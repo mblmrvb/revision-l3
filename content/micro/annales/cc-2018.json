@@ -1,0 +1,180 @@
+{
+  "id": "micro-cc-2018",
+  "matiere": "micro",
+  "annee": "2018-2019",
+  "type": "CC",
+  "titre": "Micro — CC octobre 2018",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "pret",
+  "chapitres": ["micro-ch1", "micro-ch2", "micro-ch3"],
+  "sources": ["Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2018 - 2019/CC-2018-corrigé.pdf (énoncé + résultats)"],
+  "incertitudes": [
+    "Le symbole du choc de productivité est illisible dans le PDF : il est noté $\\theta_{t+1}$ ici.",
+    "Le corrigé officiel ne donne que les résultats : les étapes intermédiaires et les indices sont des explications ajoutées."
+  ],
+  "exercices": [
+    {
+      "titre": "Question de cours",
+      "points": 3,
+      "chapitres": ["micro-ch2"],
+      "enonce": "Dans un plan $(C^i_0,C^i_1)$, illustrez graphiquement le gain à l'échange intertemporel (grâce à l'introduction de marchés financiers) pour un agent aux préférences convexes, de dotations $(w^i_0,w^i_1)$ et de technologie $f_i$ croissante et concave.",
+      "etapes": [
+        {
+          "id": "q",
+          "type": "auto",
+          "points": 3,
+          "notion": "micro-ch2",
+          "consigne": "Décris ton graphique : courbes tracées, points remarquables, conditions de tangence, et où se lit le gain.",
+          "indices": ["Trois objets : la FPP (concave, passe par $W$), la droite de budget de pente $-(1+r)$, des courbes d'indifférence.", "Compare le point d'autarcie $A$ et le point de consommation $C$ avec marché."],
+          "reexplication": "Autarcie : $A$ = tangence FPP / courbe d'indifférence. Avec marché : production en $P$ (FPP tangente à une droite de pente $-(1+r)$), consommation en $C$ (droite de budget tangente à une courbe d'indifférence). $C$ est sur une courbe plus haute que $A$.",
+          "correction": "FPP concave passant par $W=(w^i_0,w^i_1)$ ; en autarcie l'optimum est $A$ ($TMS_{1\\to0}=f'$). Avec marché, la production se place en $P$ où $f'(k)=1+r$, la droite de budget de pente $-(1+r)$ passe par $P$, et la consommation est en $C$ ($TMS_{1\\to0}=1+r$). $C$ est sur une courbe d'indifférence plus éloignée de l'origine que celle passant par $A$ : c'est le **gain à l'échange intertemporel**. Préciser si l'agent est emprunteur ou épargnant selon la position de $C$ par rapport à $P$. [Micro cours chapitre 2.pdf, p. 7-9](src:)"
+        }
+      ]
+    },
+    {
+      "titre": "Exercice 1 — Inférence et structure par terme des taux d'intérêt",
+      "points": 7,
+      "chapitres": ["micro-ch3", "micro-ch2"],
+      "enonce": "Bien unique non stockable, quatre dates $t=0,1,2,3$. Agent représentatif : $U=\\ln c_0+\\ln c_1+\\ln c_2+\\ln c_3$. Technologie en $t$ : $Q_{t+1}=\\theta_{t+1}(k_t)^{1/2}$ pour $t=0,1,2$, où $\\theta_{t+1}$ est un choc de productivité. Dotation globale $\\Omega_0=200$.\n\nTaux obligataires en $t=0$ : $R_1=2\\,\\%$, $R_2=4\\,\\%$, $R_3=6\\,\\%$. On veut en déduire les chocs de productivité anticipés.",
+      "etapes": [
+        {
+          "id": "q1a",
+          "type": "nombre",
+          "points": 0.5,
+          "notion": "micro-ch3",
+          "consigne": "Q1. Sans arbitrage, taux court $r_1$ (décimal) ?",
+          "reponse": 0.02,
+          "indices": ["L'obligation à 1 période est un ZC : $\\beta_1=\\frac{1}{1+R_1}$.", "Et $\\beta_1=\\frac{1}{1+r_1}$."],
+          "reexplication": "Pour une échéance, taux long = taux court : $r_1=R_1$.",
+          "correction": "$r_1=2\\,\\%$."
+        },
+        {
+          "id": "q1b",
+          "type": "nombre",
+          "points": 0.75,
+          "notion": "micro-ch3",
+          "consigne": "Q1. Taux court $r_2$ (décimal) ?",
+          "reponse": 0.061224,
+          "indices": ["$\\beta_2=\\frac{1-R_2\\beta_1}{1+R_2}$.", "Puis $r_2=\\frac{\\beta_1}{\\beta_2}-1$."],
+          "reexplication": "$\\beta_1=0{,}98039$, $\\beta_2=\\frac{1-0{,}04\\times0{,}98039}{1{,}04}=0{,}92383$, $r_2=6{,}12\\,\\%$.",
+          "correction": "$r_2=6{,}1224\\,\\%$."
+        },
+        {
+          "id": "q1c",
+          "type": "nombre",
+          "points": 0.75,
+          "notion": "micro-ch3",
+          "consigne": "Q1. Taux court $r_3$ (décimal) ?",
+          "reponse": 0.10558,
+          "indices": ["$\\beta_3=\\frac{1-R_3(\\beta_1+\\beta_2)}{1+R_3}$.", "$r_3=\\frac{\\beta_2}{\\beta_3}-1$."],
+          "reexplication": "$\\beta_3=\\frac{1-0{,}06\\times1{,}90422}{1{,}06}=0{,}83561$ ⇒ $r_3=10{,}56\\,\\%$.",
+          "correction": "$r_3=10{,}558\\,\\%$."
+        },
+        {
+          "id": "q2",
+          "type": "auto",
+          "points": 1.5,
+          "notion": "micro-ch2",
+          "consigne": "Q2. Écris les trois conditions marginales de l'AR en fonction de $q_t$, $k_t$ et des chocs.",
+          "indices": ["Consommations de l'AR : $c_0=200-k_0$, $c_1=q_1-k_1$, $c_2=q_2-k_2$, $c_3=q_3$.", "$TMS^{AR}_{t\\to t+1}=\\frac{c_t}{c_{t+1}}=\\frac{1}{1+r_{t+1}}$ avec $1+r_{t+1}=f'_{t+1}(k_t)=\\frac12\\theta_{t+1}k_t^{-1/2}$."],
+          "reexplication": "Chaque condition égalise TMS, prix relatif $\\frac{1}{1+r}$ et inverse de la productivité marginale.",
+          "correction": "$\\frac{200-k_0}{q_1-k_1}=\\frac{1}{1+r_1}=\\frac{1}{\\frac12\\theta_1k_0^{-1/2}}$ ; $\\frac{q_1-k_1}{q_2-k_2}=\\frac{1}{1+r_2}=\\frac{1}{\\frac12\\theta_2k_1^{-1/2}}$ ; $\\frac{q_2-k_2}{q_3}=\\frac{1}{1+r_3}=\\frac{1}{\\frac12\\theta_3k_2^{-1/2}}$."
+        },
+        {
+          "id": "q3",
+          "type": "nombre",
+          "points": 1,
+          "notion": "micro-ch2",
+          "consigne": "Q3. Sachant $k_2=\\frac13q_2$ et $k_1=\\frac37q_1$, déduis $k_0$.",
+          "reponse": 93.333,
+          "indices": ["$q_1-k_1=\\frac47q_1=\\frac47\\theta_1\\sqrt{k_0}$.", "La 1re condition donne $200-k_0=\\frac47\\theta_1\\sqrt{k_0}\\times\\frac{2\\sqrt{k_0}}{\\theta_1}=\\frac87k_0$."],
+          "reexplication": "$200=\\frac{15}{7}k_0$ ⇒ $k_0=93{,}333$. Le choc $\\theta_1$ disparaît.",
+          "correction": "$k_0=93{,}333$."
+        },
+        {
+          "id": "q4",
+          "type": "nombre",
+          "points": 2.5,
+          "notion": "micro-ch2",
+          "consigne": "Q4. Choc $\\theta_1$ anticipé par le marché ?",
+          "reponse": 19.708,
+          "indices": ["$1+r_1=\\frac12\\theta_1k_0^{-1/2}$.", "$\\theta_1=2(1+r_1)\\sqrt{k_0}=2\\times1{,}02\\times\\sqrt{93{,}333}$."],
+          "reexplication": "$\\theta_1=2{,}04\\times9{,}661=19{,}708$. Même méthode : $\\theta_2=2(1+r_2)\\sqrt{k_1}$ avec $k_1=\\frac37q_1$, puis $\\theta_3$.",
+          "correction": "$\\theta_1=19{,}708$, $\\theta_2=19{,}173$, $\\theta_3=16{,}8$ : le marché anticipe une baisse de productivité."
+        }
+      ]
+    },
+    {
+      "titre": "Exercice 2 — Échange avec marché des fonds prêtables, transferts et panique financière",
+      "points": 10,
+      "chapitres": ["micro-ch1"],
+      "enonce": "Deux dates, deux agents, $U^i=\\ln c^i_0+0{,}8\\ln c^i_1$. Bien non stockable.\n\n| | $t=0$ | $t=1$ |\n|---|---|---|\n| $A$ | 150 | 125 |\n| $B$ | 50 | 75 |\n\nMarché des fonds prêtables en $t=0$ (taux $r$). L'État organise des transferts $T^i_t$ ($>0$ taxe, $<0$ subvention) avec $T^A_t+T^B_t=0$.",
+      "etapes": [
+        {
+          "id": "q1",
+          "type": "auto",
+          "points": 2,
+          "notion": "micro-ch1",
+          "consigne": "Q1. Contraintes de $A$ en 0 et 1, et contrainte consolidée.",
+          "indices": ["Raisonne comme si $A$ payait une taxe à chaque date.", "$S^A=w^A_0-c^A_0-T^A_0$."],
+          "reexplication": "$w^A_0=c^A_0+S^A+T^A_0$ ; $c^A_1+T^A_1=(1+r)S^A+w^A_1$. On substitue $S^A$.",
+          "correction": "$w^A_0=c^A_0+S^A+T^A_0$, $c^A_1+T^A_1=(1+r)S^A+w^A_1$ ⇒ $c^A_0+\\frac{c^A_1}{1+r}=w^A_0-T^A_0+\\frac{w^A_1-T^A_1}{1+r}$."
+        },
+        {
+          "id": "q2",
+          "type": "auto",
+          "points": 1,
+          "notion": "micro-ch1",
+          "consigne": "Q2. Vérifie l'existence d'un AR et donne ses contraintes.",
+          "indices": ["Trois conditions à citer.", "Les transferts s'annulent dans l'agrégat."],
+          "reexplication": "$c^{AR}_t=\\sum_i(w^i_t-T^i_t)=\\Omega_t$.",
+          "correction": "Marchés complets, mêmes préférences, TMS homogènes de degré 0 ⇒ AR. $c^{AR}_t=w^A_t-T^A_t+w^B_t-T^B_t=\\Omega_t$ (= 200 aux deux dates)."
+        },
+        {
+          "id": "q3",
+          "type": "nombre",
+          "points": 1.5,
+          "notion": "micro-ch1",
+          "consigne": "Q3. Taux d'intérêt d'équilibre (décimal) ? Pourquoi ne dépend-il pas des transferts ?",
+          "reponse": 0.25,
+          "indices": ["$\\frac{0{,}8c^{AR}_0}{c^{AR}_1}=\\frac{1}{1+r}$.", "$c^{AR}_0=c^{AR}_1=200$."],
+          "reexplication": "$1+r=\\frac{1}{0{,}8}=1{,}25$. Les transferts ne modifient pas les dotations agrégées, donc pas le TMS de l'AR.",
+          "correction": "$r=0{,}25$ ; indépendant des transferts car $\\sum_iT^i_t=0$ laisse $\\Omega_t$ inchangé."
+        },
+        {
+          "id": "q4",
+          "type": "auto",
+          "points": 2.5,
+          "notion": "micro-ch1",
+          "consigne": "Q4. Consommations de $A$ et épargne $S^A$ en fonction de $T^A_0$, $T^A_1$.",
+          "indices": ["$\\gamma_A=\\frac{150-T^A_0+\\frac{125-T^A_1}{1{,}25}}{200+\\frac{200}{1{,}25}}$.", "$c^A_0=c^A_1=200\\gamma_A$, puis $S^A=150-T^A_0-c^A_0$."],
+          "reexplication": "$\\gamma_A=\\frac{250-T^A_0-0{,}8T^A_1}{360}$, donc $c^A_t=138{,}89-0{,}5556T^A_0-0{,}4444T^A_1$.",
+          "correction": "$c^A_0=c^A_1=138{,}89-0{,}55556T^A_0-0{,}44444T^A_1$ ; $S^A=11{,}11-0{,}44444T^A_0+0{,}44444T^A_1$."
+        },
+        {
+          "id": "q5",
+          "type": "nombre",
+          "points": 1.5,
+          "notion": "micro-ch1",
+          "consigne": "Q5. Sans transferts : épargne de $A$ en $t=0$ ?",
+          "reponse": 11.11,
+          "indices": ["$c^A_0=138{,}89$.", "$S^A=150-138{,}89$."],
+          "reexplication": "$A$ prête 11,11 en 0 et reçoit $1{,}25\\times11{,}11=13{,}89$ en 1.",
+          "correction": "$c^A_0=c^A_1=138{,}89$ ; $A$ prête 11,11 en 0 et reçoit 13,89 en 1."
+        },
+        {
+          "id": "q6",
+          "type": "auto",
+          "points": 1.5,
+          "notion": "micro-ch1",
+          "consigne": "Q6. Panique : l'État ferme le marché. Existe-t-il des transferts donnant les mêmes consommations qu'en Q5 ?",
+          "indices": ["Sans marché : $w^A_0=c^A_0+T^A_0$ et $c^A_1+T^A_1=w^A_1$.", "Impose $c^A_0=c^A_1=138{,}89$."],
+          "reexplication": "$T^A_0=150-138{,}89=11{,}11$ (taxe) et $T^A_1=125-138{,}89=-13{,}89$ (subvention).",
+          "correction": "Oui : $T^A_0=11{,}11$ et $T^A_1=-13{,}89$. Le système de transferts reproduit exactement l'épargne et son rendement : il se substitue au marché financier."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "pmf-cc-2013",
+  "matiere": "pmf",
+  "annee": "2013-2014",
+  "type": "CC",
+  "titre": "Pmf — CC 2013-2014",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Produits et marchés financiers/Annales/CC/2013 - 2014/Annale test de mi-parcours.pdf",
+    "Drive L3_EIF_Dauphine › S1/Produits et marchés financiers/Annales/CC/2013 - 2014/Corrigé test de mi-parcours.pdf"
+  ],
+  "exercices": []
+}

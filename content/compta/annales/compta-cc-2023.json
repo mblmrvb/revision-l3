@@ -1,0 +1,19 @@
+{
+  "id": "compta-cc-2023",
+  "matiere": "compta",
+  "annee": "2023-2024",
+  "type": "CC",
+  "titre": "Compta — CC 2023-2024",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2023/CC Comptabilité 23-24.pdf"
+  ],
+  "exercices": []
+}

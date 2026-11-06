@@ -1,0 +1,259 @@
+[
+  {
+    "id": "mq1-01",
+    "chapitre": "micro-ch1",
+    "question": "Pour l'agent $i$, $TMS^i_{1\\to0}$ est :",
+    "choix": [
+      "la quantité de bien 1 qu'il faut sacrifier demain pour obtenir une unité de plus aujourd'hui, à utilité constante",
+      "la quantité de bien 0 qu'il faut sacrifier aujourd'hui pour obtenir une unité de plus demain",
+      "le rapport $\\dfrac{\\partial U^i/\\partial C^i_1}{\\partial U^i/\\partial C^i_0}$",
+      "le prix relatif du bien 1 en termes de bien 0"
+    ],
+    "bonnes": [0],
+    "indice": "Lis la flèche « 1 → 0 » : on cède du bien 1 pour obtenir du bien 0.",
+    "explication": "$TMS^i_{1\\to0}=-\\dfrac{dC_1}{dC_0}=\\dfrac{\\partial U^i/\\partial C^i_0}{\\partial U^i/\\partial C^i_1}$ : bien 1 sacrifié pour une unité de bien 0 en plus. La réponse B (et C) décrit $TMS_{0\\to1}$ ; D est $\\frac{1}{1+r}$, prix du bien 1.",
+    "source": "Micro L3 chapitre 1.pdf, p. 1-2"
+  },
+  {
+    "id": "mq1-02",
+    "chapitre": "micro-ch1",
+    "question": "Avec $U^i=c\\ln C^i_0+d\\ln C^i_1$, le $TMS^i_{1\\to0}$ vaut :",
+    "choix": ["$\\dfrac{c\\,C^i_1}{d\\,C^i_0}$", "$\\dfrac{d\\,C^i_0}{c\\,C^i_1}$", "$\\dfrac{c}{d}$", "$\\dfrac{c\\,C^i_0}{d\\,C^i_1}$"],
+    "bonnes": [0],
+    "indice": "$\\partial U/\\partial C_0=c/C_0$ et $\\partial U/\\partial C_1=d/C_1$. Fais le rapport dans le bon sens.",
+    "explication": "$TMS_{1\\to0}=\\dfrac{c/C_0}{d/C_1}=\\dfrac{c\\,C_1}{d\\,C_0}$. $c/d$ est le TMS des substituts parfaits ($cC_0+dC_1$).",
+    "source": "Micro L3 chapitre 1.pdf, p. 5"
+  },
+  {
+    "id": "mq1-03",
+    "chapitre": "micro-ch1",
+    "question": "Biens datés parfaitement substituables ($U^i=cC^i_0+dC^i_1$). Quelles allocations sont Pareto-optimales ?",
+    "choix": ["Toutes les allocations faisables", "Uniquement celles où $C^i_0=C^i_1$", "Uniquement l'allocation initiale", "Aucune"],
+    "bonnes": [0],
+    "explication": "Les TMS valent tous $c/d$ quel que soit le panier : ils sont toujours égaux, donc toute allocation faisable est Pareto-optimale. Seule compte la quantité totale de bien.",
+    "source": "Micro L3 chapitre 1.pdf, p. 4-5"
+  },
+  {
+    "id": "mq1-04",
+    "chapitre": "micro-ch1",
+    "question": "Préférences log identiques, $\\Omega_0=\\Omega_1$. À l'optimum de Pareto :",
+    "choix": ["chaque agent consomme autant aux deux dates", "chaque agent consomme ses dotations", "l'agent le plus riche en $t=0$ consomme plus en $t=0$ qu'en $t=1$", "la consommation de chacun suit le profil de ses dotations individuelles"],
+    "bonnes": [0],
+    "indice": "Courbe des contrats : $C^i_1=\\frac{\\Omega_1}{\\Omega_0}C^i_0$.",
+    "explication": "Avec $\\Omega_1/\\Omega_0=1$ on obtient $C^i_0=C^i_1$ : lissage parfait, indépendamment des dotations individuelles.",
+    "source": "Micro L3 chapitre 1.pdf, p. 6"
+  },
+  {
+    "id": "mq1-05",
+    "chapitre": "micro-ch1",
+    "question": "Avec un marché des prêts au taux $r$, la condition d'équilibre de l'agent $i$ est :",
+    "choix": ["$TMS^i_{0\\to1}=\\dfrac{1}{1+r}$", "$TMS^i_{0\\to1}=1+r$", "$TMS^i_{1\\to0}=\\dfrac{1}{1+r}$", "$TMS^i_{0\\to1}=r$"],
+    "bonnes": [0],
+    "explication": "La valeur relative subjective du bien 1 ($TMS_{0\\to1}$) égale son prix relatif $\\frac{1}{1+r}$. De façon équivalente $TMS_{1\\to0}=1+r$.",
+    "source": "Micro L3 chapitre 1.pdf, p. 9"
+  },
+  {
+    "id": "mq1-06",
+    "chapitre": "micro-ch1",
+    "question": "Économie d'échange à 2 agents avec marché financier. Les conditions $C^a_0+C^b_0=\\Omega_0$, $C^a_1+C^b_1=\\Omega_1$, $S^a+S^b=0$ :",
+    "choix": ["sont redondantes : une se déduit des autres", "sont indépendantes et toutes nécessaires pour trouver $r$", "ne servent pas à trouver $r$", "ne sont vraies qu'avec un agent représentatif"],
+    "bonnes": [0],
+    "explication": "$C^a_0+C^b_0=\\Omega_0$ et $w^i_0=C^i_0+S^i$ impliquent $S^a+S^b=0$. Une seule condition de marché suffit pour déterminer $r^*$.",
+    "source": "Micro L3 chapitre 1.pdf, p. 8"
+  },
+  {
+    "id": "mq1-07",
+    "chapitre": "micro-ch1",
+    "question": "Quelles conditions permettent d'utiliser le théorème de l'agent représentatif ? (plusieurs réponses)",
+    "choix": ["Les agents ont les mêmes préférences", "Les TMS sont homogènes de degré 0", "Le système financier est complet et parfait", "Les agents ont les mêmes dotations"],
+    "bonnes": [0, 1, 2],
+    "indice": "Les dotations peuvent justement être différentes : c'est tout l'intérêt de l'AR.",
+    "explication": "Échange pur, système financier complet et parfait, mêmes préférences, TMS homogènes de degré 0. Les dotations peuvent différer : la redistribution ne change pas les agrégats.",
+    "source": "Micro L3 chapitre 1.pdf, p. 14"
+  },
+  {
+    "id": "mq1-08",
+    "chapitre": "micro-ch1",
+    "question": "$U^i=\\ln C^i_0+\\beta\\ln C^i_1$, $\\Omega_0=\\Omega_1=200$, $\\beta=10/11$. Le taux d'intérêt d'équilibre est :",
+    "choix": ["$10\\,\\%$", "$-10\\,\\%$", "$0\\,\\%$", "$9{,}1\\,\\%$"],
+    "bonnes": [0],
+    "indice": "$TMS^{AR}_{0\\to1}=\\beta\\,\\Omega_0/\\Omega_1=\\frac{1}{1+r}$.",
+    "explication": "$r=\\dfrac{\\Omega_1}{\\beta\\Omega_0}-1=\\dfrac{11}{10}-1=10\\,\\%$.",
+    "source": "diapo Séance 2 micro.pdf, diapos 34-37"
+  },
+  {
+    "id": "mq1-09",
+    "chapitre": "micro-ch1",
+    "question": "Avec un AR, l'agent $i$ consomme $C^i_t=k_i\\,\\Omega_t$. Que vaut $k_i$ ?",
+    "choix": ["$\\dfrac{w^i_0+\\frac{w^i_1}{1+r}}{\\Omega_0+\\frac{\\Omega_1}{1+r}}$", "$\\dfrac{w^i_0}{\\Omega_0}$", "$\\dfrac{w^i_0+w^i_1}{\\Omega_0+\\Omega_1}$", "$\\dfrac12$"],
+    "bonnes": [0],
+    "explication": "$k_i$ est la part de la richesse intertemporelle **actualisée** de $i$ dans la richesse globale actualisée.",
+    "source": "Micro L3 chapitre 1.pdf, p. 16"
+  },
+  {
+    "id": "mq1-10",
+    "chapitre": "micro-ch1",
+    "question": "Si le taux prêteur est différent du taux emprunteur :",
+    "choix": ["l'équilibre n'est plus nécessairement Pareto-optimal", "l'équilibre reste Pareto-optimal", "le taux d'équilibre est la moyenne des deux", "on peut toujours utiliser l'AR"],
+    "bonnes": [0],
+    "explication": "L'unicité du taux est cruciale : les agents égaliseraient leur TMS à des prix différents, donc les TMS ne seraient plus égaux entre eux.",
+    "source": "Micro L3 chapitre 1.pdf, p. 10"
+  },
+  {
+    "id": "mq2-01",
+    "chapitre": "micro-ch2",
+    "question": "Le $TMT_{1\\to0}$ est égal à :",
+    "choix": ["$f'(k)$, la productivité marginale", "$\\dfrac{1}{f'(k)}$", "$f(k)/k$", "$1+r$ en autarcie"],
+    "bonnes": [0],
+    "explication": "$TMT_{1\\to0}=-\\frac{dC_1}{dC_0}\\big|_{FPP}=f'(k)$ : coût d'opportunité du bien 0 en bien 1.",
+    "source": "Micro cours chapitre 2.pdf, p. 3"
+  },
+  {
+    "id": "mq2-02",
+    "chapitre": "micro-ch2",
+    "question": "En autarcie avec production, l'équilibre de l'agent $i$ vérifie :",
+    "choix": ["$TMS^i_{1\\to0}=f'_i(k^i)$", "$TMS^i_{0\\to1}=f'_i(k^i)$", "$f'_i(k^i)=1+r$", "$TMS^i_{1\\to0}=1$"],
+    "bonnes": [0],
+    "explication": "Valeur relative du bien 0 = coût d'opportunité : tangence entre FPP et courbe d'indifférence. Il n'y a pas de $r$ en autarcie.",
+    "source": "Micro cours chapitre 2.pdf, p. 4"
+  },
+  {
+    "id": "mq2-03",
+    "chapitre": "micro-ch2",
+    "question": "Avec un marché financier parfait, la règle d'investissement optimal est :",
+    "choix": ["$f'_i(k^i)=1+r$", "$f'_i(k^i)=r$", "$f'_i(k^i)=TMS^i_{0\\to1}$", "$f_i(k^i)=(1+r)k^i$"],
+    "bonnes": [0],
+    "indice": "On compare le rendement **brut** d'une unité investie au rendement brut d'une unité placée.",
+    "explication": "La productivité marginale égale le rendement brut du capital $1+r$.",
+    "source": "Micro cours chapitre 2.pdf, p. 6-7"
+  },
+  {
+    "id": "mq2-04",
+    "chapitre": "micro-ch2",
+    "question": "Le théorème de séparation de Fisher affirme que, à $r$ donné et avec des marchés parfaits et complets :",
+    "choix": ["l'investissement optimal ne dépend ni des préférences ni des dotations", "la consommation ne dépend pas du profit", "le taux d'intérêt ne dépend pas des préférences", "chaque agent investit toute sa dotation"],
+    "bonnes": [0],
+    "explication": "$k^i=(f'_i)^{-1}(1+r)$ ne dépend que de la technologie et de $r$ (unanimité des actionnaires). Le $r^*$ d'équilibre, lui, dépend des préférences.",
+    "source": "Micro cours chapitre 2.pdf, p. 10"
+  },
+  {
+    "id": "mq2-05",
+    "chapitre": "micro-ch2",
+    "question": "Le profit actualisé (en bien 0) de la firme $i$ est :",
+    "choix": ["$\\dfrac{f_i(k^i)}{1+r}-k^i$", "$f_i(k^i)-k^i$", "$f_i(k^i)-(1+r)k^i$", "$(1+r)f_i(k^i)-k^i$"],
+    "bonnes": [0],
+    "explication": "$\\bar\\Pi^i=\\frac{f_i(k^i)}{1+r}-k^i$. La réponse C est le profit exprimé en bien 1 : $\\Pi^i=(1+r)\\bar\\Pi^i$.",
+    "source": "Micro cours chapitre 2.pdf, p. 11"
+  },
+  {
+    "id": "mq2-06",
+    "chapitre": "micro-ch2",
+    "question": "Avec séparation, la condition d'équilibre du marché financier s'écrit :",
+    "choix": ["$S^a(r)+S^b(r)=k^a(r)+k^b(r)$", "$S^a(r)+S^b(r)=0$", "$S^a(r)=S^b(r)$", "$k^a(r)=k^b(r)$"],
+    "bonnes": [0],
+    "explication": "L'épargne des consommateurs-actionnaires finance l'investissement des firmes.",
+    "source": "Micro cours chapitre 2.pdf, p. 12"
+  },
+  {
+    "id": "mq2-07",
+    "chapitre": "micro-ch2",
+    "question": "Avec $Q=\\sqrt{k}$ et $f'(k)=1+r$, l'investissement optimal est :",
+    "choix": ["$k=\\dfrac{1}{4(1+r)^2}$", "$k=\\dfrac{1}{2(1+r)}$", "$k=\\dfrac{1}{(1+r)^2}$", "$k=4(1+r)^2$"],
+    "bonnes": [0],
+    "indice": "$f'(k)=\\frac{1}{2\\sqrt k}$.",
+    "explication": "$\\frac{1}{2\\sqrt k}=1+r\\Rightarrow\\sqrt k=\\frac{1}{2(1+r)}\\Rightarrow k=\\frac{1}{4(1+r)^2}$, et $Q=\\frac{1}{2(1+r)}$.",
+    "source": "Séance 3 diapo micro.pdf, diapo 27"
+  },
+  {
+    "id": "mq2-08",
+    "chapitre": "micro-ch2",
+    "question": "Dans une économie avec production, l'AR consomme en $t=0$ et $t=1$ :",
+    "choix": ["$(\\Omega_0-k,\\ \\Omega_1+f(k))$", "$(\\Omega_0,\\ \\Omega_1)$", "$(\\Omega_0+k,\\ \\Omega_1-f(k))$", "$(\\Omega_0-k,\\ \\Omega_1)$"],
+    "bonnes": [0],
+    "explication": "L'AR possède toutes les ressources et la technologie : il investit $k$ et récupère $f(k)$.",
+    "source": "Micro cours chapitre 2.pdf, p. 13"
+  },
+  {
+    "id": "mq2-09",
+    "chapitre": "micro-ch2",
+    "question": "Avec un marché financier, le plan de production $P$ et le plan de consommation $C$ de l'agent :",
+    "choix": ["sont en général différents", "coïncident toujours", "coïncident si l'agent est épargnant", "sont tous deux sur la FPP"],
+    "bonnes": [0],
+    "explication": "$P$ est sur la FPP (pente $-(1+r)$), $C$ est sur la droite de budget tangente à une courbe d'indifférence. Ils ne coïncident qu'en autarcie (point $A$).",
+    "source": "Micro cours chapitre 2.pdf, p. 7-8"
+  },
+  {
+    "id": "mq3-01",
+    "chapitre": "micro-ch3",
+    "question": "Le prix $q$ de l'actif $V:(w_1,\\dots,w_T)$ avec un système complet de ZC de prix $\\beta_t$ est :",
+    "choix": ["$\\sum_t w_t\\beta_t$", "$\\sum_t \\dfrac{w_t}{\\beta_t}$", "$\\prod_t w_t\\beta_t$", "$\\sum_t w_t(1+\\beta_t)$"],
+    "bonnes": [0],
+    "explication": "Le portefeuille $w_1ZC_1+\\dots+w_TZC_T$ réplique $V$ ; par AOA son coût est le prix de $V$.",
+    "source": "Micro L3 chapitre 3.pdf, p. 4"
+  },
+  {
+    "id": "mq3-02",
+    "chapitre": "micro-ch3",
+    "question": "Relation entre prix des ZC et taux courts :",
+    "choix": ["$\\beta_t=\\dfrac{\\beta_{t-1}}{1+r_t}$", "$\\beta_t=\\beta_{t-1}(1+r_t)$", "$\\beta_t=\\dfrac{1}{1+r_t}$ pour tout $t$", "$\\beta_t=1-r_t$"],
+    "bonnes": [0],
+    "explication": "$\\beta_t=\\frac{1}{(1+r_1)\\cdots(1+r_t)}$, d'où $\\beta_t=\\beta_{t-1}/(1+r_t)$ et $r_t=\\beta_{t-1}/\\beta_t-1$.",
+    "source": "Micro L3 chapitre 3.pdf, p. 5"
+  },
+  {
+    "id": "mq3-03",
+    "chapitre": "micro-ch3",
+    "question": "$\\beta_1=\\frac14$, $\\beta_2=\\frac54$. Le taux court $r_2$ vaut :",
+    "choix": ["$-80\\,\\%$", "$400\\,\\%$", "$80\\,\\%$", "$-20\\,\\%$"],
+    "bonnes": [0],
+    "indice": "$r_2=\\beta_1/\\beta_2-1$.",
+    "explication": "$r_2=\\frac{1/4}{5/4}-1=\\frac15-1=-80\\,\\%$. Un ZC plus cher à plus longue échéance implique un taux court négatif.",
+    "source": "séance 5 diapo.pdf, diapo 24"
+  },
+  {
+    "id": "mq3-04",
+    "chapitre": "micro-ch3",
+    "question": "Une opportunité d'arbitrage existe si, pour un actif $V$ répliqué par $V_1+V_2+V_3$ :",
+    "choix": ["$q\\neq q_1+q_2+q_3$", "$q=q_1+q_2+q_3$", "$q>0$", "les paiements de $V$ sont positifs"],
+    "bonnes": [0],
+    "explication": "Si les prix diffèrent, acheter le moins cher et vendre le plus cher donne un gain sûr en 0 sans flux futurs. Sur un marché parfait, c'est impossible à l'équilibre.",
+    "source": "Micro L3 chapitre 3.pdf, p. 2-3"
+  },
+  {
+    "id": "mq3-05",
+    "chapitre": "micro-ch3",
+    "question": "Le taux long $R_t$ (obligation d'échéance $t$, prix 1) vérifie :",
+    "choix": ["$R_t=\\dfrac{1-\\beta_t}{\\sum_{\\tau=1}^t\\beta_\\tau}$", "$R_t=\\dfrac{1}{\\beta_t}-1$", "$R_t=\\sum_{\\tau=1}^t r_\\tau$", "$R_t=\\dfrac{\\beta_t}{1-\\beta_t}$"],
+    "bonnes": [0],
+    "indice": "Réplique l'obligation $(R_t,\\dots,R_t,1+R_t)$ avec des ZC et écris que son prix vaut 1.",
+    "explication": "$1=R_t\\sum_{\\tau\\le t}\\beta_\\tau+\\beta_t$ d'où le résultat. B est le taux d'un ZC « sur toute la période », pas le coupon.",
+    "source": "Micro L3 chapitre 3.pdf, p. 6"
+  },
+  {
+    "id": "mq3-06",
+    "chapitre": "micro-ch3",
+    "question": "Un système financier sans incertitude à $T+1$ dates est complet si :",
+    "choix": ["il comporte $T$ actifs linéairement indépendants", "il comporte $T+1$ actifs", "tous les actifs sont des ZC", "il existe au moins une obligation"],
+    "bonnes": [0],
+    "explication": "Autant d'actifs linéairement indépendants que de dates futures ($t=1,\\dots,T$).",
+    "source": "Micro L3 chapitre 3.pdf, p. 3-4"
+  },
+  {
+    "id": "mq3-07",
+    "chapitre": "micro-ch3",
+    "question": "ZC : $\\beta_1=0{,}9$, $\\beta_2=0{,}95$, $\\beta_3=0{,}8$. Prix en $t=0$ d'un actif payant 50 en $t=2$ et 30 en $t=3$ ?",
+    "choix": ["$71{,}5$", "$79{,}4$", "$80$", "$69{,}5$"],
+    "bonnes": [0],
+    "explication": "$q_0=50\\times0{,}95+30\\times0{,}8=47{,}5+24=71{,}5$. ($79{,}4$ est son prix en $t=1$ : $71{,}5/0{,}9$.)",
+    "source": "Correction exos partie I.pdf, ex. 4.1 Q1"
+  },
+  {
+    "id": "mq3-08",
+    "chapitre": "micro-ch3",
+    "question": "À l'équilibre d'une économie avec un système complet de ZC, pour tout agent :",
+    "choix": ["$TMS^i_{0\\to t}=\\beta_t$", "$TMS^i_{0\\to t}=\\dfrac{1}{\\beta_t}$", "$TMS^i_{t\\to0}=\\beta_t$", "$TMS^i_{0\\to t}=1$"],
+    "bonnes": [0],
+    "explication": "$\\beta_t$ est le prix en bien 0 du bien de la date $t$ : il égale sa valeur relative subjective. Et $TMS_{1\\to2}=\\beta_2/\\beta_1$.",
+    "source": "Correction exos partie I.pdf, ex. 3 Q6"
+  }
+]

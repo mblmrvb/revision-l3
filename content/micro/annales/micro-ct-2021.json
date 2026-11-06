@@ -1,0 +1,30 @@
+{
+  "id": "micro-ct-2021",
+  "matiere": "micro",
+  "annee": "2021-2022",
+  "type": "CT",
+  "titre": "Micro — CT 2021-2022",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription.",
+    "Examen final : la partie « équilibre dans l'incertain » (séances 7 à 10) est hors programme."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2021/Correction/4.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2021/Correction/2.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2021/Correction/9.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2021/Correction/6.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2021/Sujet/Micro_CT_2021_Part_1.jpg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2021/Sujet/Micro_CT_2021_Part_2.jpg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2021/Correction/8.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2021/Correction/5.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2021/Correction/7.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2021/Correction/1.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2021/Correction/3.jpeg"
+  ],
+  "exercices": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "compta-cc-2013",
+  "matiere": "compta",
+  "annee": "2013-2014",
+  "type": "CC",
+  "titre": "Compta — CC 2013-2014",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2013/CC 2013.xlsx",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2013/CC 2013.pdf"
+  ],
+  "exercices": []
+}

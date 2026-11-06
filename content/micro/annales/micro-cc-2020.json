@@ -1,0 +1,20 @@
+{
+  "id": "micro-cc-2020",
+  "matiere": "micro",
+  "annee": "2020-2021",
+  "type": "CC",
+  "titre": "Micro — CC 2020-2021",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2020 - 2021/Partie_2.jpg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2020 - 2021/Partie_1.jpg"
+  ],
+  "exercices": []
+}

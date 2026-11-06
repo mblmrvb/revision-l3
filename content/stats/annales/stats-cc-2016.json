@@ -1,0 +1,22 @@
+{
+  "id": "stats-cc-2016",
+  "matiere": "stats",
+  "annee": "2016-2017",
+  "type": "CC",
+  "titre": "Stats — CC 2016-2017",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CC/2016 - 2017/Correction/Exo_1.JPG",
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CC/2016 - 2017/Correction/Exo_2.JPG",
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CC/2016 - 2017/Sujet/Exo_2.JPG",
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CC/2016 - 2017/Sujet/Exo_1.JPG"
+  ],
+  "exercices": []
+}

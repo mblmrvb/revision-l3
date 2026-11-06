@@ -1,0 +1,22 @@
+{
+  "id": "stats-cc-2018",
+  "matiere": "stats",
+  "annee": "2018-2019",
+  "type": "CC",
+  "titre": "Stats — CC 2018-2019",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CC/2018 - 2019/Correction/Exo_1.JPG",
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CC/2018 - 2019/Sujet/Questions_cours.JPG",
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CC/2018 - 2019/Correction/Questions_cours.JPG",
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CC/2018 - 2019/Sujet/Exercice.JPG"
+  ],
+  "exercices": []
+}

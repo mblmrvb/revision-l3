@@ -1,0 +1,19 @@
+{
+  "id": "compta-cc-2014",
+  "matiere": "compta",
+  "annee": "2014-2015",
+  "type": "CC",
+  "titre": "Compta — CC 2014-2015",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2014/CC + Corrigé 2014.docx"
+  ],
+  "exercices": []
+}

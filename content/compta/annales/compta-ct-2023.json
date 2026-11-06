@@ -1,0 +1,22 @@
+{
+  "id": "compta-ct-2023",
+  "matiere": "compta",
+  "annee": "2023-2024",
+  "type": "CT",
+  "titre": "Compta — CT 2023-2024",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CT/2023/Page 3 CT.jpg",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CT/2023/Page 1 CT.jpg",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CT/2023/Page 2 CT.jpg",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CT/2023/Sujet_Compta_CT_23-24.pdf"
+  ],
+  "exercices": []
+}

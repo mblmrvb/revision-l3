@@ -1,0 +1,641 @@
+[
+  {
+    "id": "micro-ex-s1",
+    "chapitre": "micro-ch1",
+    "titre": "Séance 1 — Robinson et Vendredi : allocations Pareto-optimales à 3 dates",
+    "source": "diapo Séance 1 micro.pdf, diapos 15-23",
+    "enonce": "Économie à trois dates $t=0,1,2$, un bien périssable par date, deux agents : Robinson ($R$) et Vendredi ($V$), de préférences\n\n$$U=u(c_0)+\\beta u(c_1)+\\beta^2u(c_2),\\qquad u(c)=\\frac{c^{1-\\frac1\\sigma}}{1-\\frac1\\sigma},\\qquad \\beta=\\tfrac45,\\ \\sigma=\\tfrac12.$$\n\n| $t$ | 0 | 1 | 2 |\n|---|---|---|---|\n| Robinson | 60 | 80 | 100 |\n| Vendredi | 80 | 40 | 0 |",
+    "quoi": "**Ce qu'on cherche** : l'ensemble des allocations Pareto-optimales (la « courbe » des contrats).\n**Pourquoi** : c'est la référence d'efficacité que le marché financier permettra d'atteindre (séance 2).\n**Comment** : programme de Pareto → lagrangien → égalité des TMS → contraintes de ressources.",
+    "etapes": [
+      {
+        "id": "e1",
+        "type": "nombre",
+        "consigne": "Avec $\\sigma=\\frac12$, $u(c)=\\dfrac{c^{1-2}}{1-2}$. Que vaut $u(c)$ pour $c=4$ ?",
+        "reponse": -0.25,
+        "indices": ["Calcule $1-\\frac1\\sigma$ avec $\\sigma=\\frac12$.", "$1-\\frac1\\sigma=1-2=-1$, donc $u(c)=\\frac{c^{-1}}{-1}$."],
+        "reexplication": "$u(c)=-\\dfrac1c$. Pour $c=4$ : $u(4)=-\\frac14=-0{,}25$. C'est une utilité négative mais croissante et concave : seule compte la comparaison.",
+        "correction": "$u(c)=-\\dfrac{1}{c}$ donc $u(4)=-0{,}25$. [diapo 20](src:)"
+      },
+      {
+        "id": "e2",
+        "type": "auto",
+        "consigne": "Écris le programme $P(\\bar U)$ des allocations Pareto-optimales (allocations intérieures).",
+        "indices": ["On maximise l'utilité de l'un sous la contrainte que l'autre ait au moins $\\bar U$.", "Il y a une contrainte de ressources par date : $c^R_t+c^V_t=\\Omega_t$. Calcule les $\\Omega_t$."],
+        "reexplication": "Les dotations globales sont $\\Omega_0=60+80=140$, $\\Omega_1=80+40=120$, $\\Omega_2=100+0=100$. On écrit : max utilité de Robinson, s.c. utilité de Vendredi $\\ge\\bar U$ et trois contraintes de ressources.",
+        "correction": "$$\\max\\ u(c^R_0)+0{,}8\\,u(c^R_1)+0{,}64\\,u(c^R_2)$$ s.c. $u(c^V_0)+0{,}8\\,u(c^V_1)+0{,}64\\,u(c^V_2)\\ge\\bar U$, $c^R_0+c^V_0=140$, $c^R_1+c^V_1=120$, $c^R_2+c^V_2=100$, avec $u(c)=-\\frac1c$. [diapo 20](src:)"
+      },
+      {
+        "id": "e3",
+        "type": "auto",
+        "consigne": "Écris le lagrangien et les conditions du premier ordre par rapport à $c^R_t$ et $c^V_t$.",
+        "indices": ["Un multiplicateur $\\lambda$ pour l'utilité de Vendredi, un multiplicateur $\\mu^P_t$ par contrainte de ressources.", "$u'(c)=\\frac{1}{c^2}$ quand $u(c)=-\\frac1c$."],
+        "reexplication": "$\\mathcal L=u(c^R_0)+0{,}8u(c^R_1)+0{,}64u(c^R_2)+\\lambda[\\dots-\\bar U]+\\sum_t\\mu^P_t(\\Omega_t-c^R_t-c^V_t)$. On dérive par rapport à chaque consommation.",
+        "correction": "$\\frac{1}{(c^R_0)^2}=\\mu^P_0$, $\\frac{0{,}8}{(c^R_1)^2}=\\mu^P_1$, $\\frac{0{,}64}{(c^R_2)^2}=\\mu^P_2$ et $\\frac{\\lambda}{(c^V_0)^2}=\\mu^P_0$, $\\frac{0{,}8\\lambda}{(c^V_1)^2}=\\mu^P_1$, $\\frac{0{,}64\\lambda}{(c^V_2)^2}=\\mu^P_2$. [diapo 21](src:)"
+      },
+      {
+        "id": "e4",
+        "type": "choix",
+        "consigne": "En combinant les CPO, quelle condition obtient-on entre les dates 0 et 1 ?",
+        "choix": ["$0{,}8\\left(\\frac{c^R_0}{c^R_1}\\right)^2=0{,}8\\left(\\frac{c^V_0}{c^V_1}\\right)^2$", "$c^R_0=c^V_0$", "$\\frac{c^R_1}{c^R_0}=\\frac{c^V_0}{c^V_1}$", "$0{,}8\\,c^R_0=c^R_1$"],
+        "bonne": 0,
+        "indices": ["Divise la CPO de $c^R_1$ par celle de $c^R_0$, puis pareil pour $V$.", "Les deux rapports valent $\\mu^P_1/\\mu^P_0$ : ce sont les $TMS_{0\\to1}$."],
+        "reexplication": "$TMS^R_{0\\to1}=\\frac{0{,}8/(c^R_1)^2}{1/(c^R_0)^2}=0{,}8\\left(\\frac{c^R_0}{c^R_1}\\right)^2$ et de même pour $V$ ; l'optimum égalise les TMS.",
+        "correction": "$TMS^R_{0\\to1}=0{,}8\\left(\\frac{c^R_0}{c^R_1}\\right)^2=0{,}8\\left(\\frac{c^V_0}{c^V_1}\\right)^2=TMS^V_{0\\to1}$, idem entre 0 et 2 avec $0{,}64$. [diapo 22](src:)"
+      },
+      {
+        "id": "e5",
+        "type": "nombre",
+        "consigne": "Sur la courbe des contrats, $c^R_1=k\\,c^R_0$. Que vaut $k$ ? (donne une valeur décimale)",
+        "reponse": 0.857142857,
+        "indices": ["L'égalité des TMS donne $\\frac{c^R_0}{c^R_1}=\\frac{c^V_0}{c^V_1}$.", "Quand deux rapports sont égaux, ils sont égaux au rapport des sommes : $\\frac{\\Omega_0}{\\Omega_1}$."],
+        "reexplication": "$\\frac{c^R_0}{c^R_1}=\\frac{c^R_0+c^V_0}{c^R_1+c^V_1}=\\frac{140}{120}=\\frac76$ donc $c^R_1=\\frac67c^R_0$.",
+        "correction": "$c^R_1=\\frac{\\Omega_1}{\\Omega_0}c^R_0=\\frac{6}{7}c^R_0\\approx0{,}86\\,c^R_0$. [diapo 23](src:)"
+      },
+      {
+        "id": "e6",
+        "type": "nombre",
+        "consigne": "De même, $c^R_2=k'\\,c^R_0$. Que vaut $k'$ ?",
+        "reponse": 0.714285714,
+        "indices": ["Même raisonnement entre les dates 0 et 2.", "$\\frac{c^R_0}{c^R_2}=\\frac{\\Omega_0}{\\Omega_2}$."],
+        "reexplication": "$\\frac{\\Omega_0}{\\Omega_2}=\\frac{140}{100}=\\frac75$, d'où $c^R_2=\\frac57c^R_0$.",
+        "correction": "$c^R_2=\\frac57c^R_0\\approx0{,}71\\,c^R_0$. Le profil optimal est **décroissant**, comme les dotations globales (140, 120, 100) — et non comme les dotations de Robinson (croissantes). [diapo 23](src:)"
+      }
+    ]
+  },
+  {
+    "id": "micro-ex-s2",
+    "chapitre": "micro-ch1",
+    "titre": "Séance 2 — Équilibre avec marché des prêts, sans puis avec agent représentatif",
+    "source": "diapo Séance 2 micro.pdf, diapos 22-38",
+    "enonce": "Échange pur à deux dates, deux agents $i=a,b$, $U^i=\\ln C^i_0+\\beta\\ln C^i_1$ avec $0<\\beta<1$. Dotations $w^i_0,w^i_1$, $\\Omega_t=w^a_t+w^b_t$. Marché financier parfait au taux $r$ en $t=0$.\n\nApplication numérique : $\\beta=\\frac{10}{11}$, $w^a_0=50$, $w^a_1=125$, $w^b_0=150$, $w^b_1=75$.",
+    "quoi": "**Ce qu'on cherche** : $r^*$ et les consommations d'équilibre.\n**Pourquoi** : c'est le cas type de CC — il faut savoir le faire par les deux méthodes.\n**Comment** : partie 1 = demandes individuelles puis $S^a+S^b=0$ ; partie 2 = agent représentatif (beaucoup plus rapide).",
+    "etapes": [
+      {
+        "id": "e1",
+        "type": "auto",
+        "consigne": "Écris les contraintes budgétaires de l'agent $i$, sa contrainte consolidée et la condition d'équilibre sur les TMS.",
+        "indices": ["Une contrainte par date avec l'épargne $S^i$.", "Tire $S^i$ de la contrainte en 0 et remplace dans celle en 1."],
+        "reexplication": "$w^i_0=C^i_0+S^i$, $C^i_1=w^i_1+(1+r)S^i$. Avec $S^i=w^i_0-C^i_0$ : $C^i_0+\\frac{C^i_1}{1+r}=w^i_0+\\frac{w^i_1}{1+r}$. Puis $TMS_{0\\to1}=\\frac{\\partial U/\\partial C_1}{\\partial U/\\partial C_0}$.",
+        "correction": "$w^i_0=C^i_0+S^i$, $C^i_1=w^i_1+(1+r)S^i$ ⇒ $C^i_0+\\frac{C^i_1}{1+r}=w^i_0+\\frac{w^i_1}{1+r}$. Condition : $TMS^i_{0\\to1}=\\frac{\\beta C^i_0}{C^i_1}=\\frac{1}{1+r}$. [diapo 29](src:)"
+      },
+      {
+        "id": "e2",
+        "type": "choix",
+        "consigne": "Quelle est la demande de bien 0 de l'agent $i$ ? (on note $W^i_0=w^i_0+\\frac{w^i_1}{1+r}$)",
+        "choix": ["$C^i_0=\\dfrac{W^i_0}{1+\\beta}$", "$C^i_0=\\dfrac{\\beta W^i_0}{1+\\beta}$", "$C^i_0=\\beta W^i_0$", "$C^i_0=\\dfrac{W^i_0}{2}$"],
+        "bonne": 0,
+        "indices": ["La condition TMS donne $\\frac{C^i_1}{1+r}=\\beta C^i_0$.", "Remplace dans la contrainte consolidée : $C^i_0+\\beta C^i_0=W^i_0$."],
+        "reexplication": "$(1+\\beta)C^i_0=W^i_0$ donc $C^i_0=\\frac{W^i_0}{1+\\beta}$ et $C^i_1=\\frac{\\beta(1+r)}{1+\\beta}W^i_0$ : demandes **linéaires** en la richesse (préférences homothétiques).",
+        "correction": "$C^i_0=\\frac{1}{1+\\beta}\\left(w^i_0+\\frac{w^i_1}{1+r}\\right)$, $C^i_1=\\frac{\\beta}{1+\\beta}\\left((1+r)w^i_0+w^i_1\\right)$. [diapos 30-31](src:)"
+      },
+      {
+        "id": "e3",
+        "type": "auto",
+        "consigne": "Déduis-en la demande d'épargne $S^i(r)$, puis le taux d'équilibre $r^*$ en fonction de $\\beta,\\Omega_0,\\Omega_1$.",
+        "indices": ["$S^i=w^i_0-C^i_0$.", "Écris $S^a(r)+S^b(r)=0$ : les termes en $w^i$ se regroupent en $\\Omega_t$."],
+        "reexplication": "$S^i=\\frac{1}{1+\\beta}\\left(\\beta w^i_0-\\frac{w^i_1}{1+r}\\right)$. La somme nulle donne $\\beta\\Omega_0=\\frac{\\Omega_1}{1+r}$.",
+        "correction": "$S^i=\\frac{1}{1+\\beta}\\left(\\beta w^i_0-\\frac{w^i_1}{1+r}\\right)$ ; $S^a+S^b=0\\Rightarrow\\frac{1}{1+r}=\\frac{\\beta\\Omega_0}{\\Omega_1}\\Rightarrow r^*=\\frac{\\Omega_1}{\\beta\\Omega_0}-1$. [diapos 33-34](src:)"
+      },
+      {
+        "id": "e4",
+        "type": "nombre",
+        "consigne": "Application numérique : $r^*$ = ? (en décimal, ex. 0,05 pour 5 %)",
+        "reponse": 0.1,
+        "unite": "",
+        "indices": ["Calcule $\\Omega_0$ et $\\Omega_1$.", "$\\Omega_0=\\Omega_1=200$, donc $r=\\frac{1}{\\beta}-1$."],
+        "reexplication": "$r=\\frac{200}{\\frac{10}{11}\\times200}-1=\\frac{11}{10}-1=0{,}1$.",
+        "correction": "$r^*=10\\,\\%$. [diapo 35](src:)"
+      },
+      {
+        "id": "e5",
+        "type": "nombre",
+        "consigne": "Consommation d'équilibre $C^a_0$ ?",
+        "reponse": 85.7142857,
+        "indices": ["$W^a_0=50+\\frac{125}{1{,}1}$.", "$C^a_0=\\frac{W^a_0}{1+\\beta}$ avec $1+\\beta=\\frac{21}{11}$."],
+        "reexplication": "$W^a_0=50+113{,}64=163{,}64$, puis $163{,}64/1{,}909=85{,}71$. Et $C^a_1=C^a_0$ : lissage complet car $\\Omega_0=\\Omega_1$.",
+        "correction": "$C^a_0=C^a_1=85{,}714$ et $C^b_0=C^b_1=114{,}29$. [diapo 35](src:)"
+      },
+      {
+        "id": "e6",
+        "type": "nombre",
+        "consigne": "Épargne de l'agent $a$ : $S^a$ = ? (négatif si emprunt)",
+        "reponse": -35.7142857,
+        "indices": ["$S^a=w^a_0-C^a_0$.", "$50-85{,}71$."],
+        "reexplication": "$a$ est pauvre aujourd'hui (50) et riche demain (125) : il **emprunte** pour lisser. $S^a=-35{,}71$, et $b$ prête $35{,}71$.",
+        "correction": "$S^a=50-85{,}714=-35{,}714$ : $a$ emprunte, $b$ prête (vérification : $S^a+S^b=0$). [explication ajoutée à partir des diapos 33-35](src:)"
+      },
+      {
+        "id": "e7",
+        "type": "auto",
+        "consigne": "Partie 2 : justifie qu'on peut introduire un agent représentatif, puis retrouve $r^*$ directement.",
+        "indices": ["Deux conditions sur les préférences à citer.", "Vérifie que $TMS(\\lambda C_0,\\lambda C_1)=TMS(C_0,C_1)$, puis évalue le TMS de l'AR en $(\\Omega_0,\\Omega_1)$."],
+        "reexplication": "Mêmes préférences et $TMS_{0\\to1}=\\frac{\\beta C_0}{C_1}$ homogène de degré 0. L'AR consomme $(\\Omega_0,\\Omega_1)$ : $\\frac{\\beta\\Omega_0}{\\Omega_1}=\\frac{1}{1+r}$.",
+        "correction": "Même fonction d'utilité, $TMS^i_{0\\to1}(\\lambda C_0,\\lambda C_1)=\\frac{\\beta\\lambda C_0}{\\lambda C_1}=TMS^i_{0\\to1}(C_0,C_1)$ ⇒ AR. $TMS^{AR}_{0\\to1}(\\Omega_0,\\Omega_1)=\\frac{\\beta\\Omega_0}{\\Omega_1}=\\frac{1}{1+r}$ ⇒ $r=\\frac{\\Omega_1}{\\beta\\Omega_0}-1=10\\,\\%$. [diapos 36-37](src:)"
+      },
+      {
+        "id": "e8",
+        "type": "nombre",
+        "consigne": "Sans les fonctions de demande : part $k_a$ de l'agent $a$ dans la richesse globale ?",
+        "reponse": 0.428571,
+        "indices": ["$k_a=\\frac{w^a_0+\\frac{w^a_1}{1+r}}{\\Omega_0+\\frac{\\Omega_1}{1+r}}$.", "Numérateur $50+125/1{,}1$, dénominateur $200+200/1{,}1$."],
+        "reexplication": "$k_a=\\frac{163{,}64}{381{,}82}=0{,}4286$, puis $C^a_t=k_a\\times200=85{,}71$.",
+        "correction": "$k_a=0{,}42857$ ⇒ $C^a_t=0{,}42857\\times200=85{,}714$ et $C^b_t=114{,}29$. [diapo 38](src:)"
+      }
+    ]
+  },
+  {
+    "id": "micro-ex-s3",
+    "chapitre": "micro-ch2",
+    "titre": "Séance 3 — Production et marché financier : deux technologies",
+    "source": "Séance 3 diapo micro.pdf, diapos 20-32",
+    "enonce": "Deux dates, deux agents $a,b$, $U^i=\\ln C^i_0+\\beta\\ln C^i_1$. Technologies : $Q_a=(k_a)^{0,5}$, $Q_b=2(k_b)^{0,5}$. Dotations seulement en $t=0$ : $w^a_1=w^b_1=0$. Marché des prêts au taux $r$.\n\nAN : $\\beta=\\frac{10}{11}$, $w^a_0=50$, $w^b_0=150$.",
+    "quoi": "**Ce qu'on cherche** : $r^*$, investissements, productions, consommations, épargnes.\n**Pourquoi** : c'est le schéma « production + marché » qui revient en annale (souvent à 3 dates).\n**Comment** : règle $f'(k)=1+r$ ⇒ $k_i(r)$ ; TMS + contrainte consolidée ⇒ $C^i_t(r)$ ; $S^a+S^b=0$ ⇒ $r^*$.",
+    "etapes": [
+      {
+        "id": "e1",
+        "type": "auto",
+        "consigne": "Écris les contraintes par date de l'agent $i$ et sa contrainte consolidée.",
+        "indices": ["En $t=0$ la dotation se répartit entre consommation, investissement et épargne.", "En $t=1$ : production + remboursement de l'épargne (pas de dotation)."],
+        "reexplication": "$w^i_0=C^i_0+k_i+S^i$ ; $C^i_1=f_i(k_i)+(1+r)S^i$. On tire $S^i$ de la 2e et on remplace.",
+        "correction": "$w^i_0=C^i_0+k_i+S^i$, $C^i_1=f_i(k_i)+(1+r)S^i$ ⇒ $C^i_0+\\frac{C^i_1}{1+r}=w^i_0+\\frac{f_i(k_i)}{1+r}-k_i$. [diapo 25](src:)"
+      },
+      {
+        "id": "e2",
+        "type": "choix",
+        "consigne": "Pour l'agent $a$, la règle $f'_a(k_a)=1+r$ donne :",
+        "choix": ["$k_a=\\dfrac{1}{4(1+r)^2}$", "$k_a=\\dfrac{1}{(1+r)^2}$", "$k_a=\\dfrac{1}{2(1+r)}$", "$k_a=4(1+r)^2$"],
+        "bonne": 0,
+        "indices": ["$f'_a(k)=0{,}5\\,k^{-0{,}5}$.", "$\\sqrt{k_a}=\\frac{1}{2(1+r)}$, élève au carré."],
+        "reexplication": "$\\frac{1}{2\\sqrt{k_a}}=1+r\\Rightarrow k_a=\\frac{1}{4(1+r)^2}$, $Q_a=\\frac{1}{2(1+r)}$. Pour $b$ : $\\frac{1}{\\sqrt{k_b}}=1+r\\Rightarrow k_b=\\frac{1}{(1+r)^2}$, $Q_b=\\frac{2}{1+r}$.",
+        "correction": "$k_a=\\frac{1}{4(1+r)^2}$, $Q_a=\\frac{1}{2(1+r)}$ ; $k_b=\\frac{1}{(1+r)^2}$, $Q_b=\\frac{2}{1+r}$. [diapo 27](src:)"
+      },
+      {
+        "id": "e3",
+        "type": "auto",
+        "consigne": "Donne les demandes $C^a_0(r)$, $C^a_1(r)$ puis l'épargne $S^a(r)$.",
+        "indices": ["Calcule d'abord $\\frac{Q_a}{1+r}-k_a$ (le profit actualisé).", "Comme en séance 2 : $C^a_0=\\frac{\\text{richesse}}{1+\\beta}$."],
+        "reexplication": "$\\frac{Q_a}{1+r}-k_a=\\frac{1}{2(1+r)^2}-\\frac{1}{4(1+r)^2}=\\frac{1}{4(1+r)^2}$. Donc $C^a_0=\\frac{1}{1+\\beta}\\left(w^a_0+\\frac{1}{4(1+r)^2}\\right)$ et $S^a=w^a_0-C^a_0-k_a$.",
+        "correction": "$C^a_0=\\frac{1}{1+\\beta}\\left(w^a_0+\\frac{1}{4(1+r)^2}\\right)$, $C^a_1=\\frac{\\beta(1+r)}{1+\\beta}\\left(w^a_0+\\frac{1}{4(1+r)^2}\\right)$, $S^a=\\frac{1}{1+\\beta}\\left(\\beta w^a_0-\\frac{2+\\beta}{4(1+r)^2}\\right)$. Pour $b$ : remplacer $\\frac14$ par 1. [diapos 28-30](src:)"
+      },
+      {
+        "id": "e4",
+        "type": "nombre",
+        "consigne": "Avec $S^a+S^b=0$, on trouve $r=\\sqrt{\\frac{5(2+\\beta)}{4\\beta\\Omega_0}}-1$. Application numérique : $r^*$ = ?",
+        "reponse": -0.858579,
+        "indices": ["$\\Omega_0=200$, $\\beta=10/11$.", "Sous la racine : $\\frac{5\\times(2+10/11)}{4\\times(10/11)\\times200}=0{,}02$."],
+        "reexplication": "$\\sqrt{0{,}02}=0{,}1414$, donc $r=0{,}1414-1=-0{,}8586$. Un taux très négatif : aucune dotation en $t=1$, le bien futur est rare.",
+        "correction": "$r^*=-0{,}85858$ (soit $1+r=\\sqrt{0{,}02}\\approx0{,}1414$). [diapos 31-32](src:)"
+      },
+      {
+        "id": "e5",
+        "type": "nombre",
+        "consigne": "Investissement de l'agent $b$ : $k_b$ = ?",
+        "reponse": 50,
+        "indices": ["$k_b=\\frac{1}{(1+r)^2}$.", "$(1+r)^2=0{,}02$."],
+        "reexplication": "$k_b=1/0{,}02=50$ et $k_a=\\frac{1}{4\\times0{,}02}=12{,}5$.",
+        "correction": "$k_a=12{,}5$, $k_b=50$ ; $Q_a=3{,}5355$, $Q_b=14{,}142$. [diapo 32](src:)"
+      },
+      {
+        "id": "e6",
+        "type": "nombre",
+        "consigne": "Consommation $C^a_0$ = ?",
+        "reponse": 32.738,
+        "indices": ["$C^a_0=\\frac{1}{1+\\beta}\\left(50+\\frac{1}{4(1+r)^2}\\right)$.", "$\\frac{1}{4(1+r)^2}=12{,}5$ et $1+\\beta=\\frac{21}{11}$."],
+        "reexplication": "$C^a_0=\\frac{62{,}5}{1{,}909}=32{,}738$.",
+        "correction": "$C^a_0=32{,}738$, $C^a_1=4{,}209$ ; $C^b_0=104{,}76$, $C^b_1=13{,}469$. [diapo 32](src:)"
+      },
+      {
+        "id": "e7",
+        "type": "nombre",
+        "consigne": "Épargne de l'agent $a$ : $S^a$ = ?",
+        "reponse": 4.7619,
+        "indices": ["$S^a=w^a_0-C^a_0-k_a$.", "$50-32{,}738-12{,}5$."],
+        "reexplication": "$S^a=4{,}762$ : $a$ prête, $b$ emprunte $4{,}762$ (il a la meilleure technologie et investit 50).",
+        "correction": "$S^a=4{,}7619$, $S^b=-4{,}7619$. [diapo 32](src:)"
+      }
+    ]
+  },
+  {
+    "id": "micro-ex-s4",
+    "chapitre": "micro-ch2",
+    "titre": "Séance 4 — Séparation de Fisher, firme unique et agent représentatif",
+    "source": "Séance 4 diapo.pdf, diapos 19-28",
+    "enonce": "Même économie qu'en séance 3 : $U^i=\\ln C^i_0+\\beta\\ln C^i_1$, $Q_a=(k_a)^{0,5}$, $Q_b=2(k_b)^{0,5}$, $w^a_1=w^b_1=0$, marché des prêts au taux $r$. AN : $\\beta=\\frac{10}{11}$, $w^a_0=50$, $w^b_0=150$.",
+    "quoi": "**Ce qu'on cherche** : le même équilibre qu'en séance 3, mais en séparant production et consommation.\n**Pourquoi** : la méthode « firme unique + AR » est bien plus rapide, et c'est celle des annales.\n**Comment** : profits $\\bar\\Pi^i(r)$ ; fonction de production agrégée $f(k)$ ; $TMS^{AR}_{0\\to1}=\\frac{1}{f'(k)}$ ⇒ $k$, puis $r$ ; partage $\\gamma_i$.",
+    "etapes": [
+      {
+        "id": "e1",
+        "type": "auto",
+        "consigne": "Donne le profit actualisé $\\bar\\Pi^a(r)$ et $\\bar\\Pi^b(r)$, puis la contrainte consolidée du consommateur-actionnaire $i$.",
+        "indices": ["$\\bar\\Pi^i=\\frac{Q_i}{1+r}-k_i$ avec les $k_i,Q_i$ de la séance 3.", "Avec séparation, l'actionnaire ne voit plus $k_i$ : il reçoit le profit."],
+        "reexplication": "$\\bar\\Pi^a=\\frac{1}{2(1+r)^2}-\\frac{1}{4(1+r)^2}=\\frac{1}{4(1+r)^2}$ ; $\\bar\\Pi^b=\\frac{1}{(1+r)^2}$. Budgets : $w^i_0=C^i_0+S^i$, $C^i_1=(1+r)S^i+(1+r)\\bar\\Pi^i$.",
+        "correction": "$\\bar\\Pi^a=\\frac{1}{4(1+r)^2}$, $\\bar\\Pi^b=\\frac{1}{(1+r)^2}$ ; $C^i_0+\\frac{C^i_1}{1+r}=w^i_0+\\bar\\Pi^i$. [diapos 22-23](src:)"
+      },
+      {
+        "id": "e2",
+        "type": "choix",
+        "consigne": "Fonction de production agrégée $Q=f(k)$ avec $k=k_a+k_b$ et $Q=Q_a+Q_b$ :",
+        "choix": ["$f(k)=\\sqrt5\\,k^{0,5}$", "$f(k)=3\\,k^{0,5}$", "$f(k)=\\frac52\\,k^{0,5}$", "$f(k)=\\sqrt{3k}$"],
+        "bonne": 0,
+        "indices": ["$k=\\frac{5}{4(1+r)^2}$ et $Q=\\frac{5}{2(1+r)}$.", "Exprime $\\frac{1}{1+r}$ en fonction de $k$ : $\\frac{1}{1+r}=\\frac{2\\sqrt k}{\\sqrt5}$."],
+        "reexplication": "$Q=\\frac52\\times\\frac{2\\sqrt k}{\\sqrt5}=\\sqrt5\\sqrt k$. Remarque : les parts du profit sont $\\theta_a=\\frac{Q_a}{Q}=\\frac15$, $\\theta_b=\\frac45$.",
+        "correction": "$f(k)=\\sqrt5\\,k^{0,5}=\\sqrt{5k}$, avec $\\theta_a=\\frac15$, $\\theta_b=\\frac45$. [diapo 25](src:)"
+      },
+      {
+        "id": "e3",
+        "type": "nombre",
+        "consigne": "La condition $TMS^{AR}_{0\\to1}=\\frac{1}{f'(k)}$ avec $C^{AR}_0=\\Omega_0-k$, $C^{AR}_1=f(k)$ donne $k=\\frac{\\beta\\Omega_0}{2+\\beta}$. AN : $k$ = ?",
+        "reponse": 62.5,
+        "indices": ["$\\beta\\Omega_0=\\frac{2000}{11}$, $2+\\beta=\\frac{32}{11}$.", "$k=\\frac{2000}{32}$."],
+        "reexplication": "$k=62{,}5$ (= $12{,}5+50$, cohérent avec la séance 3).",
+        "correction": "$k=\\frac{\\beta\\Omega_0}{2+\\beta}=62{,}5$ ; $f(k)=\\sqrt{5\\times62{,}5}=17{,}678$. [diapos 26-28](src:)"
+      },
+      {
+        "id": "e4",
+        "type": "nombre",
+        "consigne": "Avec $f'(k)=1+r$, $r^*$ = ?",
+        "reponse": -0.858579,
+        "indices": ["$f'(k)=\\frac{\\sqrt5}{2\\sqrt k}$.", "$\\frac{\\sqrt5}{2\\sqrt{62{,}5}}=\\frac{2{,}236}{15{,}81}$."],
+        "reexplication": "$1+r=0{,}1414$ ⇒ $r=-0{,}8586$ : le même taux qu'en séance 3, comme le prévoit le théorème de Fisher.",
+        "correction": "$r=\\frac52\\sqrt{\\frac{2+\\beta}{5\\beta\\Omega_0}}-1=-0{,}85858$. [diapo 27](src:)"
+      },
+      {
+        "id": "e5",
+        "type": "nombre",
+        "consigne": "Part $\\gamma_a=\\frac{w^a_0+\\bar\\Pi^a}{\\Omega_0+\\bar\\Pi}$ de l'agent $a$ = ?",
+        "reponse": 0.2381,
+        "indices": ["$\\bar\\Pi^a=\\frac{1}{4(1+r)^2}=12{,}5$ et $\\bar\\Pi=\\frac{5}{4(1+r)^2}=62{,}5$.", "$\\gamma_a=\\frac{62{,}5}{262{,}5}$."],
+        "reexplication": "$\\gamma_a=0{,}2381$, puis $C^a_0=\\gamma_a(\\Omega_0-k)=0{,}2381\\times137{,}5=32{,}74$ et $C^a_1=\\gamma_af(k)=4{,}209$.",
+        "correction": "$\\gamma_a=0{,}23810$ ⇒ $C^a_0=32{,}739$, $C^a_1=4{,}2091$ ; $C^b_0=104{,}76$, $C^b_1=13{,}469$ — les mêmes résultats qu'en séance 3. [diapo 28](src:)"
+      }
+    ]
+  },
+  {
+    "id": "micro-ex-s5",
+    "chapitre": "micro-ch3",
+    "titre": "Séance 5 — Retrouver les prix des zéro-coupons",
+    "source": "séance 5 diapo.pdf, diapos 19-24",
+    "enonce": "Économie à 4 dates ($t=0,1,2,3$), système financier complet :\n\n$V_1=(0,1,1)$, $q_1=2$ ; $V_2=(1,0,1)$, $q_2=1$ ; $V_3=(1,1,0)$, $q_3=\\frac32$.\n\nOn introduit les ZC d'échéances 1, 2, 3 de prix $\\beta_1,\\beta_2,\\beta_3$.",
+    "quoi": "**Ce qu'on cherche** : les $\\beta_t$, le prix d'un nouvel actif, les taux courts.\n**Pourquoi** : une fois les $\\beta_t$ connus, on price n'importe quel actif en une ligne.\n**Comment** : chaque prix connu = coût de son portefeuille de ZC ⇒ système 3×3 en $\\beta_t$.",
+    "etapes": [
+      {
+        "id": "e1",
+        "type": "auto",
+        "consigne": "Écris le système vérifié par $(\\beta_1,\\beta_2,\\beta_3)$.",
+        "indices": ["$V_1$ paie 1 en $t=2$ et 1 en $t=3$ : il se réplique avec $ZC_2+ZC_3$.", "Une équation par actif : prix = coût du portefeuille de ZC."],
+        "reexplication": "$V_1=ZC_2+ZC_3$ ⇒ $\\beta_2+\\beta_3=2$ ; $V_2=ZC_1+ZC_3$ ⇒ $\\beta_1+\\beta_3=1$ ; $V_3=ZC_1+ZC_2$ ⇒ $\\beta_1+\\beta_2=\\frac32$.",
+        "correction": "$\\beta_2+\\beta_3=2$, $\\beta_1+\\beta_3=1$, $\\beta_1+\\beta_2=\\frac32$. [diapo 22](src:)"
+      },
+      {
+        "id": "e2",
+        "type": "nombre",
+        "consigne": "$\\beta_1$ = ?",
+        "reponse": 0.25,
+        "indices": ["Additionne les trois équations : $2(\\beta_1+\\beta_2+\\beta_3)=\\frac92$.", "$\\beta_1=\\frac94-2$."],
+        "reexplication": "Somme des $\\beta$ = $\\frac94$ ; $\\beta_1=\\frac94-(\\beta_2+\\beta_3)=\\frac94-2=\\frac14$.",
+        "correction": "$\\beta_1=\\frac14$, $\\beta_2=\\frac54$, $\\beta_3=\\frac34$. [diapo 22](src:)"
+      },
+      {
+        "id": "e3",
+        "type": "nombre",
+        "consigne": "Prix d'équilibre du nouvel actif $V=(3,2,2)$ ?",
+        "reponse": 4.75,
+        "indices": ["$q=3\\beta_1+2\\beta_2+2\\beta_3$.", "$\\beta_2=\\frac54$, $\\beta_3=\\frac34$."],
+        "reexplication": "$q=\\frac34+\\frac{10}{4}+\\frac64=\\frac{19}{4}=4{,}75$.",
+        "correction": "$q=3\\beta_1+2\\beta_2+2\\beta_3=\\frac{19}{4}$. [diapo 23](src:)"
+      },
+      {
+        "id": "e4",
+        "type": "nombre",
+        "consigne": "Taux court $r_1$ = ? (décimal)",
+        "reponse": 3,
+        "indices": ["$\\beta_1=\\frac{1}{1+r_1}$.", "$r_1=\\frac{1}{\\beta_1}-1$."],
+        "reexplication": "$r_1=4-1=3$, soit 300 %.",
+        "correction": "$r_1=300\\,\\%$. [diapo 24](src:)"
+      },
+      {
+        "id": "e5",
+        "type": "nombre",
+        "consigne": "Taux court $r_2$ = ? (décimal)",
+        "reponse": -0.8,
+        "indices": ["$\\beta_2=\\frac{\\beta_1}{1+r_2}$.", "$r_2=\\frac{\\beta_1}{\\beta_2}-1$."],
+        "reexplication": "$r_2=\\frac{1/4}{5/4}-1=-0{,}8$.",
+        "correction": "$r_2=-80\\,\\%$, et $r_3=\\frac{\\beta_2}{\\beta_3}-1=\\frac23\\approx66{,}7\\,\\%$. [diapo 24](src:)"
+      }
+    ]
+  },
+  {
+    "id": "micro-ex-e1",
+    "chapitre": "micro-ch2",
+    "titre": "Entraînement 1 — Production à trois dates (choc de productivité η)",
+    "source": "Exos partie I.pdf / Correction exos partie I.pdf (2026-2027), exercice 1",
+    "enonce": "Trois dates $t=0,1,2$, trois agents $A,B,C$ de dotations $w^i_0$ et parts du capital $\\theta_i$ : $A$ (0 ; 0,5), $B$ (50 ; 0,25), $C$ (50 ; 0,25). $U^i=\\ln c^i_0+\\ln c^i_1+\\ln c^i_2$.\n\nProduction : $q_1=\\eta\\sqrt{k_0}$ (investi en 0), $q_2=\\sqrt{k_1}$ (investi en 1). Marchés de fonds prêtables en 0 et 1 aux taux $r_1,r_2$. Profit actualisé : $\\Pi=\\frac{q_1}{1+r_1}-k_0+\\frac{q_2}{(1+r_1)(1+r_2)}-\\frac{k_1}{1+r_1}$.",
+    "quoi": "**Ce qu'on cherche** : $k_0,k_1,q_1,q_2$ et l'effet d'un choc $\\eta$.\n**Pourquoi** : c'est exactement la structure de l'exercice 1 du CC 2018.\n**Comment** : AR + conditions sur les TMS **en partant de la dernière période** (récurrence à rebours).",
+    "etapes": [
+      {
+        "id": "e1",
+        "type": "auto",
+        "consigne": "Écris les contraintes de l'agent $B$ aux dates 0, 1, 2, puis sa contrainte consolidée.",
+        "indices": ["En 1 et 2, $B$ reçoit sa part $\\theta_B$ du profit de la date : $q_t-(1+r_t)k_{t-1}$.", "Actualise et somme."],
+        "reexplication": "$t=0$ : $w^B_0=c^B_0+S^B_0$ ; $t=1$ : $(1+r_1)S^B_0+\\theta_B(q_1-(1+r_1)k_0)=c^B_1+S^B_1$ ; $t=2$ : $(1+r_2)S^B_1+\\theta_B(q_2-(1+r_2)k_1)=c^B_2$.",
+        "correction": "Contrainte consolidée : $c^B_0+\\frac{c^B_1}{1+r_1}+\\frac{c^B_2}{(1+r_1)(1+r_2)}=w^B_0+\\theta_B\\Pi$. [Correction exos partie I, ex. 1 Q1](src:)"
+      },
+      {
+        "id": "e2",
+        "type": "auto",
+        "consigne": "Montre que $k_1=\\frac13q_1$.",
+        "indices": ["AR justifié (mêmes préférences, TMS homogènes de degré 0). Ses consommations : $c^{AR}_1=q_1-k_1$, $c^{AR}_2=q_2$.", "Combine $TMS^{AR}_{1\\to2}=\\frac{c^{AR}_1}{c^{AR}_2}=\\frac{1}{1+r_2}$ et $1+r_2=f'(k_1)=0{,}5k_1^{-0{,}5}$."],
+        "reexplication": "$\\frac{q_1-k_1}{\\sqrt{k_1}}=\\frac{1}{0{,}5k_1^{-0{,}5}}=2\\sqrt{k_1}$ ⇒ $q_1-k_1=2k_1$ ⇒ $k_1=\\frac{q_1}{3}$.",
+        "correction": "$\\frac{q_1-k_1}{k_1^{0,5}}=\\frac{1}{0{,}5k_1^{-0,5}}$ d'où $k_1=\\frac13q_1$ : on n'investit que le tiers des ressources disponibles en 1. [Correction ex. 1 Q2](src:)"
+      },
+      {
+        "id": "e3",
+        "type": "nombre",
+        "consigne": "En utilisant $TMS^{AR}_{0\\to1}$ et $k_1=\\frac13q_1$, on obtient $k_0=\\frac37\\Omega_0$. AN : $k_0$ = ?",
+        "reponse": 42.857,
+        "indices": ["$\\Omega_0=0+50+50$.", "$\\frac37\\times100$."],
+        "reexplication": "$\\frac{\\Omega_0-k_0}{\\frac23\\eta\\sqrt{k_0}}=\\frac{1}{0{,}5\\eta k_0^{-0{,}5}}$ ⇒ $\\Omega_0-k_0=\\frac43k_0$ ⇒ $k_0=\\frac37\\Omega_0=42{,}857$.",
+        "correction": "$k_0=\\frac{300}{7}=42{,}857$. [Correction ex. 1 Q3](src:)"
+      },
+      {
+        "id": "e4",
+        "type": "nombre",
+        "consigne": "$q_1=c\\,\\eta$ : que vaut le coefficient $c$ ?",
+        "reponse": 6.5465,
+        "indices": ["$q_1=\\eta\\sqrt{k_0}$.", "$\\sqrt{42{,}857}$."],
+        "reexplication": "$c=\\sqrt{42{,}857}=6{,}5465$. Puis $k_1=2{,}1822\\eta$ et $q_2=\\sqrt{k_1}=1{,}4772\\sqrt\\eta$.",
+        "correction": "$q_1=6{,}5465\\eta$, $k_1=2{,}1822\\eta$, $q_2=1{,}4772\\sqrt\\eta$. [Correction ex. 1 Q4](src:)"
+      },
+      {
+        "id": "e5",
+        "type": "choix",
+        "consigne": "Effet d'une hausse de $\\eta$ :",
+        "choix": ["$q_1$, $k_1$ et $q_2$ augmentent, $k_0$ ne change pas", "$k_0$ augmente", "$k_0$ diminue (motif de lissage)", "Rien ne change"],
+        "bonne": 0,
+        "indices": ["Regarde de quoi dépend $k_0=\\frac37\\Omega_0$.", "Avec une élasticité de substitution intertemporelle égale à 1 (log), effets revenu et substitution se compensent."],
+        "reexplication": "$k_0$ ne dépend pas de $\\eta$ ; $q_1,k_1$ sont proportionnels à $\\eta$ et $q_2$ à $\\sqrt\\eta$.",
+        "correction": "Un choc positif augmente la production en 1 (et donc $k_1$, $q_2$) sans affecter l'investissement en 0 : avec une élasticité de substitution intertemporelle de 1, l'AR ne cherche ni à rééquilibrer sa consommation vers le présent, ni à investir plus en 0. [Correction ex. 1 Q4](src:)"
+      }
+    ]
+  },
+  {
+    "id": "micro-ex-e2",
+    "chapitre": "micro-ch2",
+    "titre": "Entraînement 2 — Stockage et taux d'intérêt",
+    "source": "Exos partie I.pdf / Correction exos partie I.pdf (2026-2027), exercice 2",
+    "enonce": "Trois dates, deux agents $A,B$, $U^i=\\ln c^i_0+0{,}8\\ln c^i_1+0{,}64\\ln c^i_2$. Marché financier à chaque date non terminale (taux $r_{t+1}$). Bien **stockable** à rendement nul : $h^i_t\\ge0$ stocké en $t$ rend $h^i_t$ en $t+1$.\n\n| | $t=0$ | $t=1$ | $t=2$ |\n|---|---|---|---|\n| $A$ | 0 | 150 | 50 |\n| $B$ | 200 | 0 | 50 |",
+    "quoi": "**Ce qu'on cherche** : quand le stockage est utilisé, les quantités stockées et les taux.\n**Pourquoi** : le stockage est une « technologie » à rendement unitaire ; il met un **plancher** au taux d'intérêt.\n**Comment** : traiter le stockage comme une production ; tester les 3 cas et éliminer ceux qui ne sont pas des équilibres.",
+    "etapes": [
+      {
+        "id": "e1",
+        "type": "choix",
+        "consigne": "Le stockage en 0 n'est utilisé que si :",
+        "choix": ["$r_1=0$", "$r_1>0$", "$r_1=1$", "$r_1<-1$"],
+        "bonne": 0,
+        "indices": ["Le « profit » du stockage en 0 vaut $\\frac{h_0}{1+r_1}-h_0$.", "Si $r_1>0$ ce profit est négatif (on ne stocke pas) ; si $r_1<0$ il est infini (impossible à l'équilibre)."],
+        "reexplication": "Rendement brut du stockage = 1 ; rendement du prêt = $1+r_1$. On stocke une quantité positive et finie seulement si $1+r_1=1$. De même pour $r_2$.",
+        "correction": "Le stockage n'est utilisé en 0 que si $\\frac{1}{1+r_1}=1\\Rightarrow r_1=0$, et en 1 que si $r_2=0$. [Correction ex. 2 Q2](src:)"
+      },
+      {
+        "id": "e2",
+        "type": "nombre",
+        "consigne": "Cas 1 (stockage seulement en 0 : $r_1=0$, $h_1=0$). Avec l'AR ($c_0=200-h_0$, $c_1=150+h_0$), $h_0$ = ?",
+        "reponse": 5.5556,
+        "indices": ["$TMS^{AR}_{0\\to1}=\\frac{0{,}8c_0}{c_1}=\\frac{1}{1+r_1}=1$.", "$0{,}8(200-h_0)=150+h_0$."],
+        "reexplication": "$160-0{,}8h_0=150+h_0$ ⇒ $h_0=\\frac{10}{1{,}8}=5{,}556$. Puis $\\frac{0{,}8\\times155{,}56}{100}=\\frac{1}{1+r_2}$ ⇒ $r_2=-0{,}196<0$.",
+        "correction": "$h_0=5{,}5556$, $r_2=-0{,}19643$. **Pas un équilibre** : avec $r_2<0$, la demande de stockage en 1 ne devrait pas être nulle. [Correction ex. 2 Q3](src:)"
+      },
+      {
+        "id": "e3",
+        "type": "nombre",
+        "consigne": "Cas 2 (stockage seulement en 1 : $r_2=0$, $h_0=0$) : $h_1$ = ?",
+        "reponse": 11.111,
+        "indices": ["$\\frac{0{,}8c_1}{c_2}=1$ avec $c_1=150-h_1$, $c_2=100+h_1$.", "$120-0{,}8h_1=100+h_1$."],
+        "reexplication": "$h_1=\\frac{20}{1{,}8}=11{,}11$, puis $\\frac{0{,}8\\times200}{138{,}89}=\\frac{1}{1+r_1}$ ⇒ $r_1=-0{,}132<0$ : pas un équilibre non plus.",
+        "correction": "$h_1=11{,}111$, $r_1=-0{,}13194$ ⇒ pas un équilibre (avec $r_1<0$ on stockerait en 0). [Correction ex. 2 Q3](src:)"
+      },
+      {
+        "id": "e4",
+        "type": "nombre",
+        "consigne": "Cas 3 (stockage aux deux dates, $r_1=r_2=0$) : $h_0$ = ?",
+        "reponse": 15.574,
+        "indices": ["Système : $0{,}8(200-h_0)=150+h_0-h_1$ et $0{,}8(150+h_0-h_1)=100+h_1$.", "De la 1re : $150+h_0-h_1=160-0{,}8h_0$ ; injecte dans la 2e pour avoir $h_1=28-0{,}64h_0$."],
+        "reexplication": "$150+h_0-28+0{,}64h_0=160-0{,}8h_0$ ⇒ $2{,}44h_0=38$ ⇒ $h_0=15{,}574$ et $h_1=18{,}033$.",
+        "correction": "$h_0=15{,}574$, $h_1=18{,}033$ : c'est l'équilibre (taux nuls, stockage positif aux deux dates). [Correction ex. 2 Q3](src:)"
+      }
+    ]
+  },
+  {
+    "id": "micro-ex-e3",
+    "chapitre": "micro-ch3",
+    "titre": "Entraînement 3 — Marché des prêts vs bourse d'actifs",
+    "source": "Exos partie I.pdf / Correction exos partie I.pdf (2026-2027), exercice 3",
+    "enonce": "Trois dates, deux agents, $u^i=\\ln c^i_0+0{,}9\\ln c^i_1+0{,}81\\ln c^i_2$, bien non stockable.\n\n| | $t=0$ | $t=1$ | $t=2$ |\n|---|---|---|---|\n| $A$ | 100 | 80 | 50 |\n| $B$ | 0 | 100 | 220 |\n\n**Partie I** : marchés des fonds prêtables à chaque date non terminale.\n**Partie II** : seulement une bourse en $t=0$ avec $A_1$ (dividendes $[2,0]$, prix $q_1$) et $A_2$ ($[1,5]$, prix $q_2$). $X^i_1,X^i_2$ = quantités détenues.",
+    "quoi": "**Ce qu'on cherche** : taux, consommations, prix des ZC et des actifs, portefeuille de $A$.\n**Pourquoi** : montre que deux actifs indépendants suffisent à reproduire l'équilibre avec marchés des prêts (marchés complets).\n**Comment** : AR pour les taux ; partage $\\gamma_A$ ; $\\beta_t$ via les TMS ; portefeuille par les contraintes en 1 et 2.",
+    "etapes": [
+      {
+        "id": "e1",
+        "type": "nombre",
+        "consigne": "Partie I : taux $r_1$ d'équilibre ?",
+        "reponse": 1,
+        "indices": ["AR justifié ; $c^{AR}_t=\\Omega_t$ : 100, 180, 270.", "$\\frac{0{,}9c^{AR}_0}{c^{AR}_1}=\\frac{1}{1+r_1}$."],
+        "reexplication": "$1+r_1=\\frac{180}{0{,}9\\times100}=2$ ⇒ $r_1=1$. De même $1+r_2=\\frac{270}{0{,}9\\times180}=\\frac53$ ⇒ $r_2=\\frac23$.",
+        "correction": "$r_1=1$ (100 %), $r_2=\\frac23\\approx0{,}667$. [Correction ex. 3 Q2](src:)"
+      },
+      {
+        "id": "e2",
+        "type": "nombre",
+        "consigne": "Part $\\gamma_A$ de l'agent $A$ ?",
+        "reponse": 0.57196,
+        "indices": ["$\\gamma_A=\\frac{100+\\frac{80}{2}+\\frac{50}{2\\times5/3}}{100+\\frac{180}{2}+\\frac{270}{2\\times5/3}}$.", "Numérateur 155, dénominateur 271."],
+        "reexplication": "$\\gamma_A=\\frac{155}{271}=0{,}57196$, puis $c^A_t=\\gamma_A\\Omega_t$.",
+        "correction": "$\\gamma_A=0{,}57196$ ⇒ $c^A_0=57{,}196$, $c^A_1=102{,}95$, $c^A_2=154{,}43$. [Correction ex. 3 Q3](src:)"
+      },
+      {
+        "id": "e3",
+        "type": "choix",
+        "consigne": "Partie II : prix des actifs en fonction des ZC :",
+        "choix": ["$q_1=2\\beta_1$ et $q_2=\\beta_1+5\\beta_2$", "$q_1=2\\beta_1$ et $q_2=5\\beta_1+\\beta_2$", "$q_1=\\beta_1+\\beta_2$ et $q_2=6\\beta_2$", "$q_1=2$ et $q_2=6$"],
+        "bonne": 0,
+        "indices": ["$A_1$ paie 2 en $t=1$, 0 en $t=2$.", "$A_2$ paie 1 en $t=1$ et 5 en $t=2$."],
+        "reexplication": "Par AOA, prix = coût du portefeuille de ZC qui réplique les dividendes.",
+        "correction": "$q_1=2\\beta_1$, $q_2=\\beta_1+5\\beta_2$. [Correction ex. 3 Q4](src:)"
+      },
+      {
+        "id": "e4",
+        "type": "nombre",
+        "consigne": "Avec $TMS_{0\\to2}=\\beta_2$ à l'équilibre, $\\beta_2$ = ?",
+        "reponse": 0.3,
+        "indices": ["$TMS^{AR}_{0\\to2}=\\frac{0{,}81c^{AR}_0}{c^{AR}_2}$.", "$\\frac{0{,}81\\times100}{270}$."],
+        "reexplication": "$\\beta_2=0{,}3$ et $\\beta_1=\\frac{0{,}9\\times100}{180}=0{,}5$, d'où $q_1=1$ et $q_2=0{,}5+1{,}5=2$.",
+        "correction": "$\\beta_1=\\frac12$, $\\beta_2=\\frac{3}{10}$ ; $q_1=1$, $q_2=2$. [Correction ex. 3 Q7](src:)"
+      },
+      {
+        "id": "e5",
+        "type": "nombre",
+        "consigne": "Portefeuille de $A$ : quantité $X^A_2$ d'actif $A_2$ ?",
+        "reponse": 20.886,
+        "indices": ["Contrainte en $t=2$ : $c^A_2=w^A_2+5X^A_2$.", "$X^A_2=\\frac{154{,}43-50}{5}$."],
+        "reexplication": "$X^A_2=20{,}886$, puis en $t=1$ : $102{,}95=80+2X^A_1+X^A_2$ ⇒ $X^A_1=1{,}032$. Vérification en $t=0$ : $57{,}196+1{,}032\\times1+20{,}886\\times2=100$.",
+        "correction": "$X^A_1=1{,}032$, $X^A_2=20{,}886$ (vérifié avec la contrainte en $t=0$). [Correction ex. 3 Q8](src:)"
+      }
+    ]
+  },
+  {
+    "id": "micro-ex-e41",
+    "chapitre": "micro-ch3",
+    "titre": "Entraînement 4.1 — Évaluation par la synthèse avec des zéro-coupons",
+    "source": "Exos partie I.pdf / Correction exos partie I.pdf (2026-2027), exercice 4.1",
+    "enonce": "Économie à 4 dates, gamme complète de ZC : $\\beta_1=0{,}9$, $\\beta_2=0{,}95$, $\\beta_3=0{,}8$.",
+    "quoi": "**Ce qu'on cherche** : prix d'actifs à différentes dates et taux courts.\n**Comment** : $q_0=\\sum w_t\\beta_t$ ; changer de date = diviser par $\\beta$ ; $r_t=\\beta_{t-1}/\\beta_t-1$.",
+    "etapes": [
+      {
+        "id": "e1",
+        "type": "nombre",
+        "consigne": "Prix en $t=0$ d'un actif rapportant 50 en $t=2$ et 30 en $t=3$ ?",
+        "reponse": 71.5,
+        "indices": ["Portefeuille $50ZC_2+30ZC_3$.", "$50\\times0{,}95+30\\times0{,}8$."],
+        "reexplication": "$47{,}5+24=71{,}5$.",
+        "correction": "$q_0=50\\beta_2+30\\beta_3=71{,}5$. [Correction ex. 4.1 Q1](src:)"
+      },
+      {
+        "id": "e2",
+        "type": "nombre",
+        "consigne": "Prix du même actif en $t=1$ ?",
+        "reponse": 79.444,
+        "indices": ["Une unité de la date 0 vaut $\\frac{1}{\\beta_1}$ unités de la date 1.", "$q_1=\\frac{q_0}{\\beta_1}$."],
+        "reexplication": "$\\frac{71{,}5}{0{,}9}=79{,}444$.",
+        "correction": "$q_1=\\frac{q_0}{\\beta_1}=79{,}444$. [Correction ex. 4.1 Q2](src:)"
+      },
+      {
+        "id": "e3",
+        "type": "nombre",
+        "consigne": "Taux court $r_2$ (décimal) ?",
+        "reponse": -0.0526316,
+        "indices": ["$r_2=\\frac{\\beta_1}{\\beta_2}-1$.", "$\\frac{0{,}9}{0{,}95}-1$."],
+        "reexplication": "$r_2=-5{,}26\\,\\%$ (car $\\beta_2>\\beta_1$).",
+        "correction": "$r_1=11{,}11\\,\\%$, $r_2=-5{,}26\\,\\%$, $r_3=18{,}75\\,\\%$. [Correction ex. 4.1 Q3](src:)"
+      },
+      {
+        "id": "e4",
+        "type": "choix",
+        "consigne": "Un titre rapporte 50 en $t=2$ et 100 en $t=3$, payé $p_1$ en $t=1$ et $p_2$ en $t=2$. Équation vérifiée :",
+        "choix": ["$0{,}9p_1+0{,}95p_2=127{,}5$", "$p_1+p_2=150$", "$0{,}95p_1+0{,}8p_2=127{,}5$", "$0{,}9p_1+0{,}95p_2=150$"],
+        "bonne": 0,
+        "indices": ["Valeur actualisée des revenus = valeur actualisée des paiements.", "Revenus : $50\\beta_2+100\\beta_3$ ; paiements : $p_1\\beta_1+p_2\\beta_2$."],
+        "reexplication": "$50\\times0{,}95+100\\times0{,}8=127{,}5=0{,}9p_1+0{,}95p_2$.",
+        "correction": "$50\\beta_2+100\\beta_3=p_1\\beta_1+p_2\\beta_2\\Rightarrow0{,}9p_1+0{,}95p_2=127{,}5$. [Correction ex. 4.1 Q4](src:)"
+      }
+    ]
+  },
+  {
+    "id": "micro-ex-e42",
+    "chapitre": "micro-ch3",
+    "titre": "Entraînement 4.2 — Évaluation avec des taux courts",
+    "source": "Exos partie I.pdf / Correction exos partie I.pdf (2026-2027), exercice 4.2",
+    "enonce": "6 dates ($t=0,\\dots,5$). Taux courts : $r_1=2\\,\\%$, $r_2=5\\,\\%$, $r_3=7\\,\\%$, $r_4=6\\,\\%$, $r_5=4\\,\\%$.",
+    "quoi": "**Méthode** : calculer d'abord les $\\beta_t=\\beta_{t-1}/(1+r_t)$, puis tout se price par $\\sum w_t\\beta_t$. (Le corrigé arrondit les $\\beta$ à 2 décimales : tolérance de 1 % acceptée.)",
+    "etapes": [
+      {
+        "id": "e1",
+        "type": "nombre",
+        "consigne": "$\\beta_3$ = ? (3 décimales)",
+        "reponse": 0.87262,
+        "tolerance": 0.01,
+        "indices": ["$\\beta_1=\\frac{1}{1{,}02}$.", "$\\beta_3=\\frac{1}{1{,}02\\times1{,}05\\times1{,}07}$."],
+        "reexplication": "$\\beta_1=0{,}980$, $\\beta_2=0{,}934$, $\\beta_3=0{,}873$, $\\beta_4=0{,}823$, $\\beta_5=0{,}792$.",
+        "correction": "$\\beta_3\\approx0{,}87$ (le corrigé : 0,98 ; 0,93 ; 0,87 ; 0,82 ; 0,79). [Correction ex. 4.2](src:)"
+      },
+      {
+        "id": "e2",
+        "type": "nombre",
+        "consigne": "Valeur actualisée d'un titre qui rapporte 20 en $t=1$, coûte 10 en $t=3$ et rapporte 30 en $t=5$ ?",
+        "reponse": 34.63,
+        "tolerance": 0.01,
+        "indices": ["$V=(20,0,-10,0,30)$.", "$q=20\\beta_1-10\\beta_3+30\\beta_5$."],
+        "reexplication": "$19{,}61-8{,}73+23{,}75=34{,}63$.",
+        "correction": "$q_1=20\\beta_1-10\\beta_3+30\\beta_5\\approx34{,}6$. [Correction ex. 4.2 Q1](src:)"
+      },
+      {
+        "id": "e3",
+        "type": "nombre",
+        "consigne": "Contrat gratuit en 0, qui donne 10 en 1, 20 en 2, 30 en 3 et coûte $p$ en 3. $p$ = ?",
+        "reponse": 62.64,
+        "tolerance": 0.01,
+        "indices": ["Valeur actualisée nulle : $0=10\\beta_1+20\\beta_2+(30-p)\\beta_3$.", "$p=30+\\frac{10\\beta_1+20\\beta_2}{\\beta_3}$."],
+        "reexplication": "$p=30+\\frac{9{,}80+18{,}67}{0{,}873}=62{,}6$.",
+        "correction": "$p=10\\frac{\\beta_1}{\\beta_3}+20\\frac{\\beta_2}{\\beta_3}+30\\approx62{,}6$. [Correction ex. 4.2 Q2](src:)"
+      },
+      {
+        "id": "e4",
+        "type": "nombre",
+        "consigne": "Valeur en $t=3$ d'un titre rapportant 10 en $t=4$ et 30 en $t=5$ ?",
+        "reponse": 36.65,
+        "tolerance": 0.01,
+        "indices": ["Exprime les revenus en unités de la date 3 : diviser par $\\beta_3$.", "$q_3=\\frac{10\\beta_4+30\\beta_5}{\\beta_3}=\\frac{10}{1+r_4}+\\frac{30}{(1+r_4)(1+r_5)}$."],
+        "reexplication": "$\\frac{10}{1{,}06}+\\frac{30}{1{,}06\\times1{,}04}=9{,}43+27{,}21=36{,}65$.",
+        "correction": "$q_3=\\frac{10\\beta_4+30\\beta_5}{\\beta_3}\\approx36{,}6$ (36,667 dans le corrigé, avec des $\\beta$ arrondis). [Correction ex. 4.2 Q3](src:)"
+      },
+      {
+        "id": "e5",
+        "type": "nombre",
+        "consigne": "Valeur en $t=0$ d'un titre rapportant 10 en 1, 30 en 2 et le titre précédent en $t=3$ ?",
+        "reponse": 69.79,
+        "tolerance": 0.01,
+        "indices": ["$q_4=10\\beta_1+30\\beta_2+q_3\\beta_3$.", "$q_3\\beta_3=10\\beta_4+30\\beta_5$."],
+        "reexplication": "$9{,}80+28{,}01+31{,}98=69{,}8$.",
+        "correction": "$q_4=10\\beta_1+30\\beta_2+q_3\\beta_3\\approx69{,}8$ (69,6 dans le corrigé avec des $\\beta$ arrondis). [Correction ex. 4.2 Q4](src:)"
+      }
+    ]
+  },
+  {
+    "id": "micro-ex-e43",
+    "chapitre": "micro-ch3",
+    "titre": "Entraînement 4.3 — Taux obligataires et choix d'investissement",
+    "source": "Exos partie I.pdf / Correction exos partie I.pdf (2026-2027), exercice 4.3",
+    "enonce": "5 dates. Projets : $A=(50,100,0,0)$, $B=(0,0,100,150)$. Taux obligataires : $R_1=5\\,\\%$, $R_2=10\\,\\%$, $R_3=8\\,\\%$, $R_4=7\\,\\%$.",
+    "quoi": "**Ce qu'on cherche** : la valeur actualisée de chaque projet et le meilleur choix.\n**Comment** : obligations → $\\beta_t$ par récurrence (« bootstrapping ») → VA → VAN.",
+    "etapes": [
+      {
+        "id": "e1",
+        "type": "nombre",
+        "consigne": "$\\beta_2$ = ? (4 décimales)",
+        "reponse": 0.82251,
+        "tolerance": 0.002,
+        "indices": ["$\\beta_1=\\frac{1}{1+R_1}$.", "$1=R_2\\beta_1+(1+R_2)\\beta_2$."],
+        "reexplication": "$\\beta_1=0{,}95238$ ; $\\beta_2=\\frac{1-0{,}1\\times0{,}95238}{1{,}1}=0{,}82251$.",
+        "correction": "$\\beta_1=0{,}95238$, $\\beta_2=0{,}82251$, $\\beta_3=0{,}79445$, $\\beta_4=0{,}76649$. [Correction ex. 4.3 Q1](src:)"
+      },
+      {
+        "id": "e2",
+        "type": "nombre",
+        "consigne": "Valeur actualisée du projet $A$ ?",
+        "reponse": 129.87,
+        "tolerance": 0.005,
+        "indices": ["$V_A=50\\beta_1+100\\beta_2$.", "$47{,}62+82{,}25$."],
+        "reexplication": "$V_A=129{,}87$.",
+        "correction": "$V_A=129{,}87$. [Correction ex. 4.3 Q1](src:)"
+      },
+      {
+        "id": "e3",
+        "type": "nombre",
+        "consigne": "Valeur actualisée du projet $B$ ?",
+        "reponse": 194.42,
+        "tolerance": 0.005,
+        "indices": ["$V_B=100\\beta_3+150\\beta_4$.", "Il faut $\\beta_3=\\frac{1-0{,}08(\\beta_1+\\beta_2)}{1{,}08}$ et $\\beta_4=\\frac{1-0{,}07(\\beta_1+\\beta_2+\\beta_3)}{1{,}07}$."],
+        "reexplication": "$\\beta_3=0{,}79445$, $\\beta_4=0{,}76649$ ⇒ $V_B=79{,}45+114{,}97=194{,}42$.",
+        "correction": "$V_B=194{,}42$. [Correction ex. 4.3 Q1](src:)"
+      },
+      {
+        "id": "e4",
+        "type": "choix",
+        "consigne": "Coûts en $t=0$ : $A$ = 100, $B$ = 150. Quel projet choisir ?",
+        "choix": ["$B$ (VAN = 44,42)", "$A$ (VAN = 29,87)", "$A$, car il rapporte plus tôt", "Indifférent"],
+        "bonne": 0,
+        "indices": ["VAN = valeur actualisée − coût.", "$129{,}87-100$ contre $194{,}42-150$."],
+        "reexplication": "$VAN_A=29{,}87<VAN_B=44{,}42$.",
+        "correction": "$VAN_A=29{,}87$, $VAN_B=44{,}42$ ⇒ choisir $B$. [Correction ex. 4.3 Q2](src:)"
+      }
+    ]
+  }
+]

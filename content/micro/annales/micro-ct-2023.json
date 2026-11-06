@@ -1,0 +1,22 @@
+{
+  "id": "micro-ct-2023",
+  "matiere": "micro",
+  "annee": "2023-2024",
+  "type": "CT",
+  "titre": "Micro — CT 2023-2024",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription.",
+    "Examen final : la partie « équilibre dans l'incertain » (séances 7 à 10) est hors programme."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2023/Page 2.jpg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2023/Page 1.jpg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2023/Sujet_Micro_CT_23-24.pdf"
+  ],
+  "exercices": []
+}

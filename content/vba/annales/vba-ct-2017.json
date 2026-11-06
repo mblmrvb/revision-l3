@@ -1,0 +1,21 @@
+{
+  "id": "vba-ct-2017",
+  "matiere": "vba",
+  "annee": "2017-2018",
+  "type": "CT",
+  "titre": "VBA — CT 2017-2018",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CT/2017/copie d'étudiant (nom masqué).xlsm",
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CT/2017/IAF2017.xlsm",
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CT/2017/CT_IAF_2017_énoncé.docx"
+  ],
+  "exercices": []
+}

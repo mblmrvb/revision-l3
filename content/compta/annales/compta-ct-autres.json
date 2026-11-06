@@ -1,0 +1,26 @@
+{
+  "id": "compta-ct-autres",
+  "matiere": "compta",
+  "annee": "inconnue",
+  "type": "CT",
+  "titre": "Compta — CT Autres",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CT/Autres/Exam 17 janvier 2011.pdf",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CT/Autres/EXAM_janv2014_mycourse.pdf",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CT/Autres/SUJET CORRIGE 2014_Exam2.pdf",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CT/Autres/SUJET 2014_EXAM2.pdf",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CT/Autres/Doc_exam_janvier2013.pdf",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CT/Autres/DocExamen EAP 5 dec 2011.pdf",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CT/Autres/Doc_EcoAp_Examen_160112.pdf",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CT/Autres/Examen décembre 2014 Enoncé.pdf"
+  ],
+  "exercices": []
+}

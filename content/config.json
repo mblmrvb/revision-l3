@@ -1,0 +1,61 @@
+{
+  "matieres": [
+    {
+      "id": "micro",
+      "nom": "Microéconomie",
+      "court": "Micro",
+      "emoji": "⚖️",
+      "couleur": "#4f46e5",
+      "disponible": true,
+      "examens": [
+        { "nom": "Contrôle continu", "date": null, "dureeMin": 120 },
+        { "nom": "Examen final", "date": null, "dureeMin": 120 }
+      ]
+    },
+    {
+      "id": "compta",
+      "nom": "Comptabilité approfondie",
+      "court": "Compta",
+      "emoji": "📒",
+      "couleur": "#0d9488",
+      "disponible": false,
+      "examens": [{ "nom": "Examen final", "date": null, "dureeMin": 90 }]
+    },
+    {
+      "id": "pmf",
+      "nom": "Produits et marchés financiers",
+      "court": "PMF",
+      "emoji": "💹",
+      "couleur": "#db2777",
+      "disponible": false,
+      "examens": [{ "nom": "Examen final", "date": null, "dureeMin": 120 }]
+    },
+    {
+      "id": "maths",
+      "nom": "Mathématiques pour l'économiste",
+      "court": "Maths",
+      "emoji": "∑",
+      "couleur": "#7c3aed",
+      "disponible": false,
+      "examens": [{ "nom": "Examen final", "date": null, "dureeMin": 90 }]
+    },
+    {
+      "id": "stats",
+      "nom": "Statistique",
+      "court": "Stats",
+      "emoji": "📈",
+      "couleur": "#ea580c",
+      "disponible": false,
+      "examens": [{ "nom": "Examen final", "date": null, "dureeMin": 120 }]
+    },
+    {
+      "id": "vba",
+      "nom": "VBA Excel (Informatique appliquée à la finance)",
+      "court": "VBA",
+      "emoji": "💻",
+      "couleur": "#16a34a",
+      "disponible": false,
+      "examens": [{ "nom": "Examen final", "date": null, "dureeMin": 120 }]
+    }
+  ]
+}

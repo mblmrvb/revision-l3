@@ -1,0 +1,19 @@
+{
+  "id": "maths-cc-2020",
+  "matiere": "maths",
+  "annee": "2020-2021",
+  "type": "CC",
+  "titre": "Maths — CC 2020-2021",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Maths/Annales/CC/2020/2020-CC-v4-correction.pdf"
+  ],
+  "exercices": []
+}

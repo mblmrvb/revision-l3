@@ -1,0 +1,20 @@
+{
+  "id": "maths-cc-2021",
+  "matiere": "maths",
+  "annee": "2021-2022",
+  "type": "CC",
+  "titre": "Maths — CC 2021-2022",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Maths/Annales/CC/2021/Partie_2.jpg",
+    "Drive L3_EIF_Dauphine › S1/Maths/Annales/CC/2021/Partie_1.jpg"
+  ],
+  "exercices": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "pmf-cc-2020",
+  "matiere": "pmf",
+  "annee": "2020-2021",
+  "type": "CC",
+  "titre": "Pmf — CC 2020-2021",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Produits et marchés financiers/Annales/CC/2020 - 2021/Corrigé/Page_2.jpg",
+    "Drive L3_EIF_Dauphine › S1/Produits et marchés financiers/Annales/CC/2020 - 2021/Corrigé/Page_4.jpg",
+    "Drive L3_EIF_Dauphine › S1/Produits et marchés financiers/Annales/CC/2020 - 2021/Corrigé/Page_5.jpg",
+    "Drive L3_EIF_Dauphine › S1/Produits et marchés financiers/Annales/CC/2020 - 2021/Corrigé/Page_1.jpg",
+    "Drive L3_EIF_Dauphine › S1/Produits et marchés financiers/Annales/CC/2020 - 2021/Corrigé/Page_3.jpg"
+  ],
+  "exercices": []
+}

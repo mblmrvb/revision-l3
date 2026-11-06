@@ -1,0 +1,22 @@
+{
+  "id": "vba-ct-2021",
+  "matiere": "vba",
+  "annee": "2021-2022",
+  "type": "CT",
+  "titre": "VBA — CT 2021-2022",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CT/2021/Sujet/VBA_CT_2021_Part_3.jpg",
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CT/2021/Sujet/VBA_CT_2021_Part_2.jpg",
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CT/2021/Sujet/VBA_CT_2021_Part_4.jpg",
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CT/2021/Sujet/VBA_CT_2021_Part_1.jpg"
+  ],
+  "exercices": []
+}

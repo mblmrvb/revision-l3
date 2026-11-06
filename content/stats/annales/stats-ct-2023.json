@@ -1,0 +1,20 @@
+{
+  "id": "stats-ct-2023",
+  "matiere": "stats",
+  "annee": "2023-2024",
+  "type": "CT",
+  "titre": "Stats — CT 2023-2024",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CT/2023 - 2024/CT Page2.jpg",
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CT/2023 - 2024/CT Page 1.jpg"
+  ],
+  "exercices": []
+}

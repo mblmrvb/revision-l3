@@ -1,0 +1,35 @@
+{
+  "name": "revision-l3",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run check-content && tsc --noEmit && vite build && npm run check-publish",
+    "preview": "vite preview",
+    "check-content": "tsx scripts/check-content.ts",
+    "import-annales": "tsx scripts/import-annales.ts",
+    "check-publish": "tsx scripts/check-publish.ts"
+  },
+  "dependencies": {
+    "katex": "^0.16.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "react-router-dom": "^6.26.2",
+    "rehype-katex": "^7.0.1",
+    "remark-gfm": "^4.0.0",
+    "remark-math": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.5",
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "adm-zip": "^0.5.16",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8"
+  }
+}

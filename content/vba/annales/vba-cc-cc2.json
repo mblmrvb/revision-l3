@@ -1,0 +1,21 @@
+{
+  "id": "vba-cc-cc2",
+  "matiere": "vba",
+  "annee": "inconnue",
+  "type": "CC",
+  "titre": "VBA — CC CC2",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CC/CC2/CC2_VBA_énoncé.xlsm",
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CC/CC2/CC2_2019_énoncé.docx",
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CC/CC2/Data_Gouvernance.xlsm"
+  ],
+  "exercices": []
+}

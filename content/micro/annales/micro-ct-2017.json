@@ -1,0 +1,20 @@
+{
+  "id": "micro-ct-2017",
+  "matiere": "micro",
+  "annee": "2017-2018",
+  "type": "CT",
+  "titre": "Micro — CT 2017-2018",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription.",
+    "Examen final : la partie « équilibre dans l'incertain » (séances 7 à 10) est hors programme."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2017/EF-2017-principaux-rÇsultats.pdf"
+  ],
+  "exercices": []
+}

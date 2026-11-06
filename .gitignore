@@ -1,0 +1,35 @@
+# Dépendances et build
+node_modules/
+dist/
+
+# Sources brutes : JAMAIS publiées
+sources/
+*.pdf
+*.pptx
+*.ppt
+*.xlsx
+*.xls
+*.xlsm
+*.docx
+*.doc
+*.zip
+*.jpg
+*.jpeg
+*.JPG
+*.png
+!public/*.png
+!public/**/*.png
+
+# Chemins personnels / Drive
+config.local.json
+.env.local
+.local/
+**/Mon Drive/**
+**/My Drive/**
+**/GoogleDrive-*/**
+L3_EIF_Dauphine/
+
+# Divers
+.DS_Store
+Thumbs.db
+*.log

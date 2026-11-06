@@ -1,0 +1,20 @@
+{
+  "id": "maths-cc-2019",
+  "matiere": "maths",
+  "annee": "2019-2020",
+  "type": "CC",
+  "titre": "Maths — CC 2019-2020",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Maths/Annales/CC/2019/mathsécoCC2019.pdf",
+    "Drive L3_EIF_Dauphine › S1/Maths/Annales/CC/2019/mathsCC2019corr.pdf"
+  ],
+  "exercices": []
+}

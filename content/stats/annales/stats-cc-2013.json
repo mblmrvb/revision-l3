@@ -1,0 +1,19 @@
+{
+  "id": "stats-cc-2013",
+  "matiere": "stats",
+  "annee": "2013-2014",
+  "type": "CC",
+  "titre": "Stats — CC 2013-2014",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CC/2013 - 2014/Cc 2013 - Enoncé + Deux Corrections.pdf"
+  ],
+  "exercices": []
+}

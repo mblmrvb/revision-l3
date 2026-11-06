@@ -1,0 +1,21 @@
+{
+  "id": "vba-ct-2018",
+  "matiere": "vba",
+  "annee": "2018-2019",
+  "type": "CT",
+  "titre": "VBA — CT 2018-2019",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CT/2018/CT_IAF_2018_énoncé.docx",
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CT/2018/IAF2018_corrigé.xlsm",
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CT/2018/copie d'étudiant (nom masqué).xlsm"
+  ],
+  "exercices": []
+}

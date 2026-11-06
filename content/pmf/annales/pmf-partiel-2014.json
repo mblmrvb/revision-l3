@@ -1,0 +1,23 @@
+{
+  "id": "pmf-partiel-2014",
+  "matiere": "pmf",
+  "annee": "2014-2015",
+  "type": "Partiel",
+  "titre": "Pmf — Partiel 2014-2015",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Produits et marchés financiers/Annales/Partiel/2014 - 2015/Correction/Page_2.jpg",
+    "Drive L3_EIF_Dauphine › S1/Produits et marchés financiers/Annales/Partiel/2014 - 2015/Correction/Page_4.jpg",
+    "Drive L3_EIF_Dauphine › S1/Produits et marchés financiers/Annales/Partiel/2014 - 2015/Correction/Page_1.jpg",
+    "Drive L3_EIF_Dauphine › S1/Produits et marchés financiers/Annales/Partiel/2014 - 2015/Correction/Page_3.jpg",
+    "Drive L3_EIF_Dauphine › S1/Produits et marchés financiers/Annales/Partiel/2014 - 2015/Enoncé/Partiel PMF 2014 - 2015.pdf"
+  ],
+  "exercices": []
+}

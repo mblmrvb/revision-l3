@@ -1,0 +1,24 @@
+{
+  "id": "stats-ct-2015",
+  "matiere": "stats",
+  "annee": "2015-2016",
+  "type": "CT",
+  "titre": "Stats — CT 2015-2016",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CT/2015 - 2016/Correction/Exo_1_Partie_1.JPG",
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CT/2015 - 2016/Correction/Exo_1_Partie_2.JPG",
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CT/2015 - 2016/Sujet/Exo_2.JPG",
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CT/2015 - 2016/Sujet/Exo_1_Partie_2.JPG",
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CT/2015 - 2016/Sujet/Exo_1_Partie_1.JPG",
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CT/2015 - 2016/Correction/Exo_2.JPG"
+  ],
+  "exercices": []
+}

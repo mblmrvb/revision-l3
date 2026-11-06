@@ -1,0 +1,21 @@
+{
+  "id": "vba-cc-cc3",
+  "matiere": "vba",
+  "annee": "inconnue",
+  "type": "CC",
+  "titre": "VBA — CC CC3",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CC/CC3/CC3_2019_Enoncé.docx",
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CC/CC3/CC3_énoncé.xlsm",
+    "Drive L3_EIF_Dauphine › S1/Info/Annales/CC/CC3/CC3_énoncéVBA.xlsm"
+  ],
+  "exercices": []
+}

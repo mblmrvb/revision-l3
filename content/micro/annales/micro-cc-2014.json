@@ -1,0 +1,19 @@
+{
+  "id": "micro-cc-2014",
+  "matiere": "micro",
+  "annee": "2014-2015",
+  "type": "CC",
+  "titre": "Micro — CC 2014-2015",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2014 - 2015/CC 2014 corrigé exos.pdf"
+  ],
+  "exercices": []
+}

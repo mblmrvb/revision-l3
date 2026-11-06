@@ -1,0 +1,20 @@
+{
+  "id": "micro-cc-2023",
+  "matiere": "micro",
+  "annee": "2023-2024",
+  "type": "CC",
+  "titre": "Micro — CC 2023-2024",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2023 - 2024/Corrigé CC Microéconomie 23-24.pdf",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2023 - 2024/Sujet_Micro_CC_23-24.pdf"
+  ],
+  "exercices": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "compta-cc-2019",
+  "matiere": "compta",
+  "annee": "2019-2020",
+  "type": "CC",
+  "titre": "Compta — CC 2019-2020",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2019/Sujet/CC 2019.pdf",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2019/Corrigé/Part_1.jpg",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2019/Corrigé/Part_4.jpg",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2019/Corrigé/CC 2019.xlsx",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2019/Corrigé/Part_3.jpg",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2019/Corrigé/Part_2.jpg"
+  ],
+  "exercices": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pmf-cc-cc1",
+  "matiere": "pmf",
+  "annee": "inconnue",
+  "type": "CC",
+  "titre": "Pmf — CC CC1",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Produits et marchés financiers/Annales/CC/CC1/CC 1.pdf"
+  ],
+  "exercices": []
+}

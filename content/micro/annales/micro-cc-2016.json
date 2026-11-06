@@ -1,0 +1,20 @@
+{
+  "id": "micro-cc-2016",
+  "matiere": "micro",
+  "annee": "2016-2017",
+  "type": "CC",
+  "titre": "Micro — CC 2016-2017",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2016 - 2017/CC 2016.pdf",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2016 - 2017/CC 2016, principaux résultats.pdf"
+  ],
+  "exercices": []
+}

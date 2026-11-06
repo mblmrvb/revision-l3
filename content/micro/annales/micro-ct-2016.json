@@ -1,0 +1,21 @@
+{
+  "id": "micro-ct-2016",
+  "matiere": "micro",
+  "annee": "2016-2017",
+  "type": "CT",
+  "titre": "Micro — CT 2016-2017",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription.",
+    "Examen final : la partie « équilibre dans l'incertain » (séances 7 à 10) est hors programme."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2016/EF 2016.pdf",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2016/EF 2016, principaux résultats.pdf"
+  ],
+  "exercices": []
+}

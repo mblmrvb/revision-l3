@@ -1,0 +1,20 @@
+{
+  "id": "micro-cc-2013",
+  "matiere": "micro",
+  "annee": "2013-2014",
+  "type": "CC",
+  "titre": "Micro — CC 2013-2014",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2013 - 2014/Micro CC 2013 corrigé.pdf",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2013 - 2014/Micro CC 2013.pdf"
+  ],
+  "exercices": []
+}

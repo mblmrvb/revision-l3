@@ -1,0 +1,25 @@
+{
+  "id": "compta-cc-2020",
+  "matiere": "compta",
+  "annee": "2020-2021",
+  "type": "CC",
+  "titre": "Compta — CC 2020-2021",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2020/Compta_CC_2020_Part_7.jpg",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2020/Compta_CC_2020_Part_2.jpg",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2020/Compta_CC_2020_Part_3.jpg",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2020/Compta_CC_2020_Part_1.jpg",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2020/Compta_CC_2020_Part_6.jpg",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2020/Compta_CC_2020_Part_5.jpg",
+    "Drive L3_EIF_Dauphine › S1/Comptabilité approfondie/Annales/CC/2020/Compta_CC_2020_Part_4.jpg"
+  ],
+  "exercices": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "micro-ct-2022",
+  "matiere": "micro",
+  "annee": "2022-2023",
+  "type": "CT",
+  "titre": "Micro — CT 2022-2023",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription.",
+    "Examen final : la partie « équilibre dans l'incertain » (séances 7 à 10) est hors programme."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2022/2.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2022/5.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2022/10.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2022/4.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2022/3.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2022/9.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2022/1.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2022/6.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2022/11.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2022/8.jpeg",
+    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2022/7.jpeg"
+  ],
+  "exercices": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "stats-cc-2021",
+  "matiere": "stats",
+  "annee": "2021-2022",
+  "type": "CC",
+  "titre": "Stats — CC 2021-2022",
+  "dureeMin": 120,
+  "corrige": "aucun",
+  "horsProgramme": false,
+  "statut": "a-traiter",
+  "chapitres": [],
+  "incertitudes": [
+    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+  ],
+  "sources": [
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CC/2021 - 2022/Sujet/Stats_CC_2021_Part_3.jpg",
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CC/2021 - 2022/Sujet/Stats_CC_2021_Part_4.jpg",
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CC/2021 - 2022/Sujet/Stats_CC_2021_Part_1.jpg",
+    "Drive L3_EIF_Dauphine › S1/Stats/Annales/CC/2021 - 2022/Sujet/Stats_CC_2021_Part_2.jpg"
+  ],
+  "exercices": []
+}

@@ -1,0 +1,161 @@
+{
+  "id": "micro-cc-2019",
+  "matiere": "micro",
+  "annee": "2019-2020",
+  "type": "CC",
+  "titre": "Micro — CC octobre 2019",
+  "dureeMin": 120,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "pret",
+  "chapitres": ["micro-ch1", "micro-ch2", "micro-ch3"],
+  "sources": ["Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2019 - 2020/CC-2019-corrigé.pdf (énoncé + résultats)"],
+  "incertitudes": [
+    "Dans le PDF, la seconde technologie est notée avec un tilde illisible : elle est notée $\\tilde k_0$ ici.",
+    "Le corrigé affiche « r1 = 1920 » sans signe lisible : d'après $1+r_1=0{,}5\\,k_0^{-0,5}=0{,}05$, on retient $r_1=-\\frac{19}{20}$.",
+    "Les questions de cours n'ont pas de corrigé officiel : les éléments de réponse sont tirés du cours (explication ajoutée)."
+  ],
+  "exercices": [
+    {
+      "titre": "Questions de cours",
+      "points": 4,
+      "chapitres": ["micro-ch1", "micro-ch3"],
+      "enonce": "Traitez les deux questions suivantes.",
+      "etapes": [
+        {
+          "id": "c1",
+          "type": "auto",
+          "points": 2,
+          "notion": "micro-ch1",
+          "consigne": "1) La préférence pour le lissage des consommations au cours du temps.",
+          "indices": ["Pars de la condition de Pareto avec des préférences log.", "Quel est le rôle de la convexité des préférences ?"],
+          "reexplication": "Avec des préférences standards (strictement concaves), les agents préfèrent les paniers intermédiaires ; l'égalité des TMS donne $C^i_1/C^i_0=\\Omega_1/\\Omega_0$.",
+          "correction": "Préférences standards ⇒ préférence pour les combinaisons convexes ($U(\\lambda x+(1-\\lambda)y)>\\lambda U(x)+(1-\\lambda)U(y)$). À l'optimum, $C^i_1=\\frac{\\Omega_1}{\\Omega_0}C^i_0$ : la consommation suit les dotations **globales**, indépendamment des dotations individuelles ; si $\\Omega_0=\\Omega_1$, lissage parfait. Le marché financier permet de réaliser ce lissage. [Micro L3 chapitre 1.pdf, p. 5-6](src:)"
+        },
+        {
+          "id": "c2",
+          "type": "auto",
+          "points": 2,
+          "notion": "micro-ch3",
+          "consigne": "2) La méthode d'évaluation par arbitrage avec un système complet de zéro-coupons.",
+          "indices": ["Définis un ZC et l'AOA.", "Donne la formule du prix et le lien avec les taux courts."],
+          "reexplication": "Répliquer $V=(w_1,\\dots,w_T)$ par $\\sum_t w_tZC_t$ ; par AOA $q=\\sum_t w_t\\beta_t$ ; $\\beta_t=\\prod_{\\tau\\le t}\\frac{1}{1+r_\\tau}$.",
+          "correction": "ZC d'échéance $t$ : paie 1 en $t$, prix $\\beta_t$. Système complet = un ZC par échéance. Sous AOA (marché parfait, loi du prix unique), un actif et son portefeuille de synthèse ont le même prix ; $V$ est répliqué par $w_1ZC_1+\\dots+w_TZC_T$ donc $q=\\sum_t w_t\\beta_t$. Les $\\beta_t=\\frac{1}{(1+r_1)\\cdots(1+r_t)}$ sont des facteurs d'actualisation. [Micro L3 chapitre 3.pdf, p. 2-5](src:)"
+        }
+      ]
+    },
+    {
+      "titre": "Exercice 1 — Évaluation par arbitrage et taux courts",
+      "points": 5,
+      "chapitres": ["micro-ch3"],
+      "enonce": "Quatre dates $t=0,1,2,3$. Taux courts : $r_1=r_2=r_3=0{,}5$.",
+      "etapes": [
+        {
+          "id": "q1",
+          "type": "nombre",
+          "points": 1.5,
+          "consigne": "Q1. Prix $\\beta_3$ du ZC d'échéance 3 ?",
+          "reponse": 0.296296,
+          "indices": ["$\\beta_t=\\frac{1}{(1+r_1)\\cdots(1+r_t)}$.", "$\\beta_3=\\frac{1}{1{,}5^3}$."],
+          "reexplication": "$\\beta_1=\\frac23$, $\\beta_2=\\frac49$, $\\beta_3=\\frac{8}{27}$.",
+          "correction": "$\\beta_1=\\frac23$, $\\beta_2=\\frac49$, $\\beta_3=\\frac{8}{27}\\approx0{,}2963$."
+        },
+        {
+          "id": "q2",
+          "type": "nombre",
+          "points": 0.5,
+          "consigne": "Q2. Prix en $t=0$ de l'actif $A$ rapportant 30 en $t=1$ et 270 en $t=3$ ?",
+          "reponse": 100,
+          "indices": ["$q_A=30\\beta_1+270\\beta_3$."],
+          "reexplication": "$30\\times\\frac23+270\\times\\frac{8}{27}=20+80$.",
+          "correction": "$q_A=100$."
+        },
+        {
+          "id": "q3",
+          "type": "nombre",
+          "points": 1.5,
+          "consigne": "Q3. Portefeuille $C=X_AA+X_BB$ ($B$ paie 1 à chaque date), de prix 1960, revenus 540 en $t=2$. Que vaut $X_A$ ?",
+          "reponse": 12,
+          "indices": ["En $t=2$, $A$ ne paie rien : $X_B=540$.", "Prix de $B$ : $\\beta_1+\\beta_2+\\beta_3=\\frac{38}{27}$ ; écris $100X_A+540\\times\\frac{38}{27}=1960$."],
+          "reexplication": "$540\\times\\frac{38}{27}=760$, donc $100X_A=1200$.",
+          "correction": "$X_A=12$, $X_B=540$."
+        },
+        {
+          "id": "q4",
+          "type": "nombre",
+          "points": 1.5,
+          "consigne": "Q4. Prix en $t=0$ de $D=\\max(A,150B)$ ?",
+          "reponse": 246.67,
+          "indices": ["Calcule le max **date par date** : $A=(30,0,270)$, $150B=(150,150,150)$.", "$D=(150,150,270)$."],
+          "reexplication": "$q_D=150\\times\\frac23+150\\times\\frac49+270\\times\\frac{8}{27}=100+66{,}67+80$.",
+          "correction": "$q_D=246{,}67$."
+        }
+      ]
+    },
+    {
+      "titre": "Exercice 2 — Équilibre intertemporel et technologies de production",
+      "points": 11,
+      "chapitres": ["micro-ch2"],
+      "enonce": "Trois dates $t=0,1,2$, deux agents $A,B$, $U=\\ln c_0+\\ln c_1+\\ln c_2$. $\\omega^A_0=\\omega^B_0=200$, dotations nulles ensuite. Une entreprise détenue par $A$ dispose de deux technologies : $q_1=\\sqrt{k_0}$ (bien 0 → bien 1) et $q_2=\\sqrt{\\tilde k_0}$ (bien 0 → bien 2). Marché monétaire en $t=0$ et $t=1$ (taux $r_1,r_2$). Profit actualisé noté $\\Pi$.",
+      "etapes": [
+        {
+          "id": "q1",
+          "type": "auto",
+          "points": 2,
+          "consigne": "Q1. Programme de maximisation du profit et conditions d'optimalité.",
+          "indices": ["Actualise $q_1$ d'une période et $q_2$ de deux périodes.", "Dérive par rapport à $k_0$ et à $\\tilde k_0$."],
+          "reexplication": "$\\Pi=\\frac{q_1}{1+r_1}-k_0+\\frac{q_2}{(1+r_1)(1+r_2)}-\\tilde k_0$.",
+          "correction": "$\\max_{k_0,\\tilde k_0}\\Pi=\\frac{\\sqrt{\\tilde k_0}}{(1+r_1)(1+r_2)}-\\tilde k_0+\\frac{\\sqrt{k_0}}{1+r_1}-k_0$ ⇒ $0{,}5\\,k_0^{-0,5}=1+r_1$ et $0{,}5\\,\\tilde k_0^{-0,5}=(1+r_1)(1+r_2)$."
+        },
+        {
+          "id": "q3",
+          "type": "auto",
+          "points": 2,
+          "consigne": "Q2-Q3. Justifie l'AR et écris ses trois conditions marginales.",
+          "indices": ["$c^{AR}_0=\\Omega_0-k_0-\\tilde k_0$, $c^{AR}_1=q_1$, $c^{AR}_2=q_2$.", "Utilise les productivités marginales de Q1."],
+          "reexplication": "Mêmes préférences, TMS homogènes de degré 0, marchés complets.",
+          "correction": "(1) $\\frac{\\Omega_0-k_0-\\tilde k_0}{q_1}=\\frac{1}{1+r_1}=\\frac{1}{0{,}5k_0^{-0,5}}$ ; (2) $\\frac{q_1}{q_2}=\\frac{1}{1+r_2}$ ; (3) $\\frac{\\Omega_0-k_0-\\tilde k_0}{q_2}=\\frac{1}{(1+r_1)(1+r_2)}=\\frac{1}{0{,}5\\tilde k_0^{-0,5}}$."
+        },
+        {
+          "id": "q4",
+          "type": "nombre",
+          "points": 1,
+          "consigne": "Q4. Montre que $k_0=\\tilde k_0$ et donne leur valeur.",
+          "reponse": 100,
+          "indices": ["(1) donne $\\Omega_0-k_0-\\tilde k_0=2k_0$ ; (3) donne $=2\\tilde k_0$.", "Donc $k_0=\\tilde k_0=\\frac{\\Omega_0}{4}$ avec $\\Omega_0=400$."],
+          "reexplication": "$\\frac{\\Omega_0-k_0-\\tilde k_0}{\\sqrt{k_0}}=2\\sqrt{k_0}$ ⇒ $\\Omega_0-2k_0=2k_0$.",
+          "correction": "$k_0=\\tilde k_0=100$."
+        },
+        {
+          "id": "q5",
+          "type": "nombre",
+          "points": 2,
+          "consigne": "Q5. Taux $r_1$ d'équilibre (décimal) ?",
+          "reponse": -0.95,
+          "indices": ["$q_1=q_2=10$.", "(1) : $\\frac{200}{10}=\\frac{1}{1+r_1}$."],
+          "reexplication": "$1+r_1=\\frac{1}{20}$ ⇒ $r_1=-0{,}95$ ; et (2) : $q_1=q_2$ ⇒ $r_2=0$.",
+          "correction": "$r_1=-\\frac{19}{20}$, $r_2=0$."
+        },
+        {
+          "id": "q6",
+          "type": "nombre",
+          "points": 2,
+          "consigne": "Q6. Consommation $c^A_0$ de l'agent $A$ ?",
+          "reponse": 133.33,
+          "indices": ["$\\Pi=\\frac{10}{0{,}05}-100+\\frac{10}{0{,}05}-100=200$.", "$\\gamma_A=\\frac{\\omega^A_0+\\Pi}{\\Omega_0+\\Pi}$, puis $c^A_0=\\gamma_A(\\Omega_0-k_0-\\tilde k_0)$."],
+          "reexplication": "$\\gamma_A=\\frac{400}{600}=\\frac23$, $c^A_0=\\frac23\\times200$.",
+          "correction": "$\\gamma_A=0{,}6667$ ⇒ $c^A_0=133{,}33$, $c^A_1=c^A_2=6{,}6667$."
+        },
+        {
+          "id": "q7",
+          "type": "auto",
+          "points": 2,
+          "consigne": "Q7. Complète : « À la date 0, la capacité de financement de $A$ est de xxx, mais comme il investit 200, il doit emprunter xxx. À la date 1, il reçoit 10 de la production et doit rembourser xxx : il emprunte xxx. À la date 2… »",
+          "indices": ["Capacité de financement = $\\omega^A_0-c^A_0$.", "Remboursement en 1 = $(1+r_1)\\times$ emprunt."],
+          "reexplication": "$200-133{,}33=66{,}67$ ; emprunt $200-66{,}67=133{,}33$ ; à rembourser $0{,}05\\times133{,}33=6{,}67$.",
+          "correction": "Capacité $66{,}667$ ; emprunt $133{,}333$ ; en 1 il reçoit 10, rembourse $6{,}666$, emprunte $3{,}332$ ; en 2 il reçoit 10 et rembourse $3{,}332$."
+        }
+      ]
+    }
+  ]
+}
