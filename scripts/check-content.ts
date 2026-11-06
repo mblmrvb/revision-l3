@@ -81,9 +81,10 @@ for (const m of matieres) {
     if (!chapitres.has(x.chapitre)) errors.push(`${w} : chapitre inconnu`);
     if (!x.recto || !x.verso || !x.source) errors.push(`${w} : recto, verso ou source manquant`);
   }
-  const ex = existsSync(join(dir, "exercices.json")) ? readJson(join(dir, "exercices.json")) : [];
-  for (const x of ex ?? []) {
-    const w = `${m}/exercices.json › ${x.id}`;
+  const exFiles = readdirSync(dir).filter((f) => /^exercices.*\.json$/.test(f));
+  const ex = exFiles.flatMap((f) => (readJson(join(dir, f)) ?? []).map((x: any) => ({ ...x, _f: f })));
+  for (const x of ex) {
+    const w = `${m}/${x._f} › ${x.id}`;
     uniq(x.id, w);
     if (!chapitres.has(x.chapitre)) errors.push(`${w} : chapitre inconnu`);
     if (!x.titre || !x.enonce || !x.source) errors.push(`${w} : titre, énoncé ou source manquant`);

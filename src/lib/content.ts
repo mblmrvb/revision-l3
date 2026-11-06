@@ -9,7 +9,7 @@ const mdFiles = import.meta.glob("../../content/*/chapitres/*.md", {
 }) as Record<string, string>;
 const qcmFiles = import.meta.glob("../../content/*/qcm.json", { import: "default", eager: true }) as Record<string, Qcm[]>;
 const cardFiles = import.meta.glob("../../content/*/flashcards.json", { import: "default", eager: true }) as Record<string, Flashcard[]>;
-const exoFiles = import.meta.glob("../../content/*/exercices.json", { import: "default", eager: true }) as Record<string, Omit<Exercice, "matiere">[]>;
+const exoFiles = import.meta.glob("../../content/*/exercices*.json", { import: "default", eager: true }) as Record<string, Omit<Exercice, "matiere">[]>;
 const annaleFiles = import.meta.glob("../../content/*/annales/*.json", { import: "default", eager: true }) as Record<string, Annale>;
 
 function matiereOf(path: string): string {
