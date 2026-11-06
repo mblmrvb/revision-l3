@@ -8,8 +8,16 @@
       "couleur": "#4f46e5",
       "disponible": true,
       "examens": [
-        { "nom": "Contrôle continu", "date": null, "dureeMin": 120 },
-        { "nom": "Examen final", "date": null, "dureeMin": 120 }
+        {
+          "nom": "Contrôle continu",
+          "date": null,
+          "dureeMin": 120
+        },
+        {
+          "nom": "Examen final",
+          "date": null,
+          "dureeMin": 120
+        }
       ]
     },
     {
@@ -18,8 +26,19 @@
       "court": "Compta",
       "emoji": "📒",
       "couleur": "#0d9488",
-      "disponible": false,
-      "examens": [{ "nom": "Examen final", "date": null, "dureeMin": 90 }]
+      "disponible": true,
+      "examens": [
+        {
+          "nom": "Test intermédiaire (CC)",
+          "date": null,
+          "dureeMin": 90
+        },
+        {
+          "nom": "Examen final",
+          "date": null,
+          "dureeMin": 120
+        }
+      ]
     },
     {
       "id": "pmf",
@@ -28,7 +47,13 @@
       "emoji": "💹",
       "couleur": "#db2777",
       "disponible": false,
-      "examens": [{ "nom": "Examen final", "date": null, "dureeMin": 120 }]
+      "examens": [
+        {
+          "nom": "Examen final",
+          "date": null,
+          "dureeMin": 120
+        }
+      ]
     },
     {
       "id": "maths",
@@ -37,7 +62,13 @@
       "emoji": "∑",
       "couleur": "#7c3aed",
       "disponible": false,
-      "examens": [{ "nom": "Examen final", "date": null, "dureeMin": 90 }]
+      "examens": [
+        {
+          "nom": "Examen final",
+          "date": null,
+          "dureeMin": 90
+        }
+      ]
     },
     {
       "id": "stats",
@@ -46,7 +77,13 @@
       "emoji": "📈",
       "couleur": "#ea580c",
       "disponible": false,
-      "examens": [{ "nom": "Examen final", "date": null, "dureeMin": 120 }]
+      "examens": [
+        {
+          "nom": "Examen final",
+          "date": null,
+          "dureeMin": 120
+        }
+      ]
     },
     {
       "id": "vba",
@@ -55,7 +92,13 @@
       "emoji": "💻",
       "couleur": "#16a34a",
       "disponible": false,
-      "examens": [{ "nom": "Examen final", "date": null, "dureeMin": 120 }]
+      "examens": [
+        {
+          "nom": "Examen final",
+          "date": null,
+          "dureeMin": 120
+        }
+      ]
     }
   ]
 }

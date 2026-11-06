@@ -1,0 +1,63 @@
+{
+  "id": "compta-cc-2024",
+  "matiere": "compta",
+  "annee": "2024-2025",
+  "type": "CC",
+  "titre": "Compta — Contrôle continu du 4 novembre 2024",
+  "dureeMin": 90,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "pret",
+  "chapitres": ["compta-ch1", "compta-ch2", "compta-ch3", "compta-ch4"],
+  "sources": ["L3 ECO_CC_4nov24_moodle.pdf", "L3ECO_CC_4nov_Corrigé_moodle.pdf"],
+  "incertitudes": [
+    "Exercice 1A : les colonnes cochées du tableau officiel ne sont pas lisibles dans l'extraction. Pour T, le corrigé donne $10\\,\\%+18\\,\\%\\times55\\,\\%$ (intérêt) ; la classification « hors périmètre » est proposée, car O n'est qu'en influence notable (chaîne de contrôle rompue).",
+    "Exercice 2, TFT : le corrigé écrit « VAR T = −240 573 − 253 331 + 146 676 » (coquille) ; la bonne vérification est $-253\\,331-133\\,918+146\\,676=-240\\,573$. Il intitule aussi deux fois « trésorerie d'ouverture » : l'ouverture est 475 328 et la clôture 234 755.",
+    "Le texte de B. Colasse (question de cours c) n'est pas fourni : les éléments viennent du corrigé."
+  ],
+  "exercices": [
+    {
+      "titre": "Questions de cours",
+      "points": 6,
+      "chapitres": ["compta-ch1", "compta-ch3", "compta-ch2"],
+      "enonce": "a) Contrôle vs influence notable. b) Résultat net vs résultat global. c) Deux sources de légitimité de l'IASB (Colasse, 2004). d) Pourquoi l'information IFRS est-elle nécessaire à la bonne circulation des capitaux (cadres théoriques du cours n°3) ? e) Comment IFRS 10 traduit-elle l'attention portée à la réalité économique ?",
+      "etapes": [
+        { "id": "ab", "type": "auto", "points": 2, "notion": "compta-ch1", "consigne": "a) et b).", "indices": ["Degrés de participation : pouvoir vs influence.", "Conceptions restrictive et extensive du résultat."], "reexplication": "Deux phrases précises par question suffisent.", "correction": "a) Deux degrés de participation : le contrôle donne le **pouvoir** de diriger les activités pertinentes, l'influence notable seulement la capacité de **peser** sur les décisions. b) Résultat net = conception restrictive (maîtrisé par les managers) ; résultat global = conception extensive (intègre l'influence de l'environnement : JV, conversion…)." },
+        { "id": "cde", "type": "auto", "points": 4, "notion": "compta-ch2", "consigne": "c), d) et e).", "indices": ["Board, cadre conceptuel, IOSCO, Union européenne.", "Agence et marchés efficients ; IFRS 10 et le pouvoir de fait."], "reexplication": "Pour e), donne des exemples de contrôle sans majorité des voix.", "correction": "c) Board composé de membres salariés, indépendants et experts ; cadre conceptuel (démarche scientifique) ; reconnaissance par l'IOSCO ; choix de l'UE d'en faire son normalisateur. d) Agence : réduction de l'asymétrie d'information investisseurs / managers ; marchés efficients : orientation des capitaux vers les bonnes entreprises. e) Le pouvoir ne résulte pas seulement des droits de vote : situations de fait (gouvernance, actionnariat diffus, contrats…) ; nécessité du jugement." }
+      ]
+    },
+    {
+      "titre": "Exercice 1 — Périmètre et consolidation du groupe MUT",
+      "points": 6,
+      "chapitres": ["compta-ch1"],
+      "enonce": "**A.** Z détient : 60 % de G (3 autres actionnaires) ; 60 % de M (pacte : accord de K obligatoire sur les politiques industrielles, commerciales et financières) ; 40 % de S (l'autre actionnaire est G) ; 18 % de O (le président de Z siège au conseil de O) ; 10 % de T (O détient 55 % de T).\n\n**B.** MUT : immo. corporelles 357 000, immo. financières 500 000 (dont 60 % de POM au coût de 12 000 et 30 % de PAF au coût de 18 000), actif courant 490 000, total 1 347 000 ; capital 40 000, réserves 425 000, résultat 10 700. POM : capital 20 000, réserves 148 000, résultat 8 500, total actif 576 500. PAF : capital 60 000, réserves 473 600, résultat 27 200, total actif 1 844 800.",
+      "etapes": [
+        { "id": "a1", "type": "choix", "points": 0.5, "consigne": "A. Nature de la participation dans M :", "choix": ["Contrôle conjoint", "Contrôle exclusif", "Influence notable", "Hors périmètre"], "bonne": 0, "indices": ["Qui peut décider seul des politiques clés ?", "IFRS 11."], "reexplication": "Décisions pertinentes à l'unanimité de Z et K.", "correction": "Contrôle conjoint (intérêt 60 %)." },
+        { "id": "a2", "type": "nombre", "points": 0.75, "consigne": "A. Pourcentage d'**intérêt** de Z dans S (décimal) ?", "reponse": 0.76, "indices": ["Direct 40 % + indirect via G (60 % × 60 %).", "S est contrôlée : contrôle 40 % + 60 % = 100 %."], "reexplication": "$0{,}40+0{,}60\\times0{,}60=0{,}76$.", "correction": "Contrôle exclusif : % de contrôle $40\\,\\%+60\\,\\%=100\\,\\%$ ; % d'intérêt $40\\,\\%+60\\,\\%\\times60\\,\\%=76\\,\\%$." },
+        { "id": "a3", "type": "auto", "points": 0.75, "consigne": "A. Classe G, O et T et donne leurs pourcentages.", "indices": ["G : majorité simple sans pacte.", "O : 18 % mais présence au conseil ; T : la chaîne passe par O."], "reexplication": "Une société en influence notable ne transmet pas le contrôle.", "correction": "G : contrôle, 60 % / 60 %. O : influence notable (siège au conseil), 18 % / 18 %. T : intérêt $10\\,\\%+18\\,\\%\\times55\\,\\%=19{,}9\\,\\%$ ; contrôle seulement 10 % (O n'est pas contrôlée) → hors périmètre (classification proposée)." },
+        { "id": "b1", "type": "nombre", "points": 1, "consigne": "B. Intérêts minoritaires de POM (IG à 60 %) ?", "reponse": 70600, "indices": ["$CP_{POM}=176\\,500$.", "$\\times40\\,\\%$."], "reexplication": "Part groupe 105 900 ; différence 93 900 dont résultat 5 100 et réserves 88 800.", "correction": "Minoritaires $70\\,600$." },
+        { "id": "b2", "type": "nombre", "points": 1, "consigne": "B. Total des capitaux propres de l'ensemble consolidé ?", "reponse": 790440, "indices": ["PAF (30 %, MEE) : $560\\,800\\times30\\,\\%=168\\,240$ ; différence $150\\,240$ dont résultat $8\\,160$ et réserves $142\\,080$.", "$40\\,000+(425\\,000+88\\,800+142\\,080)+(10\\,700+5\\,100+8\\,160)+70\\,600$."], "reexplication": "Capital de la mère + réserves consolidées + résultat consolidé + minoritaires.", "correction": "$790\\,440$." },
+        { "id": "b3", "type": "nombre", "points": 1, "consigne": "B. Total de l'actif consolidé ?", "reponse": 2061740, "indices": ["On élimine les deux titres (12 000 et 18 000).", "On ajoute l'actif de POM (IG) et les titres PAF mis en équivalence (168 240)."], "reexplication": "$1\\,347\\,000-12\\,000-18\\,000+168\\,240+576\\,500$.", "correction": "$2\\,061\\,740$." },
+        { "id": "b4", "type": "nombre", "points": 1, "consigne": "B. Résultat net part du groupe (point de départ du TFT consolidé) ?", "reponse": 23960, "indices": ["Résultat de la mère + part dans POM + quote-part de PAF.", "$10\\,700+5\\,100+8\\,160$."], "reexplication": "Au compte de résultat : quote-part des sociétés mises en équivalence = 8 160.", "correction": "Résultat net part du groupe 23 960 ; quote-part MEE 8 160." }
+      ]
+    },
+    {
+      "titre": "Exercice 2 — Analyse et TFT de COMET",
+      "points": 8,
+      "chapitres": ["compta-ch3", "compta-ch2", "compta-ch4"],
+      "enonce": "COMET (€) : CA 2 858 741 ; résultat opérationnel 42 980 ; RN 39 110 (N) / 61 450 (N-1) ; produit de cession 17 500, VNC cédée 682 (amortie de 18 600) ; dotations aux amortissements 44 719 ; dotations aux dépréciations d'actif circulant 14 801.\n\nBilan N / N-1 : immobilisations nettes 238 042 / 132 025 ; stocks 270 175 / 224 149 ; clients 1 362 875 / 1 118 050 ; VMP (sans risque) 88 927 / 0 ; disponibilités 207 546 / 516 067 ; CCA 24 159 / 32 602 ; capital 160 000 / 150 000 ; prime 40 000 / 0 ; réserves 458 775 / 418 775 ; dettes financières non courantes 175 003 / 173 262 et courantes 190 672 / 53 308 (dont CBC 61 718 / 40 739) ; fournisseurs 661 114 / 705 790 ; fiscales et sociales 467 050 / 460 308 ; total 2 191 724 / 2 022 893. Avant l'augmentation de capital : 30 000 actions. Remboursements d'emprunts : 85 230.",
+      "etapes": [
+        { "id": "a", "type": "auto", "points": 0.5, "notion": "compta-ch3", "consigne": "a) Le résultat opérationnel est-il obligatoire ? Équivaut-il à l'EBITDA ?", "indices": ["IAS 1 et IAP.", "Flux patrimoniaux vs surplus monétaire."], "reexplication": "Le RO intègre les amortissements, l'EBITDA non.", "correction": "Non obligatoire ; pas équivalent à l'EBITDA : le RO intègre des flux patrimoniaux (dotations), l'EBITDA est un surplus monétaire théorique." },
+        { "id": "b", "type": "nombre", "points": 1, "notion": "compta-ch3", "consigne": "b) Rentabilité économique = RO / actif total (décimal) ?", "reponse": 0.0196, "indices": ["$42\\,980/2\\,191\\,724$.", "Décompose : marge RO / CA × rotation CA / actif."], "reexplication": "Marge 1,5 % × rotation 1,3 ≈ 1,96 % : faible marge, forte rotation (domination par les coûts ?).", "correction": "1,96 % = marge 1,5 % × rotation 1,30." },
+        { "id": "c", "type": "nombre", "points": 1, "notion": "compta-ch2", "consigne": "c) BFR de N ?", "reponse": 529045, "indices": ["Stocks + clients + CCA − fournisseurs − dettes fiscales et sociales.", "BFR N-1 = 208 703."], "reexplication": "Il plus que double : hausse des stocks et des clients, baisse des fournisseurs.", "correction": "BFR N = 529 045 (208 703 en N-1) : besoin de financement supplémentaire (croissance de l'activité ou durcissement de la conjoncture)." },
+        { "id": "d", "type": "nombre", "points": 1, "notion": "compta-ch4", "consigne": "d) Prix d'émission des actions nouvelles ?", "reponse": 25, "indices": ["Nominal $=150\\,000/30\\,000=5$ ⇒ $10\\,000/5=2\\,000$ actions nouvelles.", "Prime par action $=40\\,000/2\\,000$."], "reexplication": "$5+20=25$.", "correction": "25 € (nominal 5 + prime 20)." },
+        { "id": "e", "type": "nombre", "points": 0.5, "notion": "compta-ch4", "consigne": "e) Dividendes versés au titre de N-1 ?", "reponse": 21450, "indices": ["Résultat N-1 − Δ réserves.", "$61\\,450-40\\,000$."], "reexplication": "40 000 en réserves, 21 450 distribués ; toutes les actions anciennes ont droit au dividende (augmentation de capital en N).", "correction": "21 450 € de dividendes et 40 000 € en réserves." },
+        { "id": "f1", "type": "nombre", "points": 1, "notion": "compta-ch4", "consigne": "f) Hypothèse CBC momentanés : variation de trésorerie ?", "reponse": -240573, "indices": ["Trésorerie = VMP + dispo − CBC.", "Ouverture $516\\,067-40\\,739$ ; clôture $88\\,927+207\\,546-61\\,718$."], "reexplication": "$234\\,755-475\\,328$.", "correction": "Ouverture 475 328 ; clôture 234 755 ; variation **−240 573**." },
+        { "id": "f2", "type": "nombre", "points": 1, "notion": "compta-ch4", "consigne": "f) Flux net de trésorerie généré par l'activité ?", "reponse": -253331, "indices": ["MBA $=39\\,110+44\\,719-(17\\,500-682)=67\\,011$.", "ΔBFR $=+320\\,342$."], "reexplication": "La hausse du BFR rend le flux d'activité négatif.", "correction": "MBA 67 011 ; ΔBFR −320 342 ; flux d'activité **−253 331**." },
+        { "id": "f3", "type": "nombre", "points": 1, "notion": "compta-ch4", "consigne": "f) Acquisitions d'immobilisations ?", "reponse": 151418, "indices": ["Δ immos nettes + dotations + VNC cédée.", "$106\\,017+44\\,719+682$."], "reexplication": "Flux d'investissement $=-151\\,418+17\\,500=-133\\,918$.", "correction": "Acquisitions 151 418 ; flux d'investissement **−133 918**." },
+        { "id": "f4", "type": "nombre", "points": 1, "notion": "compta-ch4", "consigne": "f) Nouveaux emprunts contractés ?", "reponse": 203356, "indices": ["Dettes financières hors CBC : $303\\,957$ en N, $185\\,831$ en N-1.", "$\\Delta=118\\,126=\\text{nouveaux}-85\\,230$."], "reexplication": "Flux de financement $=50\\,000+203\\,356-85\\,230-21\\,450=146\\,676$ ; et $-253\\,331-133\\,918+146\\,676=-240\\,573$ ✓.", "correction": "Nouveaux emprunts 203 356 ; flux de financement **146 676** ; le tableau boucle. Avec des CBC confirmés : trésorerie 516 067 → 296 473 (−219 594) et financement 167 655." },
+        { "id": "g", "type": "auto", "points": 0, "notion": "compta-ch4", "consigne": "g) Commente ce tableau de flux.", "indices": ["D'où vient le flux d'activité négatif ?", "Qui finance l'activité et l'investissement ?"], "reexplication": "Relie BFR, investissement et recours au financement externe.", "correction": "La hausse du BFR pénalise fortement la trésorerie d'activité ; l'entreprise doit recourir au financement (augmentation de capital, nouveaux emprunts) et puiser dans sa trésorerie pour couvrir activité et investissements." }
+      ]
+    }
+  ]
+}

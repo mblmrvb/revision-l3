@@ -1,0 +1,68 @@
+{
+  "id": "compta-cc-2025",
+  "matiere": "compta",
+  "annee": "2025-2026",
+  "type": "CC",
+  "titre": "Compta — Test intermédiaire du 20 octobre 2025",
+  "dureeMin": 90,
+  "corrige": "officiel",
+  "horsProgramme": false,
+  "statut": "pret",
+  "chapitres": ["compta-ch1", "compta-ch2", "compta-ch3", "compta-ch4"],
+  "sources": ["L3 ECO_CC_20oct25_sujet.pdf", "L3 Eco_CC_oct 25_corrige.pdf"],
+  "incertitudes": [
+    "Le corrigé officiel contient deux coquilles dans l'exercice NOBAL : « 1 342 » au lieu de 1 372 pour les réserves, et « 7 375 » au lieu de 7 385 pour l'actif non courant. Les totaux officiels (109 610 et 43 756) correspondent bien à 1 372 et 7 385.",
+    "Pour le ratio de structure du passif, plusieurs ratios sont acceptés : un seul est demandé ici en saisie, les autres sont donnés dans la correction."
+  ],
+  "exercices": [
+    {
+      "titre": "Questions de cours",
+      "points": 9,
+      "chapitres": ["compta-ch2", "compta-ch3", "compta-ch1"],
+      "enonce": "I. Avantages pour un groupe (petite ou moyenne taille, coté sur un marché non réglementé) de présenter des comptes consolidés en IFRS.\n\nII. Extrait du compte de résultat d'ABEO (K€, mars 2025) : CA 248 704 ; achats −92 520 ; personnel −74 799 ; charges externes −53 023 ; impôts et taxes −1 311 ; **dotations aux provisions +376** ; autres −316 ; **EBITDA courant 27 112** ; amortissements −11 653 ; **ROC 15 459** ; non courant −670 ; **RO 14 789**. État du résultat global : RN 6 836 ; réévaluation régimes à prestations définies 29 ; impôt −1 041 ; JV des dérivés 253 ; non recyclables −759 ; écarts de conversion −436 (recyclables) ; total autres éléments −1 196 ; résultat global 5 641.\n\nIII. Périmètre BALRON : VOGOSCOPE 51 % contrôle / 60,43 % intérêt, IG ; NAVOC 40 % / 40 %, IG ; VOGO 16,47 % / 22,36 %, MEE.",
+      "etapes": [
+        { "id": "c1", "type": "auto", "points": 2, "notion": "compta-ch2", "consigne": "I. Avantages des comptes consolidés en IFRS pour ce groupe.", "indices": ["Pense au cadre conceptuel et à ses deux théories.", "Réalité économique vs forme juridique, comparabilité, juste valeur."], "reexplication": "Organise en 3-4 arguments : investisseurs, comparabilité, substance économique, indépendance de l'IASB.", "correction": "Dépasser la forme juridique pour montrer la réalité de la gouvernance (pouvoir, influence) ; cadre conceptuel centré sur la décision d'investissement et la **comparabilité** (marchés efficients) ; information plus pertinente sur la substance économique (juste valeur, matérialité, vision économique du contrôle) ; évaluation de la gestion des managers (théorie de l'agence) ; IASB indépendant des États et de la fiscalité, facilite les échanges internationaux." },
+        { "id": "c2", "type": "choix", "points": 1, "notion": "compta-ch3", "consigne": "II. EBITDA courant, ROC et RO sont-ils obligatoires selon IAS 1 ?", "choix": ["Non : seul le CA est obligatoire, ce sont des IAP", "Oui, tous les trois", "Seul le RO est obligatoire", "Seul l'EBITDA est obligatoire"], "bonne": 0, "indices": ["Quels postes IAS 1 impose-t-il ?", "Qu'est-ce qu'un IAP ?"], "reexplication": "IFRS 18 rendra le résultat d'exploitation obligatoire à partir de 2027.", "correction": "Postes non obligatoires (le seul obligatoire est le CA) : ce sont des indicateurs alternatifs de performance." },
+        { "id": "c3", "type": "auto", "points": 2, "notion": "compta-ch3", "consigne": "II. Avantages et limites de ces postes ; l'EBITDA est-il ici comparable à l'EBE ?", "indices": ["Information utile au pilotage, mais non normée.", "Regarde la ligne « dotations aux provisions » au-dessus de l'EBITDA."], "reexplication": "Un EBITDA qui contient des charges calculées n'est plus un flux de trésorerie théorique.", "correction": "Avantages : information supplémentaire (indicateurs sectoriels, de pilotage). Limites : non normés, peu comparables ; encadrement par les régulateurs et par IFRS 18. EBITDA ≈ EBE en principe (flux théorique de l'exploitation), mais ici il **inclut des dotations nettes aux provisions** : ce n'est plus un flux de trésorerie théorique (sauf à considérer que les dépréciations de stocks et clients n'ont pas à être retraitées)." },
+        { "id": "c4", "type": "auto", "points": 2, "notion": "compta-ch3", "consigne": "II. Objet et intérêt de l'état du résultat global du point de vue du normalisateur.", "indices": ["Conception extensive du résultat.", "Juste valeur et éléments non maîtrisés par les managers."], "reexplication": "Cite des exemples de l'état d'ABEO (écarts de conversion, dérivés).", "correction": "Présenter la variation de richesse des investisseurs ; conception **extensive** du résultat (éléments non maîtrisés par les managers : écarts de conversion, juste valeur des dérivés…) ; cohérent avec une approche de l'entreprise comme capital financier évalué à la juste valeur, incluant plus et moins-values potentielles." },
+        { "id": "c5", "type": "auto", "points": 2, "notion": "compta-ch1", "consigne": "III. Justifie la méthode retenue pour VOGOSCOPE, NAVOC et VOGO.", "indices": ["Pourquoi % de contrôle ≠ % d'intérêt pour VOGOSCOPE ?", "Contrôle et influence peuvent exister sous les seuils de 50 % et 20 %."], "reexplication": "Réalité économique (IFRS 10, IAS 28) plutôt que seuils.", "correction": "VOGOSCOPE : contrôle (majorité des droits de vote, 51 %), avec une détention en partie indirecte (d'où intérêt 60,43 %). NAVOC : contrôle **de fait** à 40 % (pouvoir sur les activités pertinentes : actionnariat diffus, majorité au conseil…). VOGO : influence notable sous 20 % (siège au conseil, transactions, échanges de personnel…)." }
+      ]
+    },
+    {
+      "titre": "Exercice I — Bilan IFRS de BALRON : capitaux engagés et ratios",
+      "points": 3,
+      "chapitres": ["compta-ch2"],
+      "enonce": "Bilan BALRON (K€) N / N-1 : capitaux propres 41 286 / 37 442 ; dettes financières non courantes 69 108 / 62 013 ; dettes financières courantes 19 136 / 30 807 ; VMP 1 380 / 1 393 ; disponibilités 7 440 / 11 014 ; total dettes courantes 65 984 / 78 855 ; total dettes 135 092 / 140 868 ; total bilan 176 378 / 178 310.",
+      "etapes": [
+        { "id": "q1", "type": "nombre", "points": 1, "consigne": "Capitaux engagés en N ?", "reponse": 120710, "indices": ["CP + endettement net.", "Endettement net $=69\\,108+19\\,136-1\\,380-7\\,440$."], "reexplication": "$41\\,286+79\\,424$.", "correction": "N : $41\\,286+79\\,424=120\\,710$ ; N-1 : $37\\,442+80\\,413=117\\,855$." },
+        { "id": "q2", "type": "nombre", "points": 1, "consigne": "Ratio CP / dettes totales en N (en %, ex. 0,30 pour 30 %) ?", "reponse": 0.3056, "indices": ["$41\\,286/135\\,092$.", "Compare avec N-1 : $37\\,442/140\\,868$."], "reexplication": "30,6 % en N contre 26,6 % en N-1 : structure renforcée.", "correction": "Levier CP / dettes : 30,56 % (N) contre 26,58 % (N-1). Autres ratios acceptés : CP / endettement net 52 % / 46,6 % ; dettes / (CP + dettes) 76,6 % / 79 % ; dettes fin. / total 50 % / 52,1 %." },
+        { "id": "q3", "type": "nombre", "points": 0.5, "consigne": "Ratio de liquidité immédiate en N (décimal) ?", "reponse": 0.1337, "indices": ["(VMP + dispo) / dettes courantes.", "$8\\,820/65\\,984$."], "reexplication": "13,4 % contre 15,7 % en N-1.", "correction": "13,37 % (N) contre 15,73 % (N-1)." },
+        { "id": "q4", "type": "auto", "points": 0.5, "consigne": "Que nous apprennent ces indicateurs ?", "indices": ["Évolution des CP et des dettes.", "Où est passée la trésorerie ?"], "reexplication": "Relie chaque ratio à une cause.", "correction": "Levier en amélioration grâce au renforcement des CP (meilleure profitabilité) et à la baisse des dettes financières et non financières ; la liquidité se dégrade légèrement : la trésorerie a probablement servi à rembourser de la dette." }
+      ]
+    },
+    {
+      "titre": "Exercice II — Consolidation de NOBAL (70 %)",
+      "points": 2.5,
+      "chapitres": ["compta-ch1"],
+      "enonce": "BALRON détient 70 % de NOBAL depuis sa création (titres : 245). NOBAL : immobilisations incorporelles 2 530, corporelles 4 855 ; capital 350, réserves 1 960, résultat 405 (CP 2 715). BALRON : actif non courant 102 470 (dont titres de participation 275) ; capital 5 657, réserves 29 531, résultat 6 098 (CP 41 286).",
+      "etapes": [
+        { "id": "q1", "type": "nombre", "points": 1, "consigne": "Part du groupe affectée aux **réserves** consolidées ?", "reponse": 1372, "indices": ["Contrôle de droit (70 %) → IG. Part groupe $=2\\,715\\times70\\,\\%=1\\,900{,}5$.", "Différence $=1\\,900{,}5-245=1\\,655{,}5$ ; retire la part du résultat $405\\times70\\,\\%$."], "reexplication": "$1\\,655{,}5-283{,}5=1\\,372$ ; minoritaires $=814{,}5$.", "correction": "Part groupe 1 900,5 ; CH 245 ; différence 1 655,5 dont résultat 283,5 et réserves **1 372** ; minoritaires 814,5." },
+        { "id": "q2", "type": "nombre", "points": 0.5, "consigne": "Actif non courant consolidé ?", "reponse": 109610, "indices": ["Additionne à 100 % et élimine les titres NOBAL.", "$102\\,470+7\\,385-245$."], "reexplication": "Les titres de participation passent de 275 à 30.", "correction": "$109\\,610$." },
+        { "id": "q3", "type": "nombre", "points": 1, "consigne": "Total des capitaux propres de l'ensemble consolidé ?", "reponse": 43756, "indices": ["Capital mère + réserves (29 531 + 1 372) + résultat (6 098 + 283,5) + minoritaires.", "$5\\,657+30\\,903+6\\,381{,}5+814{,}5$."], "reexplication": "Le capital reste celui de BALRON.", "correction": "Capital 5 657 ; réserves 30 903 ; résultat 6 381,5 ; intérêts minoritaires 814,5 ; total **43 756**." }
+      ]
+    },
+    {
+      "titre": "Exercice III — Tableau de flux de trésorerie de TOPLA",
+      "points": 5.5,
+      "chapitres": ["compta-ch4"],
+      "enonce": "| (K€) | N | N-1 |\n|---|---|---|\n| Immobilisations corporelles | 8 950 | 7 840 |\n| Immobilisations financières | 1 950 | 1 950 |\n| Créances sur actionnaires (capital non libéré) | 100 | 0 |\n| Stocks | 4 390 | 5 900 |\n| Créances | 8 630 | 8 880 |\n| Disponibilités | 560 | 760 |\n| Capital / Prime | 3 200 / 1 800 | 3 000 / 0 |\n| Réserves / Résultat / RAN | 2 330 / 2 010 / 120 | 1 950 / 2 500 / 0 |\n| Dettes financières non courantes | 2 870 | 4 530 |\n| Provisions pour risques et charges | 1 280 | 1 290 |\n| Dettes financières courantes | 1 500 | 1 420 |\n| Dettes d'exploitation / diverses | 6 300 / 3 170 | 7 010 / 3 630 |\n\nCBC momentanés : 100 / 90 ; CBC confirmés : 500 / 600. Nouveaux emprunts : 500. Dotations aux amortissements : 980, aucune cession. Dépréciations de l'actif courant : dotations 1 500, reprises 1 690. Reprises sur PRC : 10.",
+      "etapes": [
+        { "id": "q1", "type": "nombre", "points": 1, "consigne": "Variation de trésorerie à trouver (clôture − ouverture) ?", "reponse": -210, "indices": ["Trésorerie = dispo − CBC momentanés (VMP nulles).", "Ouverture $760-90$ ; clôture $560-100$."], "reexplication": "$460-670=-210$.", "correction": "Ouverture 670, clôture 460, variation **−210**." },
+        { "id": "q2", "type": "nombre", "points": 1.5, "consigne": "Flux net de trésorerie généré par l'activité ?", "reponse": 3570, "indices": ["MBA $=2\\,010+980-10=2\\,980$ (les dépréciations d'actif courant sont exclues).", "ΔBFR (stocks + créances − dettes d'exploitation − dettes diverses) $=3\\,550-4\\,140=-590$."], "reexplication": "Le BFR baisse : cela **libère** de la trésorerie, $2\\,980+590$.", "correction": "MBA 2 980 ; ΔBFR −590 ; flux d'activité **3 570**." },
+        { "id": "q3", "type": "nombre", "points": 1, "consigne": "Flux net lié à l'investissement ?", "reponse": -2090, "indices": ["Acquisitions = Δ immos nettes + dotations (aucune cession).", "$(8\\,950-7\\,840)+980$."], "reexplication": "Immobilisations financières inchangées.", "correction": "Acquisitions 2 090, flux d'investissement **−2 090**." },
+        { "id": "q4", "type": "nombre", "points": 1.5, "consigne": "Flux net lié au financement (CBC confirmés en financement) ?", "reponse": -1690, "indices": ["Augm. capital encaissée $=200+1\\,800-100=1\\,900$ ; dividendes $=2\\,500-380-120=2\\,000$ ; Δ CBC confirmés $=-100$.", "Remboursements : dettes fin. hors CBC $(4\\,370-600)-(5\\,950-690)=-1\\,490=500-\\text{remb.}$ ⇒ 1 990."], "reexplication": "$1\\,900+500-1\\,990-2\\,000-100=-1\\,690$.", "correction": "Augmentation de capital +1 900 ; nouveaux emprunts +500 ; remboursements −1 990 ; dividendes −2 000 ; CBC confirmés −100 ; flux de financement **−1 690**." },
+        { "id": "q5", "type": "auto", "points": 0.5, "consigne": "Vérifie la variation de trésorerie.", "indices": ["Additionne les trois flux.", "Compare à −210."], "reexplication": "Si ça ne boucle pas, revérifie d'abord le signe des CBC et le RAN.", "correction": "$3\\,570-2\\,090-1\\,690=-210$ ✓." }
+      ]
+    }
+  ]
+}
