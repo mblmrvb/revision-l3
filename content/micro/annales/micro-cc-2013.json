@@ -3,18 +3,161 @@
   "matiere": "micro",
   "annee": "2013-2014",
   "type": "CC",
-  "titre": "Micro — CC 2013-2014",
+  "titre": "Micro — CC novembre 2013",
   "dureeMin": 120,
   "corrige": "officiel",
   "horsProgramme": false,
-  "statut": "a-traiter",
-  "chapitres": [],
+  "statut": "pret",
+  "chapitres": ["micro-ch2", "micro-ch3"],
+  "sources": ["Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2013 - 2014/Micro CC 2013.pdf", "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2013 - 2014/Micro CC 2013 corrigé.pdf"],
   "incertitudes": [
-    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+    "Les questions de cours n'ont pas de corrigé officiel : les éléments de réponse viennent du cours (explication ajoutée).",
+    "Le corrigé arrondit : $k_0=28{,}82$, $r_1=2{,}12$, $r_2=-0{,}88$, $\\theta_A=0{,}57$. Les valeurs exactes recalculées sont très proches."
   ],
-  "sources": [
-    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2013 - 2014/Micro CC 2013 corrigé.pdf",
-    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2013 - 2014/Micro CC 2013.pdf"
-  ],
-  "exercices": []
+  "exercices": [
+    {
+      "titre": "Question de cours (au choix)",
+      "points": 4,
+      "chapitres": ["micro-ch2"],
+      "enonce": "Traitez **une** des deux questions : 1) Les politiques financières des firmes sont neutres, seules importent leurs politiques d'investissement : expliquez. 2) Illustrez graphiquement le gain à l'échange intertemporel pour un agent aux préférences standards, de dotations $(w^i_0,w^i_1)$ et de technique $f_i$ à rendements décroissants.",
+      "etapes": [
+        {
+          "id": "c1",
+          "type": "auto",
+          "points": 4,
+          "notion": "micro-ch2",
+          "consigne": "Rédige ta réponse à la question choisie (plan, idées clés, graphique décrit).",
+          "indices": ["Q1 : pense au théorème de Fisher (séparation) et à Modigliani-Miller.", "Q2 : FPP concave, droite de budget de pente $-(1+r)$, points $A$, $P$, $C$."],
+          "reexplication": "Q1 : avec des marchés parfaits et complets, la firme maximise son profit actualisé $\\bar\\Pi=\\frac{f(k)}{1+r}-k$ ; le mode de financement et la politique de dividendes ne changent pas la richesse des actionnaires (Modigliani-Miller), qui réallouent eux-mêmes leur consommation sur le marché. Q2 : voir le corrigé du CC 2018, question de cours.",
+          "correction": "**Q1** — Théorème de séparation de Fisher : à $r$ donné, l'investissement optimal vérifie $f'(k)=1+r$ indépendamment des préférences et des dotations (unanimité des actionnaires). Le théorème de Modigliani-Miller montre que les politiques de financement et de dividendes sont neutres : seul compte de maximiser le profit, l'actionnaire ajustant ensuite son épargne. [Micro cours chapitre 2.pdf, p. 10](src:)\n\n**Q2** — FPP concave passant par $W$ ; autarcie au point $A$ ($TMS=f'$) ; avec marché, production en $P$ ($f'=1+r$) et consommation en $C$ sur la droite de budget de pente $-(1+r)$ tangente en $P$ ; $C$ est sur une courbe d'indifférence plus haute que $A$. [Micro cours chapitre 2.pdf, p. 7-9](src:)"
+        }
+      ]
+    },
+    {
+      "titre": "Exercice 1 — Actions, zéro-coupons et arbitrage",
+      "points": 5,
+      "chapitres": ["micro-ch3"],
+      "enonce": "4 périodes $t=0,1,2,3$. Trois actions de prix $q_1=8$, $q_2=2$, $q_3=3$ et de dividendes $A_1:(2,2,1)$, $A_2:(1,0,1)$, $A_3:(0,1,1)$.",
+      "etapes": [
+        {
+          "id": "q1",
+          "type": "nombre",
+          "points": 2,
+          "consigne": "1) Prix des ZC : que vaut $\\beta_2$ ?",
+          "reponse": 2.333333,
+          "indices": ["Chaque action = son portefeuille de ZC : $2\\beta_1+2\\beta_2+\\beta_3=8$, $\\beta_1+\\beta_3=2$, $\\beta_2+\\beta_3=3$.", "Exprime $\\beta_1$ et $\\beta_2$ en fonction de $\\beta_3$ et remplace dans la 1re équation."],
+          "reexplication": "$\\beta_1=2-\\beta_3$, $\\beta_2=3-\\beta_3$ ⇒ $10-3\\beta_3=8$ ⇒ $\\beta_3=\\frac23$, $\\beta_1=\\frac43$, $\\beta_2=\\frac73$.",
+          "correction": "$\\beta_1=\\frac43$, $\\beta_2=\\frac73$, $\\beta_3=\\frac23$."
+        },
+        {
+          "id": "q2",
+          "type": "nombre",
+          "points": 1.5,
+          "consigne": "2) Titre hybride $\\alpha A_1+(1-\\alpha)A_2$ proposé à 3. Pour $\\alpha=0{,}5$, quel est son prix d'équilibre ?",
+          "reponse": 5,
+          "indices": ["Le prix d'un portefeuille est la combinaison des prix.", "$0{,}5q_1+0{,}5q_2$."],
+          "reexplication": "$0{,}5\\times8+0{,}5\\times2=5\\neq3$ : il y a une opportunité d'arbitrage (acheter le titre à 3, vendre $0{,}5A_1+0{,}5A_2$ pour 5).",
+          "correction": "Prix d'équilibre $=5$ ; proposé à 3, il existe une opportunité d'arbitrage."
+        },
+        {
+          "id": "q3",
+          "type": "nombre",
+          "points": 1.5,
+          "consigne": "3) Valeur de $\\alpha\\in[0,1]$ qui annule l'opportunité d'arbitrage ?",
+          "reponse": 0.166667,
+          "indices": ["Flux du titre : $(\\alpha+1,\\ 2\\alpha,\\ 1)$.", "Son coût en ZC vaut $\\frac{18}{3}\\alpha+2$ : égale-le à 3."],
+          "reexplication": "$(\\alpha+1)\\frac43+2\\alpha\\frac73+\\frac23=6\\alpha+2=3$ ⇒ $\\alpha=\\frac16$.",
+          "correction": "$\\alpha=\\frac16$."
+        }
+      ]
+    },
+    {
+      "titre": "Exercice 2 — Production à trois périodes, deux entreprises",
+      "points": 11,
+      "chapitres": ["micro-ch2"],
+      "enonce": "Trois périodes, deux agents $A,B$, $U=\\ln c_0+0{,}9\\ln c_1+0{,}81\\ln c_2$, bien non stockable. Entreprise $E_A$ (propriété de $A$) : $q^A_2=4\\sqrt{k_0}$ (bien 0 → bien 2). Marché monétaire en 0 et 1 (taux $r_1,r_2$). Dotations : $\\omega^A_0=\\omega^B_0=50$, $\\omega^A_1=\\omega^B_1=100$, $\\omega^A_2=\\omega^B_2=0$.\n\nPartie 2 : $B$ crée $E_B$ avec $q^B_2=10\\sqrt{k_1}$ (bien 1 → bien 2).",
+      "etapes": [
+        {
+          "id": "a",
+          "type": "auto",
+          "points": 1,
+          "consigne": "(a) Justifie l'existence d'un agent représentatif.",
+          "indices": ["Calcule $TMS^i_{t\\to t+1}$.", "Deux conditions sur les préférences."],
+          "reexplication": "$TMS^i_{t\\to t+1}=\\frac{0{,}9c^i_t}{c^i_{t+1}}$ : homogène de degré 0.",
+          "correction": "Mêmes préférences et $TMS^i_{t\\to t+1}=\\frac{0{,}9c^i_t}{c^i_{t+1}}$ homogènes de degré 0 (marchés complets) ⇒ AR."
+        },
+        {
+          "id": "b",
+          "type": "choix",
+          "points": 0.5,
+          "consigne": "(b) Condition de maximisation du profit de $E_A$ :",
+          "choix": ["$2k_0^{-0,5}=(1+r_1)(1+r_2)$", "$2k_0^{-0,5}=1+r_1$", "$4k_0^{-0,5}=(1+r_1)(1+r_2)$", "$2k_0^{-0,5}=1+r_2$"],
+          "bonne": 0,
+          "indices": ["La production arrive en $t=2$ : actualise de deux périodes.", "$\\max_{k_0}\\ \\frac{4\\sqrt{k_0}}{(1+r_1)(1+r_2)}-k_0$."],
+          "reexplication": "La dérivée de $4\\sqrt{k_0}$ est $2k_0^{-0,5}$.",
+          "correction": "$\\max_{k_0}\\Pi_A=\\frac{q^A_2}{(1+r_1)(1+r_2)}-k_0$ ⇒ $2k_0^{-0,5}=(1+r_1)(1+r_2)$."
+        },
+        {
+          "id": "d",
+          "type": "nombre",
+          "points": 3,
+          "consigne": "(c)-(d) Avec $TMS^{AR}_{0\\to2}=\\frac{1}{(1+r_1)(1+r_2)}$, calcule l'investissement $k_0$.",
+          "reponse": 28.826,
+          "indices": ["$c^{AR}_0=100-k_0$, $c^{AR}_2=4\\sqrt{k_0}$ ; $TMS^{AR}_{0\\to2}=\\frac{0{,}81c^{AR}_0}{c^{AR}_2}$.", "$\\frac{0{,}81(100-k_0)}{4\\sqrt{k_0}}=\\frac{\\sqrt{k_0}}{2}$ ⇒ $0{,}81(100-k_0)=2k_0$."],
+          "reexplication": "$81=2{,}81k_0$ ⇒ $k_0=28{,}83$.",
+          "correction": "$k_0=\\frac{81}{2{,}81}\\approx28{,}8$ (corrigé : 28,82)."
+        },
+        {
+          "id": "e",
+          "type": "nombre",
+          "points": 1.5,
+          "consigne": "(e) Taux $r_1$ d'équilibre ?",
+          "reponse": 2.1222,
+          "indices": ["$TMS^{AR}_{0\\to1}=\\frac{0{,}9(100-k_0)}{200}=\\frac{1}{1+r_1}$ ($c^{AR}_1=\\Omega_1=200$).", "$\\frac{0{,}9\\times71{,}17}{200}=0{,}320$."],
+          "reexplication": "$1+r_1=3{,}122$ ⇒ $r_1\\approx2{,}12$. Puis $(1+r_1)(1+r_2)=2k_0^{-0,5}=0{,}3725$ ⇒ $r_2\\approx-0{,}88$.",
+          "correction": "$r_1\\approx2{,}12$ et $r_2\\approx-0{,}88$."
+        },
+        {
+          "id": "f",
+          "type": "nombre",
+          "points": 1.5,
+          "consigne": "(f) Consommation $c^A_0$ de l'agent $A$ ?",
+          "reponse": 40.9,
+          "tolerance": 0.02,
+          "indices": ["$\\Pi_A=\\frac{4\\sqrt{k_0}}{(1+r_1)(1+r_2)}-k_0=2k_0-k_0=k_0$.", "$\\theta_A=\\frac{50+\\frac{100}{1+r_1}+\\Pi_A}{100+\\frac{200}{1+r_1}+\\Pi_A}\\approx0{,}57$, puis $c^A_0=\\theta_A(100-k_0)$."],
+          "reexplication": "$\\theta_A=\\frac{50+32{,}0+28{,}8}{100+64{,}1+28{,}8}=0{,}575$ ⇒ $c^A_0=40{,}9$, $c^A_1=115$, $c^A_2=12{,}35$.",
+          "correction": "$\\theta_A\\approx0{,}57$ ⇒ $c^A_0\\approx41$, $c^A_1\\approx115$, $c^A_2\\approx12{,}35$."
+        },
+        {
+          "id": "g",
+          "type": "auto",
+          "points": 1.5,
+          "consigne": "(g) Partie 2 : contraintes de $B$ aux trois dates et contrainte intertemporelle.",
+          "indices": ["$B$ reçoit le profit de $E_B$ en $t=2$.", "Écris le profit en valeur de la date 2 : $(1+r_1)(1+r_2)\\Pi_B$."],
+          "reexplication": "Contrainte classique à 3 dates, plus le profit actualisé $\\Pi_B$ dans la richesse.",
+          "correction": "$w^B_0=C^B_0+S^B_0$ ; $w^B_1+(1+r_1)S^B_0=C^B_1+S^B_1$ ; $(1+r_2)S^B_1+(1+r_1)(1+r_2)\\Pi_B=C^B_2$ ⇒ $C^B_0+\\frac{C^B_1}{1+r_1}+\\frac{C^B_2}{(1+r_1)(1+r_2)}=w^B_0+\\frac{w^B_1}{1+r_1}+\\Pi_B$."
+        },
+        {
+          "id": "h",
+          "type": "choix",
+          "points": 0.5,
+          "consigne": "(h) Condition de maximisation du profit de $E_B$ :",
+          "choix": ["$5k_1^{-0,5}=1+r_2$", "$5k_1^{-0,5}=(1+r_1)(1+r_2)$", "$10k_1^{-0,5}=1+r_2$", "$5k_1^{-0,5}=1+r_1$"],
+          "bonne": 0,
+          "indices": ["$\\Pi_B=\\frac{10\\sqrt{k_1}}{(1+r_1)(1+r_2)}-\\frac{k_1}{1+r_1}$.", "Multiplie la CPO par $1+r_1$."],
+          "reexplication": "L'investissement a lieu en 1, la production en 2 : seul $r_2$ intervient.",
+          "correction": "$5k_1^{-0,5}=1+r_2$."
+        },
+        {
+          "id": "i",
+          "type": "auto",
+          "points": 1.5,
+          "consigne": "(i) Conditions marginales avec AR et système permettant de calculer $k_0$ et $k_1$.",
+          "indices": ["$c^{AR}_0=100-k_0$, $c^{AR}_1=200-k_1$, $c^{AR}_2=4\\sqrt{k_0}+10\\sqrt{k_1}$.", "Utilise $TMS_{0\\to2}$ et $TMS_{1\\to2}$ avec les deux règles d'investissement."],
+          "reexplication": "Deux équations, deux inconnues $k_0,k_1$.",
+          "correction": "$\\frac{0{,}81(100-k_0)}{4\\sqrt{k_0}+10\\sqrt{k_1}}=\\frac{1}{2k_0^{-0,5}}$ et $\\frac{0{,}9(200-k_1)}{4\\sqrt{k_0}+10\\sqrt{k_1}}=\\frac{1}{5k_1^{-0,5}}$ (et $TMS_{0\\to1}=\\frac{0{,}9(100-k_0)}{200-k_1}=\\frac{1}{1+r_1}$)."
+        }
+      ]
+    }
+  ]
 }

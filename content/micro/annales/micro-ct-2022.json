@@ -5,13 +5,12 @@
   "type": "CT",
   "titre": "Micro — CT 2022-2023",
   "dureeMin": 120,
-  "corrige": "aucun",
-  "horsProgramme": false,
+  "corrige": "officiel",
+  "horsProgramme": true,
   "statut": "a-traiter",
   "chapitres": [],
   "incertitudes": [
-    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription.",
-    "Examen final : la partie « équilibre dans l'incertain » (séances 7 à 10) est hors programme."
+    "Examen final : il porte sur la 2e partie du cours (équilibre général dans l'incertain, séances 7 à 10 : utilité espérée, états du monde, actifs d'Arrow-Debreu, partage des risques), hors de ton programme actuel. Il est conservé ici et pourra être transcrit si ce chapitre est ajouté."
   ],
   "sources": [
     "Drive L3_EIF_Dauphine › S1/Micro/Annales/CT/2022/2.jpeg",

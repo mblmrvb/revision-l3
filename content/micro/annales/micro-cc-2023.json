@@ -3,18 +3,53 @@
   "matiere": "micro",
   "annee": "2023-2024",
   "type": "CC",
-  "titre": "Micro — CC 2023-2024",
+  "titre": "Micro — CC octobre 2023",
   "dureeMin": 120,
-  "corrige": "officiel",
+  "corrige": "propose",
   "horsProgramme": false,
-  "statut": "a-traiter",
-  "chapitres": [],
+  "statut": "pret",
+  "chapitres": ["micro-ch3", "micro-ch2"],
+  "sources": ["Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2023 - 2024/Sujet_Micro_CC_23-24.pdf", "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2023 - 2024/Corrigé CC Microéconomie 23-24.pdf"],
   "incertitudes": [
-    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+    "Un corrigé officiel existe dans le Drive, mais son format scanné n'a pas pu être lu : le corrigé ci-dessous est proposé.",
+    "Il est cohérent avec les valeurs données par l'énoncé (Q9 : $h_1=48{,}581$, $k_0=8{,}0589$ ; Q10 : $c^A_0=176{,}62$, $c^A_1=c^A_2=31{,}107$), que j'ai retrouvées par le calcul."
   ],
-  "sources": [
-    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2023 - 2024/Corrigé CC Microéconomie 23-24.pdf",
-    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2023 - 2024/Sujet_Micro_CC_23-24.pdf"
-  ],
-  "exercices": []
+  "exercices": [
+    {
+      "titre": "Question de cours",
+      "points": 3,
+      "chapitres": ["micro-ch3"],
+      "enonce": "Expliquez la méthode d'évaluation d'un actif financier en absence d'opportunité d'arbitrage avec un système complet de zéro-coupons.",
+      "etapes": [
+        { "id": "c", "type": "auto", "points": 3, "notion": "micro-ch3", "consigne": "Rédige ta réponse.", "indices": ["Définis ZC, système complet, AOA.", "Donne $q=\\sum_t w_t\\beta_t$ et le lien avec les taux courts."], "reexplication": "Même question qu'au CC 2021 et au CC 2019.", "correction": "ZC d'échéance $t$ : paie 1 en $t$, prix $\\beta_t$ ; système complet = un ZC par échéance. $V=(w_1,\\dots,w_T)$ est répliqué par $\\sum_tw_tZC_t$ ; en AOA, $q=\\sum_tw_t\\beta_t$. Les $\\beta_t=\\frac{1}{(1+r_1)\\cdots(1+r_t)}$ sont des facteurs d'actualisation. [Micro L3 chapitre 3.pdf, p. 2-5](src:)" }
+      ]
+    },
+    {
+      "titre": "Exercice — Évaluation par la synthèse",
+      "points": 4,
+      "chapitres": ["micro-ch3"],
+      "enonce": "4 dates, AOA. Taux courts : $r_1=1$, $r_2=1{,}5$, $r_3=3$ ($r_t=x$ signifie $100x\\,\\%$).",
+      "etapes": [
+        { "id": "q1", "type": "nombre", "points": 1, "consigne": "1) Prix $\\beta_3$ ?", "reponse": 0.05, "indices": ["$\\beta_t=\\frac{\\beta_{t-1}}{1+r_t}$.", "$\\beta_1=\\frac12$, $\\beta_2=\\frac{0{,}5}{2{,}5}$."], "reexplication": "$\\beta_1=0{,}5$, $\\beta_2=0{,}2$, $\\beta_3=\\frac{0{,}2}{4}=0{,}05$.", "correction": "$\\beta_1=0{,}5$, $\\beta_2=0{,}2$, $\\beta_3=0{,}05$." },
+        { "id": "q2", "type": "nombre", "points": 0.5, "consigne": "2) Prix $q_A$ d'un actif rapportant 100 en 1 et 200 en 3 ?", "reponse": 60, "indices": ["$100\\beta_1+200\\beta_3$."], "reexplication": "$50+10$.", "correction": "$q_A=60$." },
+        { "id": "q3", "type": "nombre", "points": 1.5, "consigne": "3) Portefeuille $C=X_AA+X_BB$ ($B$ paie 1 à chaque date), prix 600, revenu 400 en $t=2$ : $X_A$ = ?", "reponse": 5, "indices": ["En $t=2$, $A$ ne paie rien : $X_B=400$.", "$q_B=0{,}5+0{,}2+0{,}05=0{,}75$."], "reexplication": "$600=60X_A+300$ ⇒ $X_A=5$.", "correction": "$X_A=5$, $X_B=400$." },
+        { "id": "q4", "type": "nombre", "points": 1, "consigne": "4) Prix de $D=\\max(A,150B)$ ?", "reponse": 115, "indices": ["Date par date : $A=(100,0,200)$, $150B=(150,150,150)$.", "$D=(150,150,200)$."], "reexplication": "$150\\times0{,}5+150\\times0{,}2+200\\times0{,}05=75+30+10$.", "correction": "$q_D=115$." }
+      ]
+    },
+    {
+      "titre": "Problème — Équilibre général, production et stockage",
+      "points": 13,
+      "chapitres": ["micro-ch2"],
+      "enonce": "Trois dates, deux agents, $U=\\ln c_0+\\ln c_1+\\ln c_2$. Entreprise $E$ (détenue à moitié par $A$ et $B$) : bien 0 → bien 2 avec $q_2=\\sqrt{k_0}$, et un hangar permettant de stocker parfaitement en 1 : $h_1$ stocké en 1 rend $h_1$ en 2. Marché monétaire en 0 et 1. Dotations : $\\omega^0_A=100$, $\\omega^0_B=200$, $\\omega^1_A=75$, $\\omega^1_B=25$, $\\omega^2_A=\\omega^2_B=0$.",
+      "etapes": [
+        { "id": "q2", "type": "auto", "points": 1.5, "consigne": "1)-2) Justifie l'AR et écris les conditions marginales (en notant $\\Omega_0,\\Omega_1$).", "indices": ["$c^{AR}_0=\\Omega_0-k_0$, $c^{AR}_1=\\Omega_1-h_1$, $c^{AR}_2=\\sqrt{k_0}+h_1$.", "$TMS_{t\\to t+1}=\\frac{c_t}{c_{t+1}}$ (log, sans actualisation)."], "reexplication": "Mêmes préférences, TMS homogènes de degré 0, marchés complets.", "correction": "$\\frac{\\Omega_0-k_0}{\\Omega_1-h_1}=\\frac{1}{1+r_1}$ et $\\frac{\\Omega_1-h_1}{\\sqrt{k_0}+h_1}=\\frac{1}{1+r_2}$, avec $\\Omega_0=300$, $\\Omega_1=100$." },
+        { "id": "q4", "type": "nombre", "points": 2, "consigne": "3)-4) Sans stockage ($h_1=0$) : la règle $0{,}5k_0^{-0,5}=(1+r_1)(1+r_2)$ et $TMS^{AR}_{0\\to2}$ donnent $k_0$ = ?", "reponse": 100, "indices": ["$\\frac{c_0}{c_2}=\\frac{300-k_0}{\\sqrt{k_0}}=\\frac{1}{(1+r_1)(1+r_2)}=2\\sqrt{k_0}$.", "$300-k_0=2k_0$."], "reexplication": "$k_0=100$.", "correction": "$k_0=100$." },
+        { "id": "q5", "type": "nombre", "points": 1.5, "consigne": "5) Taux $r_2$ sans stockage (décimal) ?", "reponse": -0.9, "indices": ["$\\frac{c_0}{c_1}=\\frac{200}{100}=\\frac{1}{1+r_1}$ ⇒ $r_1=-0{,}5$.", "$(1+r_1)(1+r_2)=\\frac{0{,}5}{10}=0{,}05$."], "reexplication": "$1+r_2=0{,}1$ ⇒ $r_2=-0{,}9$ ; profit $\\Pi=\\frac{10}{0{,}05}-100=100$.", "correction": "$r_1=-0{,}5$, $r_2=-0{,}9$, $\\Pi=100$." },
+        { "id": "q6", "type": "nombre", "points": 1.5, "consigne": "6) Consommation $c^A_0$ sans stockage ?", "reponse": 100, "indices": ["$\\gamma_A=\\frac{100+\\frac{75}{0{,}5}+0{,}5\\Pi}{300+\\frac{100}{0{,}5}+\\Pi}$.", "$\\gamma_A=\\frac{300}{600}$."], "reexplication": "$\\gamma_A=0{,}5$ ⇒ $c^A=(100,\\ 50,\\ 5)$.", "correction": "$c^A_0=100$, $c^A_1=50$, $c^A_2=5$." },
+        { "id": "q7", "type": "choix", "points": 1.5, "consigne": "7) Avec stockage : à quelle condition sur les taux y a-t-il stockage à l'équilibre ?", "choix": ["$r_2=0$", "$r_1=0$", "$r_2<0$", "$r_1=r_2$"], "bonne": 0, "indices": ["Profit du stockage : $\\frac{h_1}{(1+r_1)(1+r_2)}-\\frac{h_1}{1+r_1}$.", "Il doit être nul pour un stockage positif et fini."], "reexplication": "Stockage parfait = rendement brut 1 entre 1 et 2 ⇒ $1+r_2=1$. L'autre condition reste $0{,}5k_0^{-0,5}=(1+r_1)(1+r_2)=1+r_1$.", "correction": "$r_2=0$, et $0{,}5k_0^{-0,5}=1+r_1$." },
+        { "id": "q9", "type": "nombre", "points": 2, "consigne": "8)-9) Le système donne $h_1=48{,}581$ et $k_0=8{,}0589$. Taux $r_1$ (décimal) ?", "reponse": -0.82387, "indices": ["$1+r_1=0{,}5k_0^{-0,5}$.", "$\\sqrt{8{,}0589}=2{,}8388$."], "reexplication": "$1+r_1=0{,}17613$ ⇒ $r_1=-0{,}824$ ; $r_2=0$ ; $\\Pi=\\frac{\\sqrt{k_0}}{1+r_1}-k_0=16{,}118-8{,}059=8{,}059$.", "correction": "Système : $100-h_1=\\sqrt{k_0}+h_1$ et $300-k_0=2\\sqrt{k_0}(100-h_1)$. Résultats : $r_1=-0{,}824$, $r_2=0$, $\\Pi\\approx8{,}06$." },
+        { "id": "q10", "type": "auto", "points": 3, "consigne": "10) Avec stockage, $c^A=(176{,}62;\\ 31{,}107;\\ 31{,}107)$. Compare avec la question 6 et explique.", "indices": ["Comment évoluent $k_0$ et la consommation agrégée en 0 ?", "Pourquoi $c^A_1=c^A_2$ ? Pourquoi la part de $A$ augmente-t-elle ?"], "reexplication": "Le stockage permet de transférer du bien de 1 à 2 sans perte : on investit beaucoup moins en 0, $r_2$ remonte à 0 et la valeur de la dotation de $A$ en $t=1$ augmente.", "correction": "Le stockage offre un transfert gratuit de 1 vers 2 : $r_2$ passe de $-0{,}9$ à 0 et il devient inutile d'investir autant en 0 ($k_0$ : 100 → 8,06). La consommation agrégée en 0 augmente (200 → 291,9) et le profit chute (100 → 8,06). La part de $A$ augmente ($\\gamma_A$ : 0,5 → 0,605) car sa grosse dotation de la date 1 (75) vaut plus en valeur actualisée ($1+r_1$ plus faible). $A$ consomme bien plus en 0 (100 → 176,6) et en 2 (5 → 31,1), un peu moins en 1 (50 → 31,1) ; avec $r_2=0$ et sans actualisation, il lisse parfaitement entre 1 et 2 ($c^A_1=c^A_2$)." }
+      ]
+    }
+  ]
 }

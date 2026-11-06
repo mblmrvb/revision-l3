@@ -3,17 +3,111 @@
   "matiere": "micro",
   "annee": "2015-2016",
   "type": "CC",
-  "titre": "Micro — CC 2015-2016",
+  "titre": "Micro — CC octobre 2015",
   "dureeMin": 120,
   "corrige": "officiel",
   "horsProgramme": false,
-  "statut": "a-traiter",
-  "chapitres": [],
+  "statut": "pret",
+  "chapitres": ["micro-ch3", "micro-ch1"],
+  "sources": ["Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2015 - 2016/CC 2015, principaux résultats.pdf"],
   "incertitudes": [
-    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+    "Le corrigé ne donne que les principaux résultats : les démarches détaillées sont des explications ajoutées.",
+    "Le document ne contient pas de question de cours (4 points) : elle n'est pas reprise."
   ],
-  "sources": [
-    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2015 - 2016/CC 2015, principaux résultats.pdf"
-  ],
-  "exercices": []
+  "exercices": [
+    {
+      "titre": "Exercice 1 — Actions et taux courts",
+      "points": 4,
+      "chapitres": ["micro-ch3"],
+      "enonce": "4 périodes. Actions : $A_1:(1,2,1)$ prix 2 ; $A_2:(0,2,1)$ prix $\\frac54$ ; $A_3:(2,0,1)$ prix $\\frac74$.",
+      "etapes": [
+        {
+          "id": "q1",
+          "type": "nombre",
+          "points": 2,
+          "consigne": "1) Un actif $A_4:(4,1,2)$ est proposé à 5. Quel est son prix d'équilibre ?",
+          "reponse": 4,
+          "indices": ["Retrouve les $\\beta_t$ : $\\beta_1+2\\beta_2+\\beta_3=2$, $2\\beta_2+\\beta_3=\\frac54$, $2\\beta_1+\\beta_3=\\frac74$.", "Les deux premières donnent $\\beta_1=\\frac34$."],
+          "reexplication": "$\\beta_1=0{,}75$, $\\beta_3=0{,}25$, $\\beta_2=0{,}5$ ⇒ $q=4\\times0{,}75+0{,}5+2\\times0{,}25=4$ : 5 n'est pas un prix d'équilibre.",
+          "correction": "Prix d'équilibre $=4$ (donc 5 n'est pas un prix d'équilibre)."
+        },
+        {
+          "id": "q2",
+          "type": "nombre",
+          "points": 2,
+          "consigne": "2) Taux court $r_3$ (décimal) ?",
+          "reponse": 1,
+          "indices": ["$r_t=\\frac{\\beta_{t-1}}{\\beta_t}-1$.", "$\\frac{0{,}5}{0{,}25}-1$."],
+          "reexplication": "$r_1=\\frac{1}{0{,}75}-1=33\\,\\%$, $r_2=50\\,\\%$, $r_3=100\\,\\%$.",
+          "correction": "$r_1=33\\,\\%$, $r_2=50\\,\\%$, $r_3=100\\,\\%$."
+        }
+      ]
+    },
+    {
+      "titre": "Exercice 2 — Échange : marché financier ou marché des zéro-coupons",
+      "points": 12,
+      "chapitres": ["micro-ch1", "micro-ch3"],
+      "enonce": "Trois périodes, deux agents, $U^i=\\ln c^i_0+0{,}9\\ln c^i_1+0{,}81\\ln c^i_2$, bien non stockable. Dotations : $A=(0,250,350)$, $B=(100,50,100)$.\n\n**Partie I** : marché financier à chaque date non terminale. **Partie II** : seulement un système complet de ZC $Z_1:(1,0)$, $Z_2:(0,1)$ de prix $\\beta_1,\\beta_2$ ; $X^i_j$ = quantité de $Z_j$.",
+      "etapes": [
+        {
+          "id": "q1",
+          "type": "auto",
+          "points": 1.5,
+          "consigne": "1) Contraintes de $A$ aux trois dates et contrainte consolidée.",
+          "indices": ["$S^A_0$ et $S^A_1$.", "Consolide en actualisant."],
+          "reexplication": "Même structure que dans l'exercice d'entraînement 3.",
+          "correction": "$w^A_0=c^A_0+S^A_0$ ; $c^A_1+S^A_1=(1+r_1)S^A_0+w^A_1$ ; $c^A_2=(1+r_2)S^A_1+w^A_2$ ⇒ $c^A_0+\\frac{c^A_1}{1+r_1}+\\frac{c^A_2}{(1+r_1)(1+r_2)}=w^A_0+\\frac{w^A_1}{1+r_1}+\\frac{w^A_2}{(1+r_1)(1+r_2)}$."
+        },
+        {
+          "id": "q2",
+          "type": "nombre",
+          "points": 2.5,
+          "consigne": "2) Taux $r_1$ d'équilibre (décimal) ?",
+          "reponse": 2.333333,
+          "indices": ["AR : $\\Omega=(100,300,450)$.", "$\\frac{0{,}9\\times100}{300}=\\frac{1}{1+r_1}$."],
+          "reexplication": "$1+r_1=\\frac{10}{3}$ ⇒ $r_1=\\frac73$ ; $\\frac{0{,}9\\times300}{450}=0{,}6=\\frac{1}{1+r_2}$ ⇒ $r_2=\\frac23$.",
+          "correction": "$r_1=\\frac73$, $r_2=\\frac23$."
+        },
+        {
+          "id": "q3",
+          "type": "nombre",
+          "points": 2,
+          "consigne": "3) Consommation $c^A_1$ ?",
+          "reponse": 152.77,
+          "indices": ["$\\gamma_A=\\frac{0+250\\times0{,}3+350\\times0{,}18}{100+300\\times0{,}3+450\\times0{,}18}$ (facteurs d'actualisation $0{,}3$ et $0{,}18$).", "$\\gamma_A=\\frac{138}{271}$."],
+          "reexplication": "$\\gamma_A=0{,}50923$ ⇒ $c^A=(50{,}92;\\ 152{,}77;\\ 229{,}15)$.",
+          "correction": "$c^A_0=50{,}923$, $c^A_1=152{,}77$, $c^A_2=229{,}15$."
+        },
+        {
+          "id": "q4",
+          "type": "auto",
+          "points": 2,
+          "consigne": "4) Partie II : contraintes de $A$ avec les ZC ; montre que $c^A_0+\\beta_1c^A_1+\\beta_2c^A_2=w^A_0+\\beta_1w^A_1+\\beta_2w^A_2$.",
+          "indices": ["En 0 : $A$ achète $X^A_1$ et $X^A_2$ ZC.", "En 1 et 2 : il reçoit 1 par ZC détenu ; remplace $X^A_j$."],
+          "reexplication": "$X^A_1=c^A_1-w^A_1$ et $X^A_2=c^A_2-w^A_2$ dans la contrainte de date 0.",
+          "correction": "$w^A_0=c^A_0+\\beta_1X^A_1+\\beta_2X^A_2$ ; $c^A_1=w^A_1+X^A_1$ ; $c^A_2=w^A_2+X^A_2$ ⇒ en substituant, $c^A_0+\\beta_1c^A_1+\\beta_2c^A_2=w^A_0+\\beta_1w^A_1+\\beta_2w^A_2$."
+        },
+        {
+          "id": "q6",
+          "type": "nombre",
+          "points": 2.5,
+          "consigne": "5)-6) Conditions $TMS^i_{0\\to t}=\\beta_t$ : que vaut $\\beta_2$ ?",
+          "reponse": 0.18,
+          "indices": ["$TMS^{AR}_{0\\to2}=\\frac{0{,}81c^{AR}_0}{c^{AR}_2}$.", "$\\frac{0{,}81\\times100}{450}$."],
+          "reexplication": "$\\beta_1=\\frac{0{,}9\\times100}{300}=0{,}3$, $\\beta_2=0{,}18$ (et $TMS_{1\\to2}=\\beta_2/\\beta_1$).",
+          "correction": "$\\beta_1=0{,}3$, $\\beta_2=0{,}18$."
+        },
+        {
+          "id": "q7",
+          "type": "nombre",
+          "points": 1.5,
+          "consigne": "7) Quantité $X^A_2$ de ZC d'échéance 2 détenue par $A$ (négatif = vente) ?",
+          "reponse": -120.85,
+          "indices": ["$c^A_2=w^A_2+X^A_2$.", "$229{,}15-350$."],
+          "reexplication": "$X^A_2=-120{,}85$ et $X^A_1=152{,}77-250=-97{,}23$ : $A$ vend des ZC pour consommer en 0.",
+          "correction": "$A$ vend $97{,}23$ ZC d'échéance 1 et $120{,}85$ ZC d'échéance 2."
+        }
+      ]
+    }
+  ]
 }

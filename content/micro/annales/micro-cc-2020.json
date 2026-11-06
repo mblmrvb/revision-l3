@@ -3,18 +3,62 @@
   "matiere": "micro",
   "annee": "2020-2021",
   "type": "CC",
-  "titre": "Micro — CC 2020-2021",
+  "titre": "Micro — CC octobre 2020",
   "dureeMin": 120,
-  "corrige": "aucun",
+  "corrige": "propose",
   "horsProgramme": false,
-  "statut": "a-traiter",
-  "chapitres": [],
+  "statut": "pret",
+  "chapitres": ["micro-ch2", "micro-ch3", "micro-ch1"],
+  "sources": ["Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2020 - 2021/Partie_1.jpg", "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2020 - 2021/Partie_2.jpg"],
   "incertitudes": [
-    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+    "Aucun corrigé officiel dans le Drive : tout le corrigé est proposé (non officiel).",
+    "Vérifications de cohérence : avec $\\beta_1=\\frac14$, $\\beta_2=\\frac12$, $\\beta_3=\\frac34$, on retrouve bien $q_1=5$ et $q_3=4$ donnés par l'énoncé ; à l'exercice 2, la contrainte de $A$ en $t=0$ est vérifiée avec le portefeuille trouvé.",
+    "Des annotations manuscrites d'un étudiant figurent sur la photo ; elles n'ont pas été prises en compte."
   ],
-  "sources": [
-    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2020 - 2021/Partie_2.jpg",
-    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2020 - 2021/Partie_1.jpg"
-  ],
-  "exercices": []
+  "exercices": [
+    {
+      "titre": "Question de cours",
+      "points": 2,
+      "chapitres": ["micro-ch2"],
+      "enonce": "Montrez que dans une économie à deux dates avec production et un marché parfait des prêts et des emprunts ouvert à la date 0, des agents ayant la même technologie vont faire les mêmes choix de production.",
+      "etapes": [
+        {
+          "id": "c",
+          "type": "auto",
+          "points": 2,
+          "notion": "micro-ch2",
+          "consigne": "Rédige la démonstration.",
+          "indices": ["Écris le programme de l'agent avec la contrainte consolidée et dérive par rapport à $k^i$.", "Regarde de quoi dépend la condition obtenue."],
+          "reexplication": "La CPO en $k^i$ donne $f'_i(k^i)=1+r$, qui ne fait intervenir ni $U^i$ ni $w^i$.",
+          "correction": "Programme : $\\max U^i(C^i_0,C^i_1)$ s.c. $C^i_0+\\frac{C^i_1}{1+r}=w^i_0+\\frac{w^i_1}{1+r}+\\frac{f_i(k^i)}{1+r}-k^i$. CPO : $TMS^i_{0\\to1}=\\frac{1}{1+r}$ et $f'_i(k^i)=1+r$ ⇒ $k^i=(f'_i)^{-1}(1+r)$. À $r$ donné, l'investissement ne dépend que de la technologie : deux agents de même technologie font le même choix, quels que soient leurs goûts et dotations (unanimité des actionnaires, théorème de séparation de Fisher). [Micro cours chapitre 2.pdf, p. 10](src:)"
+        }
+      ]
+    },
+    {
+      "titre": "Exercice 1 — Évaluation par arbitrage",
+      "points": 6,
+      "chapitres": ["micro-ch3"],
+      "enonce": "4 dates. Trois actions de prix $q_1=5$, $q_2=1$, $q_3=4$ : $A_1:(8,0,4)$, $A_2:(2,1,0)$, $A_3:(1,6,1)$.",
+      "etapes": [
+        { "id": "q1", "type": "nombre", "points": 1, "consigne": "1) Si $\\beta_1=\\frac14$ et $\\beta_3=\\frac34$, que vaut $\\beta_2$ ?", "reponse": 0.5, "indices": ["Utilise l'action qui fait intervenir $\\beta_2$ simplement.", "$A_2$ : $2\\beta_1+\\beta_2=1$."], "reexplication": "$\\beta_2=1-2\\times\\frac14=\\frac12$ (vérification avec $A_3$ : $\\frac14+3+\\frac34=4$ ✓).", "correction": "$\\beta_2=\\frac12$." },
+        { "id": "q2", "type": "nombre", "points": 1.5, "consigne": "2) $A_4:(16,6,8)$ est proposé à 15. Quel est son prix d'équilibre ?", "reponse": 13, "indices": ["$q=16\\beta_1+6\\beta_2+8\\beta_3$.", "$4+3+6$."], "reexplication": "Prix d'équilibre 13 < 15 : vendre $A_4$ à 15 et acheter le portefeuille de ZC qui le réplique pour 13 rapporte 2 sans risque.", "correction": "Prix d'équilibre $=13$ : 15 n'est pas un prix d'équilibre (opportunité d'arbitrage)." },
+        { "id": "q3", "type": "nombre", "points": 1.5, "consigne": "3) $A_5:(3,a,1)$ a pour prix d'équilibre 6. Que vaut $a$ ?", "reponse": 9, "indices": ["$3\\beta_1+a\\beta_2+\\beta_3=6$.", "$0{,}75+0{,}5a+0{,}75=6$."], "reexplication": "$0{,}5a=4{,}5$ ⇒ $a=9$.", "correction": "$a=9$." },
+        { "id": "q4", "type": "nombre", "points": 2, "consigne": "4) Taux court $r_2$ (décimal) ?", "reponse": -0.5, "indices": ["$r_t=\\frac{\\beta_{t-1}}{\\beta_t}-1$.", "$\\frac{1/4}{1/2}-1$."], "reexplication": "$r_1=4-1=3$ ; $r_2=-0{,}5$ ; $r_3=\\frac{1/2}{3/4}-1=-\\frac13$.", "correction": "$r_1=300\\,\\%$, $r_2=-50\\,\\%$, $r_3=-33{,}3\\,\\%$." }
+      ]
+    },
+    {
+      "titre": "Exercice 2 — Échange : marché financier ou marché des zéro-coupons",
+      "points": 12,
+      "chapitres": ["micro-ch1", "micro-ch3"],
+      "enonce": "Trois périodes, deux agents, $U^i=\\ln c^i_0+0{,}8\\ln c^i_1+0{,}64\\ln c^i_2$, bien non stockable. Dotations : $A=(0,75,300)$, $B=(50,25,100)$.\n\n**Partie I** : marché financier à chaque date non terminale. **Partie II** : seulement un système complet de ZC $Z_1:(1,0)$, $Z_2:(0,1)$, de prix $\\beta_1,\\beta_2$ ; $X^i_j$ = quantité de $Z_j$.",
+      "etapes": [
+        { "id": "q1", "type": "auto", "points": 1.5, "consigne": "1) Contraintes de $A$ aux trois dates et contrainte consolidée.", "indices": ["$S^A_0$, $S^A_1$.", "Actualise et somme."], "reexplication": "Même structure que le CC 2015.", "correction": "$w^A_0=c^A_0+S^A_0$ ; $c^A_1+S^A_1=(1+r_1)S^A_0+w^A_1$ ; $c^A_2=(1+r_2)S^A_1+w^A_2$ ⇒ $c^A_0+\\frac{c^A_1}{1+r_1}+\\frac{c^A_2}{(1+r_1)(1+r_2)}=w^A_0+\\frac{w^A_1}{1+r_1}+\\frac{w^A_2}{(1+r_1)(1+r_2)}$." },
+        { "id": "q2", "type": "nombre", "points": 2.5, "consigne": "2) Taux $r_2$ d'équilibre (décimal) ?", "reponse": 4, "indices": ["AR : $\\Omega=(50,100,400)$.", "$\\frac{0{,}8\\times100}{400}=\\frac{1}{1+r_2}$."], "reexplication": "$1+r_2=5$ ; et $\\frac{0{,}8\\times50}{100}=0{,}4$ ⇒ $r_1=1{,}5$.", "correction": "$r_1=1{,}5$ (150 %), $r_2=4$ (400 %)." },
+        { "id": "q3", "type": "nombre", "points": 2, "consigne": "3) Consommation $c^A_2$ ?", "reponse": 177.05, "indices": ["Facteurs d'actualisation : $\\frac{1}{1+r_1}=0{,}4$ et $\\frac{1}{(1+r_1)(1+r_2)}=0{,}08$.", "$\\gamma_A=\\frac{75\\times0{,}4+300\\times0{,}08}{50+100\\times0{,}4+400\\times0{,}08}=\\frac{54}{122}$."], "reexplication": "$\\gamma_A=0{,}44262$ ⇒ $c^A=(22{,}13;\\ 44{,}26;\\ 177{,}05)$.", "correction": "$c^A_0=22{,}131$, $c^A_1=44{,}262$, $c^A_2=177{,}05$." },
+        { "id": "q4", "type": "auto", "points": 2, "consigne": "4) Partie II : contraintes de $A$ avec les ZC et contrainte consolidée.", "indices": ["En 0, $A$ achète ou vend $X^A_1$, $X^A_2$.", "Substitue $X^A_j=c^A_j-w^A_j$."], "reexplication": "On obtient la même contrainte qu'en partie I avec $\\beta_t$ à la place des facteurs d'actualisation.", "correction": "$w^A_0=c^A_0+\\beta_1X^A_1+\\beta_2X^A_2$ ; $c^A_1=w^A_1+X^A_1$ ; $c^A_2=w^A_2+X^A_2$ ⇒ $c^A_0+\\beta_1c^A_1+\\beta_2c^A_2=w^A_0+\\beta_1w^A_1+\\beta_2w^A_2$." },
+        { "id": "q6", "type": "nombre", "points": 2.5, "consigne": "5)-6) Avec $TMS^i_{0\\to t}=\\beta_t$ : $\\beta_2$ = ?", "reponse": 0.08, "indices": ["$TMS^{AR}_{0\\to2}=\\frac{0{,}64c^{AR}_0}{c^{AR}_2}$.", "$\\frac{0{,}64\\times50}{400}$."], "reexplication": "$\\beta_1=\\frac{0{,}8\\times50}{100}=0{,}4$, $\\beta_2=0{,}08$ (et $TMS_{1\\to2}=\\beta_2/\\beta_1=0{,}2$).", "correction": "$\\beta_1=0{,}4$, $\\beta_2=0{,}08$." },
+        { "id": "q7", "type": "nombre", "points": 1.5, "consigne": "7) Quantité $X^A_1$ (négatif = vente) ?", "reponse": -30.738, "indices": ["$c^A_1=w^A_1+X^A_1$.", "$44{,}262-75$."], "reexplication": "$X^A_1=-30{,}74$, $X^A_2=177{,}05-300=-122{,}95$. Vérification en 0 : $22{,}13-0{,}4\\times30{,}74-0{,}08\\times122{,}95\\approx0$ ✓.", "correction": "$A$ vend $30{,}74$ ZC d'échéance 1 et $122{,}95$ ZC d'échéance 2." }
+      ]
+    }
+  ]
 }

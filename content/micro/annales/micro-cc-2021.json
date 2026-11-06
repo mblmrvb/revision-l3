@@ -3,18 +3,54 @@
   "matiere": "micro",
   "annee": "2021-2022",
   "type": "CC",
-  "titre": "Micro — CC 2021-2022",
+  "titre": "Micro — CC octobre 2021",
   "dureeMin": 120,
-  "corrige": "aucun",
+  "corrige": "propose",
   "horsProgramme": false,
-  "statut": "a-traiter",
-  "chapitres": [],
+  "statut": "pret",
+  "chapitres": ["micro-ch3", "micro-ch2"],
+  "sources": ["Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2021 - 2022/part_1.jpg", "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2021 - 2022/part_2.jpg"],
   "incertitudes": [
-    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+    "Aucun corrigé officiel dans le Drive : tout le corrigé est proposé (non officiel).",
+    "Exercice 1, Q3 : « prix payé en $t=3$ » est interprété comme un paiement unique en date 3, d'où $p_3\\beta_3=\\beta_1+\\beta_2+\\beta_3$.",
+    "Vérification de cohérence à l'exercice 2 : $TMS^{AR}_{1\\to2}=\\frac{200}{100}=2=\\frac{1}{1+r_2}$ redonne bien $r_2=-0{,}5$, obtenu aussi par la règle d'investissement."
   ],
-  "sources": [
-    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2021 - 2022/part_1.jpg",
-    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2021 - 2022/part_2.jpg"
-  ],
-  "exercices": []
+  "exercices": [
+    {
+      "titre": "Question de cours",
+      "points": 3,
+      "chapitres": ["micro-ch3"],
+      "enonce": "Expliquez la méthode d'évaluation d'un actif financier en absence d'opportunité d'arbitrage avec un système complet de zéro-coupons.",
+      "etapes": [
+        { "id": "c", "type": "auto", "points": 3, "notion": "micro-ch3", "consigne": "Rédige ta réponse.", "indices": ["Définis ZC, système complet, AOA.", "Donne $q=\\sum_t w_t\\beta_t$ et le lien $\\beta_t$ ↔ taux courts."], "reexplication": "Plan : (1) actifs et ZC, (2) portefeuille de synthèse et AOA, (3) formule et interprétation des $\\beta_t$ comme facteurs d'actualisation.", "correction": "ZC d'échéance $t$ : paie 1 en $t$, prix $\\beta_t$ ; système complet = un ZC par échéance. Un actif $V=(w_1,\\dots,w_T)$ est répliqué par $\\sum_tw_tZC_t$. En AOA (marché parfait, loi du prix unique), prix de l'actif = coût du portefeuille de synthèse : $q=\\sum_tw_t\\beta_t$. Les $\\beta_t=\\frac{1}{(1+r_1)\\cdots(1+r_t)}$ sont des facteurs d'actualisation ; s'il y avait un écart de prix, acheter le moins cher et vendre le plus cher donnerait un gain sûr. [Micro L3 chapitre 3.pdf, p. 2-5](src:)" }
+      ]
+    },
+    {
+      "titre": "Exercice 1 — Évaluation par arbitrage (questions indépendantes)",
+      "points": 5,
+      "chapitres": ["micro-ch3"],
+      "enonce": "4 dates. Il existe un ZC par échéance (prix $\\beta_t$), une obligation classique par échéance (coupon $R_t$) et un marché monétaire entre $t$ et $t+1$ (taux $r_{t+1}$).",
+      "etapes": [
+        { "id": "q1", "type": "choix", "points": 1, "consigne": "1) Flux d'un portefeuille contenant une unité de chaque obligation :", "choix": ["$(1+R_1+R_2+R_3,\\ 1+R_2+R_3,\\ 1+R_3)$", "$(R_1+R_2+R_3,\\ R_2+R_3,\\ R_3)$", "$(1+R_1,\\ 1+R_2,\\ 1+R_3)$", "$(3,\\ 2,\\ 1)$"], "bonne": 0, "indices": ["$B_t$ paie $R_t$ jusqu'en $t-1$ puis $1+R_t$ en $t$.", "En $t=1$ : $B_1$ rembourse $1+R_1$, $B_2$ et $B_3$ paient leur coupon."], "reexplication": "Additionne date par date.", "correction": "$(1+R_1+R_2+R_3,\\ 1+R_2+R_3,\\ 1+R_3)$." },
+        { "id": "q2", "type": "choix", "points": 1.5, "consigne": "2) $R_2$ en fonction de $r_1$ et $r_2$ :", "choix": ["$R_2=\\dfrac{(1+r_1)(1+r_2)-1}{2+r_2}$", "$R_2=\\dfrac{r_1+r_2}{2}$", "$R_2=\\sqrt{(1+r_1)(1+r_2)}-1$", "$R_2=\\dfrac{(1+r_1)(1+r_2)-1}{2}$"], "bonne": 0, "indices": ["$R_2=\\frac{1-\\beta_2}{\\beta_1+\\beta_2}$.", "$\\beta_1=\\frac{1}{1+r_1}$, $\\beta_2=\\frac{1}{(1+r_1)(1+r_2)}$ : multiplie haut et bas par $(1+r_1)(1+r_2)$."], "reexplication": "$1-\\beta_2=\\frac{(1+r_1)(1+r_2)-1}{(1+r_1)(1+r_2)}$ et $\\beta_1+\\beta_2=\\frac{(1+r_2)+1}{(1+r_1)(1+r_2)}$.", "correction": "$R_2=\\dfrac{(1+r_1)(1+r_2)-1}{2+r_2}$ (attention : ce n'est pas la moyenne des taux courts)." },
+        { "id": "q3", "type": "choix", "points": 1, "consigne": "3) Prix payé en $t=3$ d'un titre versant 1 à chaque date future :", "choix": ["$p_3=\\dfrac{\\beta_1+\\beta_2+\\beta_3}{\\beta_3}$", "$p_3=\\beta_1+\\beta_2+\\beta_3$", "$p_3=3\\beta_3$", "$p_3=\\dfrac{\\beta_3}{\\beta_1+\\beta_2+\\beta_3}$"], "bonne": 0, "indices": ["Valeur actualisée du paiement = valeur actualisée des revenus.", "$p_3\\beta_3=\\beta_1+\\beta_2+\\beta_3$."], "reexplication": "Payer en 3 revient à exprimer la valeur en unités de la date 3 : diviser par $\\beta_3$.", "correction": "$p_3=\\frac{\\beta_1+\\beta_2+\\beta_3}{\\beta_3}$." },
+        { "id": "q4", "type": "auto", "points": 1.5, "consigne": "4) Portefeuille d'obligations $x_1B_1+x_2B_2+x_3B_3$ qui réplique $ZC_3$.", "indices": ["Une équation par date, en partant de $t=3$.", "$t=3$ : $x_3(1+R_3)=1$ ; $t=2$ : $x_2(1+R_2)+x_3R_3=0$."], "reexplication": "Résolution à rebours : $x_3$, puis $x_2$, puis $x_1$.", "correction": "$x_3=\\frac{1}{1+R_3}$, $x_2=-\\frac{R_3}{(1+R_2)(1+R_3)}$, $x_1=-\\frac{R_3}{(1+R_1)(1+R_2)(1+R_3)}$ (on vend à découvert des obligations courtes pour annuler les coupons)." }
+      ]
+    },
+    {
+      "titre": "Exercice 2 — Équilibre intertemporel et technologies de production",
+      "points": 12,
+      "chapitres": ["micro-ch2"],
+      "enonce": "Trois dates, deux agents, $U=\\ln c_0+\\ln c_1+\\ln c_2$, bien non stockable, marché monétaire en 0 et 1. Dotations : $A=(0,100,0)$, $B=(300,100,0)$.\n\n**Partie 1** : entreprise de $A$, bien 0 → bien 2 : $q^A_2=10\\sqrt{k_0}$. **Partie 2** : $B$ crée une entreprise, bien 1 → bien 2 : $q^B_2=4\\sqrt{k_1}$.",
+      "etapes": [
+        { "id": "q2", "type": "choix", "points": 1.5, "consigne": "1)-2) AR justifié. Condition de maximisation du profit de l'entreprise de $A$ :", "choix": ["$5k_0^{-0,5}=(1+r_1)(1+r_2)$", "$5k_0^{-0,5}=1+r_1$", "$10k_0^{-0,5}=(1+r_1)(1+r_2)$", "$5k_0^{-0,5}=1+r_2$"], "bonne": 0, "indices": ["$\\max_{k_0}\\frac{10\\sqrt{k_0}}{(1+r_1)(1+r_2)}-k_0$.", "Dérivée de $10\\sqrt{k_0}$ : $5k_0^{-0,5}$."], "reexplication": "Production en $t=2$ : on actualise de deux périodes.", "correction": "$5k_0^{-0,5}=(1+r_1)(1+r_2)$." },
+        { "id": "q4", "type": "nombre", "points": 3, "consigne": "3)-4) Avec $c^{AR}=(300-k_0,\\ 200,\\ 10\\sqrt{k_0})$, investissement $k_0$ ?", "reponse": 100, "indices": ["$TMS^{AR}_{0\\to2}=\\frac{c_0}{c_2}=\\frac{1}{(1+r_1)(1+r_2)}=\\frac{\\sqrt{k_0}}{5}$.", "$\\frac{300-k_0}{10\\sqrt{k_0}}=\\frac{\\sqrt{k_0}}{5}$ ⇒ $300-k_0=2k_0$."], "reexplication": "$k_0=100$.", "correction": "$k_0=100$, $q^A_2=100$." },
+        { "id": "q5", "type": "nombre", "points": 1.5, "consigne": "5) Taux $r_2$ (décimal) ?", "reponse": -0.5, "indices": ["$TMS^{AR}_{0\\to1}=\\frac{200}{200}=1$ ⇒ $r_1=0$.", "$(1+r_1)(1+r_2)=5/\\sqrt{100}=0{,}5$."], "reexplication": "$r_1=0$, $r_2=-0{,}5$ (cohérent avec $TMS_{1\\to2}=\\frac{200}{100}=2=\\frac{1}{1+r_2}$).", "correction": "$r_1=0$, $r_2=-0{,}5$." },
+        { "id": "q6", "type": "nombre", "points": 1.5, "consigne": "6) Consommation $c^A_2$ ?", "reponse": 33.333, "indices": ["$\\Pi=\\frac{100}{0{,}5}-100=100$ (reçu par $A$).", "$\\gamma_A=\\frac{0+\\frac{100}{1}+100}{300+200+100}=\\frac13$."], "reexplication": "$c^A=\\frac13(200,200,100)$.", "correction": "$c^A_0=c^A_1=66{,}67$, $c^A_2=33{,}33$." },
+        { "id": "q7", "type": "auto", "points": 1.5, "consigne": "7) Partie 2 : contraintes de $B$ et contrainte intertemporelle.", "indices": ["$B$ reçoit le profit de son entreprise en $t=2$.", "Le profit actualisé s'ajoute à la richesse."], "reexplication": "Même structure que le CC 2013 (g).", "correction": "$w^B_0=c^B_0+S^B_0$ ; $w^B_1+(1+r_1)S^B_0=c^B_1+S^B_1$ ; $(1+r_2)S^B_1+(1+r_1)(1+r_2)\\Pi_B=c^B_2$ ⇒ $c^B_0+\\frac{c^B_1}{1+r_1}+\\frac{c^B_2}{(1+r_1)(1+r_2)}=w^B_0+\\frac{w^B_1}{1+r_1}+\\Pi_B$." },
+        { "id": "q8", "type": "choix", "points": 1, "consigne": "8) Condition de maximisation du profit de l'entreprise de $B$ :", "choix": ["$2k_1^{-0,5}=1+r_2$", "$2k_1^{-0,5}=(1+r_1)(1+r_2)$", "$4k_1^{-0,5}=1+r_2$", "$2k_1^{-0,5}=1+r_1$"], "bonne": 0, "indices": ["$\\Pi_B=\\frac{4\\sqrt{k_1}}{(1+r_1)(1+r_2)}-\\frac{k_1}{1+r_1}$.", "Multiplie la CPO par $1+r_1$."], "reexplication": "Investissement en 1, production en 2 : seul $r_2$ compte.", "correction": "$2k_1^{-0,5}=1+r_2$." },
+        { "id": "q9", "type": "auto", "points": 2, "consigne": "9) Conditions marginales avec AR et système en $(k_0,k_1)$.", "indices": ["$c^{AR}_0=300-k_0$, $c^{AR}_1=200-k_1$, $c^{AR}_2=10\\sqrt{k_0}+4\\sqrt{k_1}$.", "Combine $TMS_{0\\to2}$ avec la règle de $A$ et $TMS_{1\\to2}$ avec celle de $B$."], "reexplication": "Deux équations, deux inconnues.", "correction": "$\\frac{300-k_0}{10\\sqrt{k_0}+4\\sqrt{k_1}}=\\frac{\\sqrt{k_0}}{5}$ et $\\frac{200-k_1}{10\\sqrt{k_0}+4\\sqrt{k_1}}=\\frac{\\sqrt{k_1}}{2}$ (et $\\frac{300-k_0}{200-k_1}=\\frac{1}{1+r_1}$)." }
+      ]
+    }
+  ]
 }

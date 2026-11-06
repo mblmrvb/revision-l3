@@ -3,18 +3,62 @@
   "matiere": "micro",
   "annee": "2016-2017",
   "type": "CC",
-  "titre": "Micro — CC 2016-2017",
+  "titre": "Micro — CC octobre 2016",
   "dureeMin": 120,
   "corrige": "officiel",
   "horsProgramme": false,
-  "statut": "a-traiter",
-  "chapitres": [],
+  "statut": "pret",
+  "chapitres": ["micro-ch1", "micro-ch3", "micro-ch2"],
+  "sources": ["Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2016 - 2017/CC 2016.pdf", "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2016 - 2017/CC 2016, principaux résultats.pdf"],
   "incertitudes": [
-    "Fiche créée automatiquement : chapitres couverts et statut « hors programme » à déterminer lors de la transcription."
+    "Le symbole du taux de perte du stockage est illisible dans le PDF : il est noté $\\delta$ ici ; de même la condition s'écrit $r_2=-\\delta$ (le signe n'apparaît pas dans l'extraction, il est déduit du calcul).",
+    "Les questions de cours n'ont pas de corrigé officiel (explication ajoutée)."
   ],
-  "sources": [
-    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2016 - 2017/CC 2016.pdf",
-    "Drive L3_EIF_Dauphine › S1/Micro/Annales/CC/2016 - 2017/CC 2016, principaux résultats.pdf"
-  ],
-  "exercices": []
+  "exercices": [
+    {
+      "titre": "Question de cours (au choix)",
+      "points": 4,
+      "chapitres": ["micro-ch1"],
+      "enonce": "Traitez **une seule** question : 1) La préférence pour le lissage des consommations au cours du temps. 2) Le théorème de l'agent représentatif dans une économie d'échange : hypothèses, implications et limites.",
+      "etapes": [
+        {
+          "id": "c",
+          "type": "auto",
+          "points": 4,
+          "notion": "micro-ch1",
+          "consigne": "Rédige ta réponse (définitions, résultat clé, graphique éventuel, limites).",
+          "indices": ["Q1 : convexité des préférences, $C^i_1=\\frac{\\Omega_1}{\\Omega_0}C^i_0$.", "Q2 : mêmes préférences + TMS homogènes de degré 0 ; l'AR consomme $\\Omega_t$."],
+          "reexplication": "Pour Q2, pense aussi aux limites : effets de répartition gommés, hypothèses fortes (préférences identiques et homothétiques, marchés complets et parfaits).",
+          "correction": "**Q1** — Préférences standards ⇒ préférence pour les paniers intermédiaires ; à l'optimum $C^i_1=\\frac{\\Omega_1}{\\Omega_0}C^i_0$, la consommation suit les dotations globales ; lissage parfait si $\\Omega_0=\\Omega_1$. [Micro L3 chapitre 1.pdf, p. 5-6](src:)\n\n**Q2** — Hypothèses : échange pur, système financier complet et parfait, mêmes préférences, TMS homogènes de degré 0. Implications : $TMS^{AR}_{0\\to1}(\\Omega_0,\\Omega_1)=\\frac{1}{1+r}$ donne $r^*$ sans fonctions de demande ; partage linéaire $C^i_t=k_i\\Omega_t$ ; courbe des contrats droite, $r^*$ indépendant de la répartition. Limites : les effets de redistribution sont gommés, hypothèses restrictives. [Micro L3 chapitre 1.pdf, p. 13-16](src:)"
+        }
+      ]
+    },
+    {
+      "titre": "Exercice 1 — Taux courts et évaluation",
+      "points": 5,
+      "chapitres": ["micro-ch3"],
+      "enonce": "4 dates, taux courts $r_1=r_2=r_3=0{,}25$.",
+      "etapes": [
+        { "id": "q1", "type": "nombre", "points": 1.5, "consigne": "1) Prix $\\beta_3$ ?", "reponse": 0.512, "indices": ["$\\beta_t=\\frac{1}{1{,}25^t}$.", "$0{,}8^3$."], "reexplication": "$\\beta_1=0{,}8$, $\\beta_2=0{,}64$, $\\beta_3=0{,}512$.", "correction": "$\\beta_1=0{,}8$, $\\beta_2=0{,}64$, $\\beta_3=0{,}512$." },
+        { "id": "q2", "type": "nombre", "points": 0.5, "consigne": "2) Prix de l'actif $A$ rapportant 100 en 1 et 400 en 3 ?", "reponse": 284.8, "indices": ["$100\\beta_1+400\\beta_3$."], "reexplication": "$80+204{,}8$.", "correction": "$q_A=284{,}8$." },
+        { "id": "q3", "type": "choix", "points": 1, "consigne": "3) Prix payé en deux fois : $q_0$ en 0 et $q_3$ en 3. Équation de valorisation :", "choix": ["$q_0+0{,}512\\,q_3=284{,}8$", "$q_0+q_3=284{,}8$", "$0{,}512\\,q_0+q_3=284{,}8$", "$q_0+q_3=500$"], "bonne": 0, "indices": ["Valeur actualisée des paiements = valeur actualisée des revenus.", "$q_3$ est payé en $t=3$."], "reexplication": "On actualise $q_3$ avec $\\beta_3$.", "correction": "$q_0+0{,}512\\,q_3=284{,}8$." },
+        { "id": "q4", "type": "nombre", "points": 1, "consigne": "4) Portefeuille $C=X_AA+X_BB$ ($B$ certain unitaire) de prix 4800, revenu 1000 en $t=2$ : $X_A$ = ?", "reponse": 10, "indices": ["En $t=2$, $A$ ne paie rien : $X_B=1000$.", "$q_B=0{,}8+0{,}64+0{,}512=1{,}952$."], "reexplication": "$4800=284{,}8X_A+1952$ ⇒ $X_A=10$.", "correction": "$X_A=10$, $X_B=1000$." },
+        { "id": "q5", "type": "nombre", "points": 1, "consigne": "5) Prix de $D=\\max(A,200B)$ ?", "reponse": 492.8, "indices": ["Date par date : $A=(100,0,400)$, $200B=(200,200,200)$.", "$D=(200,200,400)$."], "reexplication": "$200\\times0{,}8+200\\times0{,}64+400\\times0{,}512$.", "correction": "$q_D=492{,}8$." }
+      ]
+    },
+    {
+      "titre": "Exercice 2 — Équilibre général et stockage imparfait",
+      "points": 11,
+      "chapitres": ["micro-ch1", "micro-ch2"],
+      "enonce": "Trois dates, deux agents, $U^i=\\ln c^i_0+\\ln c^i_1+\\ln c^i_2$, marché monétaire en 0 et 1, bien non stockable. Dotations : $A=(100,50,0)$, $B=(200,250,100)$.\n\n**Partie 2** : à la date 1, on découvre un stockage imparfait : stocker $h_i$ en 1 rend $(1-\\delta)h_i$ en 2 ($0\\le\\delta<1$). Le bien de la date 1 est le numéraire.",
+      "etapes": [
+        { "id": "q2", "type": "nombre", "points": 2.5, "consigne": "1)-2) Avec l'AR, $r_t=\\frac{\\Omega_t}{\\Omega_{t-1}}-1$. Que vaut $r_2$ (décimal) ?", "reponse": -0.666667, "indices": ["$\\Omega=(300,300,100)$.", "$\\frac{c^{AR}_1}{c^{AR}_2}=\\frac{1}{1+r_2}$."], "reexplication": "$r_1=0$, $r_2=\\frac{100}{300}-1=-\\frac23$.", "correction": "$r_1=0$, $r_2=-\\frac23$." },
+        { "id": "q3", "type": "nombre", "points": 2, "consigne": "3) Épargne $S^A_0$ de l'agent $A$ ?", "reponse": 50, "indices": ["$\\gamma_A=\\frac{100+50+0}{300+300+300}=\\frac16$.", "$c^A_0=\\gamma_A\\times300$."], "reexplication": "$c^A=(50,50,16{,}67)$ ; $S^A_0=100-50=50$, $S^A_1=50+50-50=50$.", "correction": "$c^A_0=c^A_1=50$, $c^A_2=16{,}667$ ; $S^A_0=50$, $S^A_1=50$." },
+        { "id": "q4", "type": "auto", "points": 1.5, "consigne": "4) Partie 2 : contraintes de $A$ en 1 et 2 et contrainte consolidée en $t=1$.", "indices": ["En 1 : revenu de l'épargne + dotation = consommation + épargne + stock.", "En 2 : le stock rend $(1-\\delta)h_A$."], "reexplication": "On actualise en unités de la date 1.", "correction": "$(1+r_1)S^A_0+w^A_1=c^A_1+S^A_1+h_A$ ; $c^A_2=(1+r_2)S^A_1+w^A_2+(1-\\delta)h_A$ ⇒ $c^A_1+\\frac{c^A_2}{1+r_2}=w^A_1+(1+r_1)S^A_0-h_A+\\frac{w^A_2}{1+r_2}+\\frac{(1-\\delta)h_A}{1+r_2}$." },
+        { "id": "q5", "type": "choix", "points": 1, "consigne": "5) Condition sur $r_2$ pour que le stockage soit utilisé :", "choix": ["$r_2=-\\delta$", "$r_2=\\delta$", "$r_2=0$", "$r_2>0$"], "bonne": 0, "indices": ["« Profit » du stockage : $\\frac{(1-\\delta)h_A}{1+r_2}-h_A$.", "Il faut $1+r_2=1-\\delta$."], "reexplication": "Rendement brut du stockage $1-\\delta$ = rendement brut du prêt $1+r_2$.", "correction": "$r_2=-\\delta$." },
+        { "id": "q6", "type": "nombre", "points": 1.5, "consigne": "6) Quantité totale stockée $h$ pour $\\delta=0{,}5$ ?", "reponse": 50, "indices": ["$\\frac{\\Omega_1-h}{\\Omega_2+(1-\\delta)h}=\\frac{1}{1-\\delta}$.", "$h=\\frac12\\left(\\Omega_1-\\frac{\\Omega_2}{1-\\delta}\\right)$."], "reexplication": "$h=\\frac12(300-200)=50$.", "correction": "$h=\\frac12\\left(\\Omega_1-\\frac{\\Omega_2}{1-\\delta}\\right)=50$." },
+        { "id": "q7", "type": "nombre", "points": 2.5, "consigne": "7) Consommation $c^A_2$ avec stockage ($\\delta=0{,}5$) ?", "reponse": 25, "indices": ["Avec $r_2=-\\delta$, $h_A$ disparaît de la part $\\gamma_A$ : $\\gamma_A=\\frac{w^A_1+(1+r_1)S^A_0+\\frac{w^A_2}{1+r_2}}{\\Omega_1+\\frac{\\Omega_2}{1+r_2}}$.", "$\\gamma_A=\\frac{100}{500}=0{,}2$ ; $c^A_2=\\gamma_A(\\Omega_2+(1-\\delta)h)$."], "reexplication": "$c^A_1=0{,}2\\times250=50$, $c^A_2=0{,}2\\times125=25>16{,}67$ : le stockage améliore la situation de $A$ en date 2.", "correction": "$\\gamma_A=0{,}2$ ⇒ $c^A_1=50$, $c^A_2=25$ (contre 16,67 sans stockage). La part de $A$ ne dépend pas de $h_A$ car, à $r_2=-\\delta$, le « profit » du stockage est nul." }
+      ]
+    }
+  ]
 }
